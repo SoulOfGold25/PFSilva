@@ -211,6 +211,7 @@ body {
     cursor: pointer;
     font-family: "Merriweather", serif;
     font-size: 14px;
+    box-sizing: border-box;
 }
 
 .botonPurpura:hover{
@@ -1601,7 +1602,7 @@ footer {
 
     .articuloSegundaSectionAprende {
         max-width: 41.875rem;
-        margin: 0;
+        margin: 0 auto;
         padding: .625rem;
     }
 
@@ -1617,8 +1618,18 @@ footer {
         gap: .9375rem;
     }
 
+    .articuloNeurodivergenciaTea div{
+        width: 9.375rem;
+        height: 1.875rem;
+    }
+
     .articuloNeurodivergencia {
         padding: 1.25rem;
+    }
+
+    .articuloNeurodivergencia div{
+        width: 9.375rem;
+        height: 1.875rem;
     }
 
     .cuartaSectionAprende img {
@@ -1640,6 +1651,12 @@ footer {
         flex-direction: column;
         gap: .625rem;
         justify-content: center;
+    }
+
+    #botonTamañoMobile{
+        width: 9.375rem;
+        height: 1.875rem ;
+        align-self: center;  
     }
 }
 
@@ -1721,7 +1738,6 @@ footer {
         max-width: 18rem;
         height: auto;
         padding: .625rem;
-        padding: 0;
         justify-content: center;
     }
 
@@ -1858,7 +1874,7 @@ footer {
     /* HTML Aprende */
     main>:first-child {
         max-width: 100%;
-        padding: 0;
+        padding: .625rem;
         margin: .625rem 0;
     }
 
@@ -1869,18 +1885,18 @@ footer {
     .articuloPrimeraSectionAprende {
         max-width: 18rem;
         margin: 0;
-        padding: .3125rem;
+        padding: .625rem;
     }
 
     .segundaSectionAprende {
         max-width: 100%;
-        padding: 0;
-        margin: .3125rem 0;
+        padding: .625rem;
+        margin: 0 auto;
     }
 
     .articuloSegundaSectionAprende {
         max-width: 18rem;
-        margin: 0;
+        margin: .625rem auto;
         padding: .3125rem;
     }
 
@@ -1893,14 +1909,27 @@ footer {
 
     .articuloNeurodivergenciaTea {
         padding: 1.25rem;
-        gap: .9375rem;
+        gap: .3125rem;
         text-align: justify;
         justify-content: center;
+    }
+
+    .articuloNeurodivergenciaTea div{
+        width: 6.25rem;
+        height: .625rem;
+        align-self: center;
     }
 
     .articuloNeurodivergencia {
         padding: .625rem;
     }
+
+    .articuloNeurodivergencia div{
+        width: 6.25rem;
+        height: .625rem;
+        align-self: center;
+    }
+
 
     .cuartaSectionAprende img {
         width: 6.25rem;
@@ -1908,7 +1937,7 @@ footer {
 
     .cuartaSectionAprende {
         padding: .625rem;
-        margin: .3125rem auto;
+        margin: .625rem auto;
     }
 
     .quintaSectionAprende {
@@ -1918,6 +1947,11 @@ footer {
         text-align: center;
     }
 
+    .quintaSectionAprende   div {
+        width: fit-content;
+        height: 1.25rem;
+    }
+
     .contenedorQuintaSectionAprende {
         max-width: 41.875rem;
         padding: .625rem;
@@ -1925,4 +1959,21 @@ footer {
         gap: .3125rem;
         justify-content: center;
     }
+
+    .contenedorSextaSectionAprende{
+        flex-direction: column;
+    }
+
+    .articuloSextaSectionAprende{
+        padding: 1.875rem;
+        flex-direction: column;
+    }
+
+    #botonTamañoMobile{
+        width: 9.375rem;
+        height: 1.875rem ;
+        align-self: center;  
+    }
+
+
 }
