@@ -1,36 +1,38 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
 /* Quitar puntos a la lista */
-ul{
+ul {
     list-style: none;
-    font-family:  "Merriweather", serif;
+    font-family: "Merriweather", serif;
     font-size: 14px;
     font-weight: 300;
-    line-height: 1.6;  /* altura de linea */
+    line-height: 1.6;
+    /* altura de linea */
     margin: 0;
 }
 
-ol{
-    font-family:  "Merriweather", serif;
+ol {
+    font-family: "Merriweather", serif;
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.6;  /* altura de linea */
+    line-height: 1.6;
+    /* altura de linea */
     margin: 0;
 }
 
 /* Quitar subrayado a la etiqueta anchor */
-a{
+a {
     text-decoration: none;
     color: inherit;
-    font-family:  "Merriweather", serif;
+    font-family: "Merriweather", serif;
     font-size: 14px;
 }
 
 /* Tamaño y fuente de los titulos */
-h1{
+h1 {
     font-family: 'Roboto Slab, serif';
     font-size: 48px;
     color: #f5f5dc;
@@ -38,58 +40,60 @@ h1{
     margin: 0;
 }
 
-h2{
+h2 {
     font-family: 'Roboto Slab, serif';
     font-size: 32px;
     font-weight: 800;
     margin: 0;
 }
 
-h3{
+h3 {
     font-family: 'Roboto Slab, serif';
     font-size: 24px;
     font-weight: 700;
 }
 
-h4{
+h4 {
     font-family: 'Roboto Slab, serif';
     font-size: 20px;
     font-weight: 600;
 }
 
-h5{
+h5 {
     font-family: 'Roboto Slab, serif';
     font-size: 16px;
     font-weight: 500;
 }
 
-h6{
+h6 {
     font-family: 'Roboto Slab, serif';
     font-size: 14px;
     font-weight: 400;
 }
-p{
+
+p {
     font-family: "Merriweather", serif;
     font-size: 16px;
     font-weight: 300;
-    line-height: 1.6;  /* altura de linea */
+    line-height: 1.6;
+    /* altura de linea */
     margin: 0;
 }
 
 /* establecer color de fondo del header */
-header{
+header {
     width: 100%;
     font-family: 'Roboto Slab', serif;
     color: #f5f5dc;
-    background-color: #4b0082;    
+    background-color: #4b0082;
 }
 
-body{
+body {
     background-color: #f5f5dc;
 }
 
-.navBar{
-    max-width:  76rem;
+.navBar {
+    max-width: 76rem;
     padding: .625rem;
     margin: 0 auto;
     box-sizing: border-box;
@@ -101,25 +105,38 @@ body{
 
 }
 
-.logoHeader{
+.logoHeader {
     width: 6.25rem;
 }
 
-.logoHeader img{
+.logoHeader:hover{
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+.logoHeader img {
     max-width: 6.25rem;
 }
 
-.titulosHeader ul{
+.titulosHeader ul {
     width: fit-content;
     display: flex;
     justify-content: space-around;
-    gap: 1.25rem; 
+    gap: 1.25rem;
     flex-wrap: wrap;
-
 }
 
-.botonesHeader{
-    width:fit-content;
+.titulosHeader ul li :hover{
+    padding: .625rem;
+    box-sizing: border-box;
+    border: #f5f5dc solid 1px;
+    border-radius: 20px 0px 20px 0px;
+    transition: transform 0.3s;
+    transform: scale(1.1); 
+}
+
+.botonesHeader {
+    width: fit-content;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -128,74 +145,98 @@ body{
 
 
 /* Boton amarillo */
-.btnAmarillo{
-    width: 6.25rem;
+.btnAmarillo {
+    width: 8.125rem;
     height: fit-content;
     background-color: #d19e00;
     color: #f5f5dc;
     padding: .625rem .9375rem;
-    border-radius: 20px 0px 20px 0px  ;
+    box-sizing: border-box;
+    border-radius: 20px 0px 20px 0px;
+    border: solid #f5f5dc 1px;
     margin: 0rem .3125rem;
-    display: flex; /* Hacer del botón un contenedor flex */
+    display: flex;
     justify-content: center; /* Centrar el contenido horizontalmente */
-    align-items: center; /* Centrar el contenido verticalmente */
+    align-items: center;/* Centrar el contenido verticalmente */
     cursor: pointer;
     font-family: "Merriweather", serif;
     font-size: 14px;
 }
 
+.btnAmarillo:hover{
+    background-color: #4b0082;
+    border: #d19e00 solid 1px;
+    transition: border-color 0.3s;
+}
+
 /* Boton purpura */
-.btnBlanco{
-    width: 6.25rem;
+.btnBlanco {
+    width: 8.125rem;
     height: fit-content;
     background-color: #f5f5dc;
     color: #4b0082;
     padding: .625rem .9375rem;
-    border-radius: 20px 0px 20px 0px  ;
+    border-radius: 20px 0px 20px 0px;
+    border: solid #f5f5dc 1px;
     margin: 0rem .3125rem;
-    display: flex; /* Hacer del botón un contenedor flex */
-    justify-content: center; /* Centrar el contenido horizontalmente */
-    align-items: center; /* Centrar el contenido verticalmente */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     cursor: pointer;
     font-family: "Merriweather", serif;
     font-size: 14px;
 }
 
-.botonPurpura{
+.btnBlanco:hover{
+    background-color: #4b0082;
+    border: #f5f5dc solid 1px;
+    color: #f5f5dc;
+}
+
+.botonPurpura {
     width: 6.25rem;
     height: fit-content;
     background-color: #4b0082;
     color: #f5f5dc;
     padding: .625rem .9375rem;
-    border-radius: 20px 0px 20px 0px  ;
+    border-radius: 20px 0px 20px 0px;
     margin: 0rem .3125rem;
-    display: flex; /* Hacer del botón un contenedor flex */
-    justify-content: center; /* Centrar el contenido horizontalmente */
-    align-items: center; /* Centrar el contenido verticalmente */
+    border: 1px #4b4b4b solid;
+    display: flex;
+    justify-content: center;  
+    align-items: center;
     text-align: center;
     cursor: pointer;
     font-family: "Merriweather", serif;
     font-size: 14px;
 }
 
+.botonPurpura:hover{
+    background-color: #f5f5dc;
+    border: #4b0082 solid 1px;
+    color: #4b0082;
+}
+
 /* box modeling primera section */
 
-.primeraSection{
+.primeraSection {
     background-image:
         linear-gradient(to bottom right, #4c0082d3, #f5f5f500),
-        url(../assets/fotoTitulo1.jpg); /* agrego de fondo una imagen*/
-    background-size:cover;
+        url(../assets/fotoTitulo1.jpg);
+    /* agrego de fondo una imagen*/
+    background-size: cover;
     background-position: center;
     max-width: 100%;
     height: auto;
     margin: 2.5rem auto;
 }
 
-.flexPrimeraSection{
+.flexPrimeraSection {
     max-width: 76rem;
     height: auto;
-    padding:3.125rem;
+    padding: 3.125rem;
     margin: auto auto;
     box-sizing: border-box;
     display: flex;
@@ -206,48 +247,45 @@ body{
     flex-wrap: wrap;
 }
 
-.primeraSection .flexPrimeraSection p{
+.primeraSection .flexPrimeraSection p {
     color: #f5f5dc;
     text-align: justify;
 }
 
-.flexPrimeraSection h2 .h2Cada{
-    color:blanchedalmond;
+.flexPrimeraSection h2 .h2Cada {
+    color: blanchedalmond;
 }
 
-.flexPrimeraSection h2 .h2Mente{
-    color:cadetblue;
+.flexPrimeraSection h2 .h2Mente {
+    color: cadetblue;
 }
 
-.flexPrimeraSection h2 .h2Es{
-    color:violet;
+.flexPrimeraSection h2 .h2Es {
+    color: violet;
 }
 
-.flexPrimeraSection h2 .h2Unica{
-    color:royalblue;
+.flexPrimeraSection h2 .h2Unica {
+    color: royalblue;
 }
 
-.flexPrimeraSection h2 .h2Y{
-    color:green;
+.flexPrimeraSection h2 .h2Y {
+    color: green;
 }
 
-.flexPrimeraSection h2 .h2Valiosa{
-    color:aqua;
+.flexPrimeraSection h2 .h2Valiosa {
+    color: aqua;
 }
 
 
-.segundaSection{
+.segundaSection {
     width: 100%;
     background-color: #4b0082;
     color: #f5f5dc;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
 }
 
-.segundaSection article{
-    max-width: 76rem;
+.segundaSection article {
+    width: 76rem;
     padding: 1.25rem;
     margin: 0 auto;
     box-sizing: border-box;
@@ -257,17 +295,18 @@ body{
     align-items: center;
 }
 
-.terceraSection{
+.terceraSection {
     max-width: 76rem;
     margin: 2.5rem auto;
     display: flex;
     gap: 1.25rem;
     justify-content: space-between;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
 }
 
-.terceraSection article{
-    flex: 1; /* Establezco que cada elemento utilice una fraccion dentro del contenedor*/
+.terceraSection article {
+    flex: 1;
+    /* Establezco que cada elemento utilice una fraccion dentro del contenedor*/
     padding: .625rem;
     border: solid .0625rem #4b0082;
     border-radius: 1.875rem;
@@ -280,21 +319,22 @@ body{
     gap: 1.25rem;
 }
 
-.terceraSection img{
+.terceraSection img {
     width: 15.625rem;
     height: 15.625rem;
     object-fit: cover;
     border-radius: 50%;
 }
-.terceraSection p{
+
+.terceraSection p {
     text-align: justify;
 }
 
-.pDerecha{
+.pDerecha {
     align-self: flex-end;
 }
 
-.sectionDonar{
+.sectionDonar {
     max-width: 76rem;
     margin: 0 auto;
     display: flex;
@@ -307,7 +347,7 @@ body{
     color: #4b0082;
 }
 
-.contenedorQuieroDonar{
+.contenedorQuieroDonar {
     width: 45rem;
     background-color: #4b0082;
     color: #f5f5dc;
@@ -321,49 +361,49 @@ body{
     gap: .9375rem;
 }
 
-#quieroDonarTitulo{
+#quieroDonarTitulo {
     grid-column: 1/3;
     justify-self: start;
     align-self: center;
 }
 
-#quieroDonarSubtitulo{
+#quieroDonarSubtitulo {
     grid-column: 1/2;
     grid-row: 2/3;
     justify-self: end;
     align-self: center;
 }
 
-#quieroDonar5{
+#quieroDonar5 {
     grid-column: 2/3;
     grid-row: 2/3;
     justify-self: center;
 }
 
-#quieroDonar10{
+#quieroDonar10 {
     grid-column: 3/4;
-    grid-row: 2/3; 
+    grid-row: 2/3;
     justify-self: center;
 }
 
-#quieroDonar20{
+#quieroDonar20 {
     grid-column: 4/5;
     grid-row: 2/3;
     justify-self: center;
 }
 
-#btnDonar{
+#btnDonar {
     grid-column: 4/5;
     grid-row: 3/4;
     justify-self: center;
 }
 
-#inputDinero{
+#inputDinero {
     grid-column: 2/4;
     grid-row: 3/4;
 }
 
-.cuartaSection{
+.cuartaSection {
     max-width: 76rem;
     margin: 2.5rem auto;
     display: flex;
@@ -374,14 +414,14 @@ body{
     box-sizing: border-box;
 }
 
-.contenedorCuartaSection{
+.contenedorCuartaSection {
     max-width: 76rem;
     display: flex;
     gap: 1.25rem;
     flex-wrap: wrap;
 }
 
-.articuloCuartaSection{
+.articuloCuartaSection {
     flex: 1;
     padding: 1.25rem;
     border-radius: 1.875rem;
@@ -397,18 +437,18 @@ body{
     box-sizing: border-box;
 }
 
-.fotoArticuloSection4{
+.fotoArticuloSection4 {
     height: 9.375rem;
     border: solid 1px #f5f5dc;
     margin: 5px;
-    border-radius:20px;
+    border-radius: 20px;
 }
 
-#btnUnete{
+#btnUnete {
     align-self: flex-end;
 }
 
-.quintaSection{
+.quintaSection {
     max-width: 76rem;
     margin: 0 auto;
     display: flex;
@@ -419,12 +459,13 @@ body{
     box-sizing: border-box;
 }
 
-.backgroundQuintaSection{
+.backgroundQuintaSection {
     width: 76rem;
     height: 31.25rem;
     background-image:
-        linear-gradient(to left , #4c0082a8, #f5f5f500),
-        url(../assets/fotoSection5.jpg); /* agrego de fondo una imagen*/
+        linear-gradient(to left, #4c0082a8, #f5f5f500),
+        url(../assets/fotoSection5.jpg);
+    /* agrego de fondo una imagen*/
     background-size: cover;
     background-position: center;
     padding: 1.25rem;
@@ -438,7 +479,7 @@ body{
     align-content: center;
 }
 
-.articuloQuintaSection{
+.articuloQuintaSection {
     max-width: 31.25rem;
     margin: 6.25rem;
     display: flex;
@@ -447,524 +488,11 @@ body{
     flex-wrap: wrap;
 }
 
-.articuloQuintaSection p{
+.articuloQuintaSection p {
     text-align: justify;
 }
 
-/* Inicio responsive index */
-    @media ((min-width: 46.5rem) and (max-width: 64rem)){
-        h1{
-            font-family: 'Roboto Slab, serif';
-            font-size: 32px;
-            color: #f5f5dc;
-            font-weight: 700;
-            margin: 0;
-        }
-
-        h2{
-            font-family: 'Roboto Slab, serif';
-            font-size: 28px;
-            font-weight: 600;
-            margin: 0;
-        }
-        
-        h3{
-            font-family: 'Roboto Slab, serif';
-            font-size: 24px;
-            font-weight: 600;
-        }
-        
-        h4{
-            font-family: 'Roboto Slab, serif';
-            font-size: 20px;
-            font-weight: 500;
-        }
-        
-        h5{
-            font-family: 'Roboto Slab, serif';
-            font-size: 16px;
-            font-weight: 500;
-        }
-        
-        h6{
-            font-family: 'Roboto Slab, serif';
-            font-size: 14px;
-            font-weight: 400;
-        }
-        p{
-            font-family: "Merriweather", serif;
-            font-size: 14px;
-            font-weight: 300;
-            line-height: 1.6;  /* altura de linea */
-            margin: 0;
-        }
-
-        a{
-            font-size: 12px;
-        }
-
-        .titulosHeader{
-            display: none;
-        }
-
-        .primeraSection{
-            margin: 1.25rem auto;
-        }
-
-        .flexPrimeraSection{
-            max-width: 41.875rem;
-            height: auto;
-            margin: 0 auto;
-            justify-content: center;    
-        }
-        .flexPrimeraSection h1{
-            max-width: 100%;
-            justify-content: center;    
-        }
-        .flexPrimeraSection h2{
-            max-width: 100%;
-            font-size: 24px;
-            justify-content: center;    
-        }
-
-        .flexPrimeraSection div{
-            align-self: center;
-            font-size: .875rem;
-        }
-
-        .terceraSection{
-            max-width: 41.875rem;
-            margin: 1.25rem auto;
-            flex-direction: column;
-            gap: .625rem;
-            justify-content: space-between;
-            flex-wrap: wrap;   
-        }
-
-        .terceraSection p{
-            align-self: center;
-        }
-
-        .terceraSection img{
-            width: 9.375rem;
-            height: 9.375rem;
-        }
-
-        .sectionDonar{
-            max-width: 41.875rem;
-            gap: 1.25rem;
-        }
-
-        .contenedorQuieroDonar{
-            max-width: 29.375rem;
-            gap: .625rem;
-            justify-content: center;
-        }
-
-        #quieroDonarTitulo{
-            grid-column: 1/5;
-        }
-        
-        #quieroDonarSubtitulo{
-            display: none;
-        }
-        
-        #quieroDonar5{
-            max-width: fit-content;
-        }
-        
-        #quieroDonar10{
-            max-width: fit-content;
-        }
-        
-        #quieroDonar20{
-            max-width: fit-content;
-        }
-        
-        #btnDonar{
-            max-width: fit-content;
-        }
-        
-        .cuartaSection{
-            max-width: 41.875rem;
-            margin: 1.25rem auto;
-            gap: 1.25rem;
-        }
-
-        .contenedorCuartaSection{
-            max-width: 100%;
-            gap: .625rem;
-            flex-direction: column;
-        }
-
-        #btnUnete{
-            align-self: center;
-        }        
-        
-        .quintaSection{
-            max-width: 41.875rem;            
-        }
-
-        .backgroundQuintaSection{
-            justify-content: center;
-            max-width: 100%;
-            border-radius: 1.875rem;
-            background-image: 
-            linear-gradient( #4c0082b2, #f5f5f51a),
-            url(../assets/fotoSection5.jpg); /* agrego de fondo una imagen*/
-
-        }
-
-        .articuloQuintaSection{
-            max-width: 100%;
-            margin: 0 1.25rem;
-        }
-
-        /* HTML Aprende */
-        main>:first-child{
-            max-width: 100%;
-            padding: 0;
-            margin: .625rem 0;            
-        }
-        
-        .articuloPrimeraSectionAprende{
-            max-width: 41.875rem;
-            margin: 0;
-            padding: .625rem;
-        }
-
-        .segundaSectionAprende{
-            max-width: 100%;
-            padding: 0;
-            margin: .625rem 0;
-        }
-
-        .articuloSegundaSectionAprende{
-            max-width: 41.875rem;
-            margin: 0;
-            padding: .625rem;
-        }
-
-        .terceraSectionAprende{
-            max-width: 41.875rem;
-            padding: .625rem;
-            margin: .625rem auto;
-            gap: 1.25rem;
-        }
-
-        .articuloNeurodivergenciaTea{
-            padding: 1.25rem;
-            gap: .9375rem;    
-        }
-
-        .articuloNeurodivergencia{
-            padding: 1.25rem;
-        }
-
-        .cuartaSectionAprende img{
-            width: 9.375rem;
-        }
-        
-        .cuartaSectionAprende{
-            padding: 1.25rem;
-            margin: .625rem auto;
-        }
-        
-        .quintaSectionAprende{
-            margin: .625rem 0;
-        }
-
-        .contenedorQuintaSectionAprende{
-            max-width: 670rem;
-            padding: 1.25rem;
-            flex-direction: column;
-            gap: .625rem;
-            justify-content: center;
-        }
-    }
-
-
-    @media ((min-width: 0px) and (max-width: 46.5rem)){
-        h1{
-            font-family: 'Roboto Slab, serif';
-            font-size: 24px;
-            color: #f5f5dc;
-            font-weight: 700;
-            margin: 0;
-        }
-
-        h2{
-            font-family: 'Roboto Slab, serif';
-            font-size: 20px;
-            font-weight: 600;
-            margin: 0;
-        }
-        
-        h3{
-            font-family: 'Roboto Slab, serif';
-            font-size: 18px;
-            font-weight: 600;
-        }
-        
-        h4{
-            font-family: 'Roboto Slab, serif';
-            font-size: 16px;
-            font-weight: 500;
-        }
-        
-        h5{
-            font-family: 'Roboto Slab, serif';
-            font-size: 14px;
-            font-weight: 500;
-        }
-        
-        h6{
-            font-family: 'Roboto Slab, serif';
-            font-size: 14px;
-            font-weight: 400;
-        }
-        p{
-            font-family: "Merriweather", serif;
-            font-size: 12px;
-            font-weight: 300;
-            line-height: 1.6;  /* altura de linea */
-            margin: 0;
-        }
-
-        a{
-            font-size: 8px;
-        }
-
-        .btnAmarillo{
-            width: 3.75rem;
-        }
-
-        .btnBlanco{
-            width: 3.75rem;
-        }
-
-        .titulosHeader{
-            display: none;
-        }
-
-        .botonesHeader{
-            flex-direction: column;
-        }
-        .primeraSection{
-            margin: 1.25rem auto;
-        }
-
-        .flexPrimeraSection{
-            max-width: 18rem;
-            height: auto;
-            padding: .625rem;
-            padding: 0;
-            justify-content: center;    
-        }
-        .flexPrimeraSection h1{
-            max-width: 100%;
-            justify-content: center;    
-        }
-        .flexPrimeraSection h2{
-            max-width: 100%;
-            /* font-size: 24px; */
-            justify-content: center;    
-        }
-
-        .flexPrimeraSection div{
-            align-self: center;
-            font-size: .875rem;
-        }
-
-        .segundaSection article{
-            flex-direction: column;
-            gap: .625rem;
-        }
-
-        .segundaSection article h2{
-            font-size: 18px;
-        }
-
-        .terceraSection{
-            max-width: 18rem;
-            margin: 1.25rem auto;
-            flex-direction: column;
-            gap: .625rem;
-            justify-content: space-between;
-            flex-wrap: wrap;   
-        }
-
-        .terceraSection p{
-            align-self: center;
-        }
-
-        .terceraSection img{
-            width: 9.375rem;
-            height: 9.375rem;
-        }
-
-        .sectionDonar{
-            max-width: 100%;
-            gap: 1.25rem;
-        }
-
-        .contenedorQuieroDonar{
-            max-width: 100%;
-            gap: .625rem;
-            justify-content: center;
-        }
-
-        #quieroDonarTitulo{
-            grid-column: 1/5;
-            justify-self: center;
-        }
-        
-        #quieroDonarSubtitulo{
-            display: none;
-        }
-        
-        #quieroDonar5{
-            max-width: fit-content;
-        }
-        
-        #quieroDonar10{
-            max-width: fit-content;
-        }
-        
-        #quieroDonar20{
-            max-width: fit-content;
-        }
-        
-        #btnDonar{
-            max-width: fit-content;
-        }
-        
-        .cuartaSection{
-            max-width: 18rem;
-            margin: 1.25rem auto;
-            gap: 1.25rem;
-        }
-
-        .contenedorCuartaSection{
-            max-width: 100%;
-            gap: .625rem;
-            flex-direction: column;
-        }
-
-        .articuloCuartaSection div{
-            width: fit-content;
-
-        }
-
-        #btnUnete{
-            align-self: center;
-        }        
-        
-        .quintaSection{
-            max-width: 18rem;            
-        }
-
-        .backgroundQuintaSection{
-            justify-content: center;
-            max-width: 100%;
-            border-radius: 1.875rem;
-            background-image: 
-            linear-gradient( #4c0082b2, #f5f5f51a),
-            url(../assets/fotoSection5.jpg); /* agrego de fondo una imagen*/
-
-        }
-
-        .articuloQuintaSection{
-            max-width: 100%;
-            margin: 0 1.25rem;
-        }
-
-        .primerContenedorFooter{
-            flex-direction: column;
-            gap: .625rem;
-        }
-
-        .primerContenedorFooter div{
-            font-size: .75rem;
-            width: fit-content;
-        }
-
-        /* HTML Aprende */
-        main>:first-child{
-            max-width: 100%;
-            padding: 0;
-            margin: .625rem 0;            
-        }
-
-        main>:first-child h1{
-            text-align: center;          
-        }
-        
-        .articuloPrimeraSectionAprende{
-            max-width: 18rem;
-            margin: 0;
-            padding: .3125rem;
-        }
-
-        .segundaSectionAprende{
-            max-width: 100%;
-            padding: 0;
-            margin: .3125rem 0;
-        }
-
-        .articuloSegundaSectionAprende{
-            max-width: 18rem;
-            margin: 0;
-            padding: .3125rem;
-        }
-
-        .terceraSectionAprende{
-            max-width: 18rem;
-            padding: .3125rem;
-            margin: .3125rem auto;
-            gap: .625rem;
-        }
-
-        .articuloNeurodivergenciaTea{
-            padding: 1.25rem;
-            gap: .9375rem;
-            text-align: justify;    
-            justify-content: center;
-        }
-
-        .articuloNeurodivergencia{
-            padding: .625rem;
-        }
-
-        .cuartaSectionAprende img{
-            width: 6.25rem;
-        }
-        
-        .cuartaSectionAprende{
-            padding: .625rem;
-            margin: .3125rem auto;
-        }
-        
-        .quintaSectionAprende{
-            margin: .625rem 0;
-            flex-direction: column;
-            justify-content: center;
-            text-align: center;
-        }
-
-        .contenedorQuintaSectionAprende{
-            max-width: 41.875rem;
-            padding: .625rem;
-            flex-direction: column;
-            gap: .3125rem;
-            justify-content: center;
-        }
-    }
-
-
-
-
-footer{
+footer {
     height: 100%;
     background-color: #4b0082;
     color: #f5f5dc;
@@ -976,13 +504,13 @@ footer{
     gap: .625rem;
 }
 
-.primerContenedorFooter{
+.primerContenedorFooter {
     display: flex;
     /* border: solid 1px black; */
     flex-wrap: wrap;
 }
 
-.primerContenedorFooter article{
+.primerContenedorFooter article {
     flex: 1;
     padding: 0 1.25rem;
     box-sizing: border-box;
@@ -995,15 +523,15 @@ footer{
     gap: 1.25rem;
 }
 
-#articuloTranspariencia{
+#articuloTranspariencia {
     text-align: justify;
 }
 
-.btnNewsletter{    
+.btnNewsletter {
     display: flex;
 }
 
-.segundoContenedorFooter{
+.segundoContenedorFooter {
     /* border: solid 1px black; */
     display: flex;
     flex-direction: column;
@@ -1013,7 +541,7 @@ footer{
     flex-wrap: wrap;
 }
 
-.redesSociales{
+.redesSociales {
     width: 18.75rem;
     display: flex;
     justify-content: space-between;
@@ -1023,7 +551,7 @@ footer{
 
 /* Inicio CSS del HTML "Aprende" */
 
-.primeraSectionAprende{
+.primeraSectionAprende {
     max-width: 100%;
     padding: 1.25rem;
     margin: 1.875rem 0;
@@ -1032,10 +560,10 @@ footer{
     box-sizing: border-box;
     display: flex;
     justify-content: center;
-    
+
 }
 
-.articuloPrimeraSectionAprende{
+.articuloPrimeraSectionAprende {
     max-width: 76rem;
     margin: 1.25rem auto;
     padding: 1.25rem;
@@ -1052,7 +580,7 @@ footer{
 
 /* segundaSection HTML Aprende */
 
-.segundaSectionAprende{
+.segundaSectionAprende {
     max-width: 100%;
     padding: 1.25rem;
     margin: 1.875rem 0;
@@ -1061,7 +589,7 @@ footer{
     flex-direction: column;
 }
 
-.articuloSegundaSectionAprende{
+.articuloSegundaSectionAprende {
     max-width: 76rem;
     margin: 1.25rem auto;
     padding: 1.25rem;
@@ -1075,13 +603,13 @@ footer{
     text-align: justify;
 }
 
-.articuloSegundaSectionAprende h2{
+.articuloSegundaSectionAprende h2 {
     color: #4b0082;
 }
 
 /* Tercera section aprende */
 
-.terceraSectionAprende{
+.terceraSectionAprende {
     max-width: 76rem;
     padding: 1.25rem;
     margin: 1.875rem auto;
@@ -1092,11 +620,11 @@ footer{
     gap: 1.25rem;
 }
 
-.terceraSectionAprende h3{
+.terceraSectionAprende h3 {
     color: #4b0082;
 }
 
-.articuloNeurodivergenciaTea{
+.articuloNeurodivergenciaTea {
     width: 100%;
     padding: 3.125rem;
     border: solid .0625rem #4b0082;
@@ -1110,25 +638,25 @@ footer{
 
 }
 
-.articuloNeurodivergenciaTea h3{
+.articuloNeurodivergenciaTea h3 {
     color: #4b0082;
 }
 
-.articuloNeurodivergenciaTea ul{
+.articuloNeurodivergenciaTea ul {
     text-indent: 2em;
     list-style: disc;
     list-style-position: inside;
 }
 
-.articuloNeurodivergenciaTea p{
+.articuloNeurodivergenciaTea p {
     text-align: justify;
 }
 
-.articuloNeurodivergenciaTea div{
+.articuloNeurodivergenciaTea div {
     align-self: flex-end;
 }
 
-.articuloNeurodivergencia{
+.articuloNeurodivergencia {
     width: 100%;
     padding: 3.125rem;
     border: solid .0625rem #4b0082;
@@ -1141,18 +669,18 @@ footer{
     flex-wrap: wrap;
 }
 
-.articuloNeurodivergencia div{
+.articuloNeurodivergencia div {
     align-self: flex-end;
 }
 
 
-.cuartaSectionAprende img{
+.cuartaSectionAprende img {
     width: 12.5rem;
     object-fit: cover;
     border-radius: 1.875rem;
 }
 
-.cuartaSectionAprende{
+.cuartaSectionAprende {
     max-width: 62.5rem;
     padding: 2.5rem;
     margin: 1.875rem auto;
@@ -1165,23 +693,23 @@ footer{
     justify-content: space-around;
 }
 
-.articuloCuartaSectionAprende{
+.articuloCuartaSectionAprende {
     width: 37.5rem;
 }
 
-.articuloCuartaSectionAprende p{
+.articuloCuartaSectionAprende p {
     text-align: justify;
 }
 
 /* CSS HTML quintaSection */
 
-.quintaSectionAprende{
+.quintaSectionAprende {
     width: 100%;
     background-color: #4b0082;
     margin: 1.875rem 0;
 }
 
-.contenedorQuintaSectionAprende{
+.contenedorQuintaSectionAprende {
     max-width: 76rem;
     padding: 2.5rem;
     margin: 0 auto;
@@ -1193,17 +721,18 @@ footer{
     color: #f5f5dc;
 }
 
-.articuloCuartaSectionAprende{
+.articuloCuartaSectionAprende {
     display: flex;
     flex-wrap: wrap;
 }
 
-.articuloQuintaSectionAprende div{
+.articuloQuintaSectionAprende div {
     width: fit-content;
 }
- /* CSS sexta section aprende */
 
-.sextaSectionAprende{
+/* CSS sexta section aprende */
+
+.sextaSectionAprende {
     max-width: 76rem;
     padding: 2.5rem;
     margin: 1.25rem auto;
@@ -1213,15 +742,15 @@ footer{
     gap: 1.25rem;
 }
 
-.contenedorSextaSectionAprende{
+.contenedorSextaSectionAprende {
     width: 100%;
     display: flex;
     gap: 1.25rem;
     flex-wrap: wrap;
 }
 
-.articuloSextaSectionAprende{
-    flex:1;
+.articuloSextaSectionAprende {
+    flex: 1;
     height: auto;
     border-radius: 1.875rem 0 6.25rem 0;
     padding: 3.125rem;
@@ -1232,27 +761,28 @@ footer{
     gap: 1.25rem;
 }
 
-.articuloSextaSectionAprende div{
+.articuloSextaSectionAprende div {
     align-self: flex-end;
 }
-.articuloSextaSectionAprende p{
+
+.articuloSextaSectionAprende p {
     text-align: justify;
 }
 
-.contenedorSextaSectionAprende > :first-child{
+.contenedorSextaSectionAprende> :first-child {
     background-color: #4b0082;
     color: #f5f5dc;
     border: solid #f5f5dc 1px;
 }
 
-.contenedorSextaSectionAprende > :last-child{
+.contenedorSextaSectionAprende> :last-child {
     color: #4b0082;
     border: solid #4b0082 1px;
 }
 
 /* Inicio HTML TIENDA! */
 
-.primerContenedorSectionTienda{
+.primerContenedorSectionTienda {
     max-width: 76rem;
     margin: 1.875rem auto;
     display: flex;
@@ -1262,12 +792,12 @@ footer{
     gap: 1.875rem;
 }
 
-.sectionTiendaTitulo h1{
+.sectionTiendaTitulo h1 {
     color: #4b0082;
 }
 
 /* Establezco el el contenido de la reseña y el grid de ventas */
-.segundoContenedorSectionTienda{
+.segundoContenedorSectionTienda {
     max-width: 100%;
     display: flex;
     gap: 1.875rem;
@@ -1276,7 +806,7 @@ footer{
 
 /* Trabajo con la reseña */
 
-.segundoContenedorSectionTienda > :first-child{
+.segundoContenedorSectionTienda> :first-child {
     max-width: 15.625rem;
     height: fit-content;
     display: flex;
@@ -1285,7 +815,7 @@ footer{
     flex-wrap: wrap;
 }
 
-.segundoContenedorSectionTienda > :first-child article{
+.segundoContenedorSectionTienda> :first-child article {
     width: 100%;
     padding: .9375rem;
     border: solid 1px #4b0082;
@@ -1298,12 +828,12 @@ footer{
     text-align: justify;
 }
 
-.segundoContenedorSectionTienda > :first-child article h2{
+.segundoContenedorSectionTienda> :first-child article h2 {
     color: #4b0082;
 }
 
 
-.segundoContenedorSectionTienda > :first-child article > :last-child{
+.segundoContenedorSectionTienda> :first-child article> :last-child {
     align-self: center;
 }
 
@@ -1311,7 +841,7 @@ footer{
 
 /* Trabajo con la grilla de productos */
 
-.segundoContenedorSectionTienda > :last-child{
+.segundoContenedorSectionTienda> :last-child {
     max-width: 56.25rem;
     display: flex;
     flex-wrap: wrap;
@@ -1320,14 +850,14 @@ footer{
     /* align-items: flex-start; */
 }
 
-.segundoContenedorSectionTienda > :last-child article{
+.segundoContenedorSectionTienda> :last-child article {
     max-width: 18.125rem;
-    padding: .9375rem ;
+    padding: .9375rem;
     border: #4b0082 .0625rem solid;
     border-radius: 1.25rem;
     box-sizing: border-box;
     display: flex;
-    flex-direction:  column;
+    flex-direction: column;
     justify-content: space-between;
     align-content: center;
     align-items: center;
@@ -1335,15 +865,15 @@ footer{
     flex-wrap: wrap;
 }
 
-.segundoContenedorSectionTienda > :last-child article img{
+.segundoContenedorSectionTienda> :last-child article img {
     width: 100%;
     height: 14.6875rem;
-    object-fit:cover;
+    object-fit: cover;
     border-radius: 1.875rem;
 }
 
 
-.topVenta{
+.topVenta {
     width: 7.5rem;
     height: fit-content;
     align-self: flex-start;
@@ -1353,29 +883,29 @@ footer{
     border-radius: .3125rem;
 }
 
-.segundoContenedorSectionTienda > :last-child article > :nth-child(3) > :first-child{
+.segundoContenedorSectionTienda> :last-child article> :nth-child(3)> :first-child {
     color: #4b0082;
     font-size: 1.125rem;
 }
 
-.segundoContenedorSectionTienda > :last-child article div{
+.segundoContenedorSectionTienda> :last-child article div {
     display: flex;
     /* width: 100%; */
 }
 
-.segundoContenedorSectionTienda > :last-child article div > :first-child{
+.segundoContenedorSectionTienda> :last-child article div> :first-child {
     border: solid .0625rem #4b0082;
     width: fit-content;
 }
 
-.segundoContenedorSectionTienda > :last-child article div > :last-child{
+.segundoContenedorSectionTienda> :last-child article div> :last-child {
     border: solid .0625rem #d19e00;
     width: fit-content;
 }
 
 /* Ultima parte de tienda */
 
-.ultimoTituloTienda{
+.ultimoTituloTienda {
     width: 100%;
     height: 6.25rem;
     padding: 1.875rem;
@@ -1390,21 +920,21 @@ footer{
 
 /* Inicio CSS HTML Conocenos */
 
-.primeraSectionConocenos{
+.primeraSectionConocenos {
     max-width: 100%;
     margin: 1.875rem 0;
     background-color: #4b0082;
     color: #f5f5dc;
 }
 
-.contenedorPrimeraSectionConocenos{
+.contenedorPrimeraSectionConocenos {
     max-width: 76rem;
     margin: 0 auto;
     padding: 1.875rem;
     box-sizing: border-box;
 }
 
-.segundaSectionConocenos{
+.segundaSectionConocenos {
     max-width: 76rem;
     margin: 1.875rem auto;
     display: flex;
@@ -1413,7 +943,7 @@ footer{
     gap: 1.25rem;
 }
 
-.segundaSectionConocenos article{
+.segundaSectionConocenos article {
     width: 31.25rem;
     height: auto;
     background-color: #4b0082;
@@ -1429,17 +959,17 @@ footer{
     gap: 1.25rem;
 }
 
-.segundaSectionConocenos article p{
+.segundaSectionConocenos article p {
     text-align: justify;
 }
 
-.segundaSectionConocenos article div{
+.segundaSectionConocenos article div {
     align-self: flex-end;
 }
 
 
 /* Primer contenedor */
-.terceraSectionConocenos{
+.terceraSectionConocenos {
     max-width: 76rem;
     margin: 1.875rem auto;
     display: flex;
@@ -1448,7 +978,7 @@ footer{
 }
 
 /* Segundo contenedor, con ambos articulos base */
-.contenedorTerceraSectionConocenos{
+.contenedorTerceraSectionConocenos {
     max-width: 76rem;
     height: auto;
     box-sizing: border-box;
@@ -1460,8 +990,8 @@ footer{
 
 /* Embajadores e informes anuales contenedor */
 
-.contenidoArticulo{
-    max-width: 43.75rem ;
+.contenidoArticulo {
+    max-width: 43.75rem;
     height: auto;
     padding: 2.5rem;
     display: flex;
@@ -1471,56 +1001,58 @@ footer{
     flex-wrap: wrap;
 }
 
-.contenidoArticulo div{
+.contenidoArticulo div {
     width: fit-content;
 }
 
-.contenidoArticulo p{
+.contenidoArticulo p {
     width: fit-content;
     text-align: justify;
 }
 
 /* Contenedor de la imagen primer articulo */
-#imagenUnoSectionConocenos{
+#imagenUnoSectionConocenos {
     width: 32.25rem;
-    background-image: url(../assets/embajadores.jpg); /* agrego de fondo una imagen*/
-    background-size:cover;
+    background-image: url(../assets/embajadores.jpg);
+    /* agrego de fondo una imagen*/
+    background-size: cover;
     background-position: center;
-    border-radius:0 30px 30px 0;
+    border-radius: 0 30px 30px 0;
 }
 
 /* Contenedor de la imagen segundo articulo */
-#imagenDosSectionConocenos{
+#imagenDosSectionConocenos {
     width: 32.25rem;
-    background-image: url(../assets/informeAnual.jpg); /* agrego de fondo una imagen*/
-    background-size:cover;
+    background-image: url(../assets/informeAnual.jpg);
+    /* agrego de fondo una imagen*/
+    background-size: cover;
     background-position: center;
-    border-radius:0 30px 30px 0;
+    border-radius: 0 30px 30px 0;
 }
 
-.cuartaSectionConocenos{
+.cuartaSectionConocenos {
     max-width: 76rem;
     margin: 2.5rem auto;
     display: flex;
     flex-direction: column;
 }
 
-.cuartaSectionConocenos >:first-child{
+.cuartaSectionConocenos>:first-child {
     display: flex;
     flex-direction: column;
     gap: .625rem;
 }
 
-.cuartaSectionConocenos >:first-child h2{
+.cuartaSectionConocenos>:first-child h2 {
     color: #4b0082;
 }
 
-.cuartaSectionConocenos >:first-child p{
+.cuartaSectionConocenos>:first-child p {
     text-align: justify;
 }
 
 
-.cuartaSectionConocenos >:last-child{
+.cuartaSectionConocenos>:last-child {
     max-width: 100%;
     padding: 2.5rem;
     box-sizing: border-box;
@@ -1529,23 +1061,23 @@ footer{
     gap: 1.25rem;
 }
 
-.cuartaSectionConocenos >:last-child article{
+.cuartaSectionConocenos>:last-child article {
     max-width: 100%;
     display: flex;
     flex-direction: column;
     gap: .625rem;
 }
 
-.cuartaSectionConocenos >:last-child article h3{
+.cuartaSectionConocenos>:last-child article h3 {
     color: #4b0082;
 }
 
-.cuartaSectionConocenos >:last-child article p{
+.cuartaSectionConocenos>:last-child article p {
     text-align: justify;
 }
 
 /* Primer contenedor */
-.quintaSectionConocenos{
+.quintaSectionConocenos {
     max-width: 76rem;
     margin: 1.875rem auto;
     display: flex;
@@ -1554,7 +1086,7 @@ footer{
 }
 
 /* Segundo contenedor, con ambos articulos base */
-.contenedorQuintaSectionConocenos{
+.contenedorQuintaSectionConocenos {
     max-width: 76rem;
     height: auto;
     box-sizing: border-box;
@@ -1566,8 +1098,8 @@ footer{
 
 /* Embajadores e informes anuales contenedor */
 
-.contenidoArticuloQuintaSection{
-    max-width: 43.75rem ;
+.contenidoArticuloQuintaSection {
+    max-width: 43.75rem;
     height: auto;
     padding: 2.5rem;
     display: flex;
@@ -1579,29 +1111,30 @@ footer{
     justify-content: space-between;
 }
 
-.contenidoArticuloQuintaSection div{
+.contenidoArticuloQuintaSection div {
     width: fit-content;
 }
 
-.contenidoArticuloQuintaSection p{
+.contenidoArticuloQuintaSection p {
     text-align: justify;
 }
 
 /* Contenedor de la imagen primer articulo */
-#imagenQuintaSectionConocenos{
+#imagenQuintaSectionConocenos {
     width: 32.25rem;
-    background-image: url(../assets/informeAnual.jpg); /* agrego de fondo una imagen*/
-    background-size:cover;
+    background-image: url(../assets/informeAnual.jpg);
+    /* agrego de fondo una imagen*/
+    background-size: cover;
     background-position: center;
-    border-radius:0 30px 30px 0;
+    border-radius: 0 30px 30px 0;
 }
 
-.sextaSectionConocenos{
+.sextaSectionConocenos {
     max-width: 76rem;
     margin: 3.125rem auto;
 }
 
-.contenedorSextaSectionConocenos{
+.contenedorSextaSectionConocenos {
     max-width: 55rem;
     margin: 0 auto;
     display: flex;
@@ -1609,16 +1142,16 @@ footer{
 }
 
 
-.contenedorSextaSectionConocenos>:first-child{
+.contenedorSextaSectionConocenos>:first-child {
     width: 50%;
     height: auto;
     background-image: url(../assets/sucursales.jpg);
-    background-size:cover;
+    background-size: cover;
     background-position: center;
     border-radius: 1.875rem 0 0 1.875rem;
 }
 
-.contenedorSextaSectionConocenos>:last-child{
+.contenedorSextaSectionConocenos>:last-child {
     max-width: 50%;
     background-color: #4b0082;
     color: #f5f5dc;
@@ -1630,7 +1163,7 @@ footer{
     flex-wrap: wrap;
 }
 
-.contenedorSextaSectionConocenos>:last-child>:first-child{
+.contenedorSextaSectionConocenos>:last-child>:first-child {
     text-align: justify;
 }
 
@@ -1654,10 +1187,11 @@ footer{
     align-items: center;
 }
 
-.contenedorSextaSectionConocenos>:last-child>:last-child>:first-child div{
+.contenedorSextaSectionConocenos>:last-child>:last-child>:first-child div {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    border: 1px #f5f5dc solid;
     background-color: #d19e00;
     display: flex;
     justify-content: center;
@@ -1665,12 +1199,16 @@ footer{
     cursor: pointer;
 }
 
-.contenedorSextaSectionConocenos>:last-child>:last-child>:last-child{
+.contenedorSextaSectionConocenos>:last-child>:last-child>:first-child div:hover{
+    background-color: #4b0082;
+}
+
+.contenedorSextaSectionConocenos>:last-child>:last-child>:last-child {
     width: fit-content;
 }
 
 
-.primeraSectionUnete{
+.primeraSectionUnete {
     max-width: 76rem;
     padding: 1.25rem;
     box-sizing: border-box;
@@ -1681,26 +1219,27 @@ footer{
     text-align: center;
 }
 
-.primeraSectionUnete h1{
+.primeraSectionUnete h1 {
     color: #4b0082;
 }
 
 
-.segundaSectionUnete{
+.segundaSectionUnete {
     max-width: 76rem;
     height: 20rem;
     padding: 1.25rem;
     border-radius: 6.25rem 0 12.5rem 0;
     box-sizing: border-box;
     background-image:
-    linear-gradient(to bottom right, #4c0082e0, #f5f5f517),
-    url(../assets/donar.jpg); /* agrego de fondo una imagen*/
-    background-size:cover;
+        linear-gradient(to bottom right, #4c0082e0, #f5f5f517),
+        url(../assets/donar.jpg);
+    /* agrego de fondo una imagen*/
+    background-size: cover;
     background-position: center;
     display: flex;
 }
 
-.contenedorSegundaSectionUnete{
+.contenedorSegundaSectionUnete {
     max-width: 40rem;
     margin: auto;
     display: grid;
@@ -1710,75 +1249,75 @@ footer{
     color: #f5f5dc;
 }
 
-.contenedorSegundaSectionUnete>:first-child{
+.contenedorSegundaSectionUnete>:first-child {
     grid-row: 1/2;
     grid-column: 1/4;
 }
 
-.contenedorSegundaSectionUnete>:nth-child(2){
+.contenedorSegundaSectionUnete>:nth-child(2) {
     grid-row: 2/3;
     grid-column: 1/2;
 }
 
-.contenedorSegundaSectionUnete>:nth-child(3){
+.contenedorSegundaSectionUnete>:nth-child(3) {
     grid-row: 2/3;
     grid-column: 2/3;
 }
 
-.contenedorSegundaSectionUnete>:nth-child(4){
+.contenedorSegundaSectionUnete>:nth-child(4) {
     grid-row: 2/3;
     grid-column: 3/4;
 }
 
-.contenedorSegundaSectionUnete>:nth-child(5){
+.contenedorSegundaSectionUnete>:nth-child(5) {
     grid-row: 2/3;
     grid-column: 4/5;
 }
 
-.contenedorSegundaSectionUnete>:nth-child(6){
+.contenedorSegundaSectionUnete>:nth-child(6) {
     grid-row: 3/4;
     grid-column: 1/2;
 }
 
-.contenedorSegundaSectionUnete>:nth-child(7){
+.contenedorSegundaSectionUnete>:nth-child(7) {
     grid-row: 3/4;
     grid-column: 2/3;
 }
 
-.contenedorSegundaSectionUnete>:nth-child(8){
+.contenedorSegundaSectionUnete>:nth-child(8) {
     grid-row: 3/4;
     grid-column: 3/4;
 }
 
-.contenedorSegundaSectionUnete>:nth-child(9){
+.contenedorSegundaSectionUnete>:nth-child(9) {
     grid-row: 3/4;
     grid-column: 4/5;
 }
 
-.contenedorSegundaSectionUnete>:nth-child(10){
+.contenedorSegundaSectionUnete>:nth-child(10) {
     grid-row: 4/5;
     grid-column: 1/2;
 }
 
-.contenedorSegundaSectionUnete>:nth-child(11){
+.contenedorSegundaSectionUnete>:nth-child(11) {
     grid-row: 4/5;
     grid-column: 2/4;
 }
 
-.contenedorSegundaSectionUnete>:last-child{
+.contenedorSegundaSectionUnete>:last-child {
     grid-row: 4/5;
     grid-column: 4/5;
 }
 
 /*  */
 
-.terceraSectionUnete{
+.terceraSectionUnete {
     max-width: 76rem;
     display: flex;
     gap: 1.25rem;
 }
 
-.contenedorTerceraSectionUnete{
+.contenedorTerceraSectionUnete {
     flex: 1;
     padding: 1.875rem;
     box-sizing: border-box;
@@ -1789,7 +1328,7 @@ footer{
     text-align: justify;
 }
 
-.cuartaSectionUnete{
+.cuartaSectionUnete {
     max-width: 76rem;
     padding: 2.5rem;
     box-sizing: border-box;
@@ -1801,7 +1340,7 @@ footer{
     color: #4b0082;
 }
 
-.quintaSectionUnete{
+.quintaSectionUnete {
     max-width: 76rem;
     border: solid #4b0082 .0625rem;
     border-radius: 1.875rem;
@@ -1811,7 +1350,7 @@ footer{
     color: #4b0082;
 }
 
-.contenedorQuintaSectionUnete{
+.contenedorQuintaSectionUnete {
     max-width: 50%;
     padding: 2.5rem;
     box-sizing: border-box;
@@ -1821,18 +1360,18 @@ footer{
     justify-content: flex-start;
 }
 
-.contenedorQuintaSectionUnete p{
+.contenedorQuintaSectionUnete p {
     color: black;
     text-align: justify;
 }
 
-.quintaSectionUnete img{
+.quintaSectionUnete img {
     object-fit: cover;
     width: 100%;
     border-radius: 1.875rem;
 }
 
-.contenedorGridUnete{
+.contenedorGridUnete {
     width: 76rem;
     display: grid;
     margin: 1.25rem auto;
@@ -1842,37 +1381,548 @@ footer{
     justify-content: stretch;
 }
 
-.contenedorGridUnete>:first-child{
+.contenedorGridUnete>:first-child {
     grid-column: 1/13;
     grid-row: 1/2;
 }
 
-.contenedorGridUnete>:nth-child(2){
+.contenedorGridUnete>:nth-child(2) {
     grid-column: 1/13;
     grid-row: 2/3;
 }
 
-.contenedorGridUnete>:nth-child(3){
+.contenedorGridUnete>:nth-child(3) {
     grid-column: 1/13;
     grid-row: 3/4;
 }
 
-.contenedorGridUnete>:nth-child(4){
+.contenedorGridUnete>:nth-child(4) {
     grid-column: 1/13;
     grid-row: 4/5;
 }
 
-.contenedorGridUnete>:nth-child(5){
+.contenedorGridUnete>:nth-child(5) {
     grid-column: 1/13;
     grid-row: 5/6;
 }
 
+/* Responsive tablets*/
+@media ((min-width: 46.5rem) and (max-width: 64rem)) {
+    h1 {
+        font-family: 'Roboto Slab, serif';
+        font-size: 32px;
+        color: #f5f5dc;
+        font-weight: 700;
+        margin: 0;
+    }
 
+    h2 {
+        font-family: 'Roboto Slab, serif';
+        font-size: 28px;
+        font-weight: 600;
+        margin: 0;
+    }
 
+    h3 {
+        font-family: 'Roboto Slab, serif';
+        font-size: 24px;
+        font-weight: 600;
+    }
 
+    h4 {
+        font-family: 'Roboto Slab, serif';
+        font-size: 20px;
+        font-weight: 500;
+    }
 
+    h5 {
+        font-family: 'Roboto Slab, serif';
+        font-size: 16px;
+        font-weight: 500;
+    }
 
+    h6 {
+        font-family: 'Roboto Slab, serif';
+        font-size: 14px;
+        font-weight: 400;
+    }
 
+    p {
+        font-family: "Merriweather", serif;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 1.6;
+        /* altura de linea */
+        margin: 0;
+    }
 
+    a {
+        font-size: 12px;
+    }
 
+    .titulosHeader {
+        display: none;
+    }
 
+    .primeraSection {
+        margin: 1.25rem auto;
+    }
+
+    .flexPrimeraSection {
+        max-width: 41.875rem;
+        height: auto;
+        margin: 0 auto;
+        justify-content: center;
+    }
+
+    .flexPrimeraSection h1 {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .flexPrimeraSection h2 {
+        max-width: 100%;
+        font-size: 24px;
+        justify-content: center;
+    }
+
+    .flexPrimeraSection div {
+        align-self: center;
+        font-size: .875rem;
+    }
+
+    .terceraSection {
+        max-width: 41.875rem;
+        margin: 1.25rem auto;
+        flex-direction: column;
+        gap: .625rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .terceraSection p {
+        align-self: center;
+    }
+
+    .terceraSection img {
+        width: 9.375rem;
+        height: 9.375rem;
+    }
+
+    .sectionDonar {
+        max-width: 41.875rem;
+        gap: 1.25rem;
+    }
+
+    .contenedorQuieroDonar {
+        max-width: 29.375rem;
+        gap: .625rem;
+        justify-content: center;
+    }
+
+    #quieroDonarTitulo {
+        grid-column: 1/5;
+    }
+
+    #quieroDonarSubtitulo {
+        display: none;
+    }
+
+    #quieroDonar5 {
+        max-width: fit-content;
+    }
+
+    #quieroDonar10 {
+        max-width: fit-content;
+    }
+
+    #quieroDonar20 {
+        max-width: fit-content;
+    }
+
+    #btnDonar {
+        max-width: fit-content;
+    }
+
+    .cuartaSection {
+        max-width: 41.875rem;
+        margin: 1.25rem auto;
+        gap: 1.25rem;
+    }
+
+    .contenedorCuartaSection {
+        max-width: 100%;
+        gap: .625rem;
+        flex-direction: column;
+    }
+
+    #btnUnete {
+        align-self: center;
+    }
+
+    .quintaSection {
+        max-width: 41.875rem;
+    }
+
+    .backgroundQuintaSection {
+        justify-content: center;
+        max-width: 100%;
+        border-radius: 1.875rem;
+        background-image:
+            linear-gradient(#4c0082b2, #f5f5f51a),
+            url(../assets/fotoSection5.jpg);
+        /* agrego de fondo una imagen*/
+
+    }
+
+    .articuloQuintaSection {
+        max-width: 100%;
+        margin: 0 1.25rem;
+    }
+
+    /* HTML Aprende */
+    main>:first-child {
+        max-width: 100%;
+        padding: 0;
+        margin: .625rem 0;
+    }
+
+    .articuloPrimeraSectionAprende {
+        max-width: 41.875rem;
+        margin: 0;
+        padding: .625rem;
+    }
+
+    .segundaSectionAprende {
+        max-width: 100%;
+        padding: 0;
+        margin: .625rem 0;
+    }
+
+    .articuloSegundaSectionAprende {
+        max-width: 41.875rem;
+        margin: 0;
+        padding: .625rem;
+    }
+
+    .terceraSectionAprende {
+        max-width: 41.875rem;
+        padding: .625rem;
+        margin: .625rem auto;
+        gap: 1.25rem;
+    }
+
+    .articuloNeurodivergenciaTea {
+        padding: 1.25rem;
+        gap: .9375rem;
+    }
+
+    .articuloNeurodivergencia {
+        padding: 1.25rem;
+    }
+
+    .cuartaSectionAprende img {
+        width: 9.375rem;
+    }
+
+    .cuartaSectionAprende {
+        padding: 1.25rem;
+        margin: .625rem auto;
+    }
+
+    .quintaSectionAprende {
+        margin: .625rem 0;
+    }
+
+    .contenedorQuintaSectionAprende {
+        max-width: 670rem;
+        padding: 1.25rem;
+        flex-direction: column;
+        gap: .625rem;
+        justify-content: center;
+    }
+}
+
+/* Responsive mobile */
+@media ((min-width: 18rem) and (max-width: 46.5rem)) {
+    h1 {
+        font-family: 'Roboto Slab, serif';
+        font-size: 24px;
+        color: #f5f5dc;
+        font-weight: 700;
+        margin: 0;
+    }
+
+    h2 {
+        font-family: 'Roboto Slab, serif';
+        font-size: 20px;
+        font-weight: 600;
+        margin: 0;
+    }
+
+    h3 {
+        font-family: 'Roboto Slab, serif';
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    h4 {
+        font-family: 'Roboto Slab, serif';
+        font-size: 16px;
+        font-weight: 500;
+    }
+
+    h5 {
+        font-family: 'Roboto Slab, serif';
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    h6 {
+        font-family: 'Roboto Slab, serif';
+        font-size: 14px;
+        font-weight: 400;
+    }
+
+    p {
+        font-family: "Merriweather", serif;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 1.6;
+        /* altura de linea */
+        margin: 0;
+    }
+
+    a {
+        font-size: 8px;
+    }
+
+    .btnAmarillo {
+        width: 3.75rem;
+    }
+
+    .btnBlanco {
+        width: 3.75rem;
+    }
+
+    .titulosHeader {
+        display: none;
+    }
+
+    .botonesHeader {
+        flex-direction: column;
+    }
+
+    .primeraSection {
+        margin: 1.25rem auto;
+    }
+
+    .flexPrimeraSection {
+        max-width: 18rem;
+        height: auto;
+        padding: .625rem;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .flexPrimeraSection h1 {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .flexPrimeraSection h2 {
+        max-width: 100%;
+        /* font-size: 24px; */
+        justify-content: center;
+    }
+
+    .flexPrimeraSection div {
+        align-self: center;
+        font-size: .875rem;
+    }
+
+    .segundaSection article {
+        flex-direction: column;
+        gap: .625rem;
+    }
+
+    .segundaSection article h2 {
+        font-size: 18px;
+    }
+
+    .terceraSection {
+        max-width: 18rem;
+        margin: 1.25rem auto;
+        flex-direction: column;
+        gap: .625rem;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .terceraSection p {
+        align-self: center;
+    }
+
+    .terceraSection img {
+        width: 9.375rem;
+        height: 9.375rem;
+    }
+
+    .sectionDonar {
+        max-width: 100%;
+        gap: 1.25rem;
+    }
+
+    .contenedorQuieroDonar {
+        max-width: 100%;
+        gap: .625rem;
+        justify-content: center;
+    }
+
+    #quieroDonarTitulo {
+        grid-column: 1/5;
+        justify-self: center;
+    }
+
+    #quieroDonarSubtitulo {
+        display: none;
+    }
+
+    #quieroDonar5 {
+        max-width: fit-content;
+    }
+
+    #quieroDonar10 {
+        max-width: fit-content;
+    }
+
+    #quieroDonar20 {
+        max-width: fit-content;
+    }
+
+    #btnDonar {
+        max-width: fit-content;
+    }
+
+    .cuartaSection {
+        max-width: 18rem;
+        margin: 1.25rem auto;
+        gap: 1.25rem;
+    }
+
+    .contenedorCuartaSection {
+        max-width: 100%;
+        gap: .625rem;
+        flex-direction: column;
+    }
+
+    .articuloCuartaSection div {
+        width: fit-content;
+
+    }
+
+    #btnUnete {
+        align-self: center;
+    }
+
+    .quintaSection {
+        max-width: 18rem;
+    }
+
+    .backgroundQuintaSection {
+        justify-content: center;
+        max-width: 100%;
+        border-radius: 1.875rem;
+        background-image:
+            linear-gradient(#4c0082b2, #f5f5f51a),
+            url(../assets/fotoSection5.jpg);
+        /* agrego de fondo una imagen*/
+
+    }
+
+    .articuloQuintaSection {
+        max-width: 100%;
+        margin: 0 1.25rem;
+    }
+
+    .primerContenedorFooter {
+        flex-direction: column;
+        gap: .625rem;
+    }
+
+    .primerContenedorFooter div {
+        font-size: .75rem;
+        width: fit-content;
+    }
+
+    /* HTML Aprende */
+    main>:first-child {
+        max-width: 100%;
+        padding: 0;
+        margin: .625rem 0;
+    }
+
+    main>:first-child h1 {
+        text-align: center;
+    }
+
+    .articuloPrimeraSectionAprende {
+        max-width: 18rem;
+        margin: 0;
+        padding: .3125rem;
+    }
+
+    .segundaSectionAprende {
+        max-width: 100%;
+        padding: 0;
+        margin: .3125rem 0;
+    }
+
+    .articuloSegundaSectionAprende {
+        max-width: 18rem;
+        margin: 0;
+        padding: .3125rem;
+    }
+
+    .terceraSectionAprende {
+        max-width: 18rem;
+        padding: .3125rem;
+        margin: .3125rem auto;
+        gap: .625rem;
+    }
+
+    .articuloNeurodivergenciaTea {
+        padding: 1.25rem;
+        gap: .9375rem;
+        text-align: justify;
+        justify-content: center;
+    }
+
+    .articuloNeurodivergencia {
+        padding: .625rem;
+    }
+
+    .cuartaSectionAprende img {
+        width: 6.25rem;
+    }
+
+    .cuartaSectionAprende {
+        padding: .625rem;
+        margin: .3125rem auto;
+    }
+
+    .quintaSectionAprende {
+        margin: .625rem 0;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .contenedorQuintaSectionAprende {
+        max-width: 41.875rem;
+        padding: .625rem;
+        flex-direction: column;
+        gap: .3125rem;
+        justify-content: center;
+    }
+}
