@@ -1,0 +1,255 @@
+.primeraSection {
+    width: 100%;
+    margin: 2.5rem 0;
+
+    article {
+        background-image:
+            linear-gradient(to bottom right, #4c0082d3, #f5f5f500),
+            url(../assets/fotoTitulo1.jpg);
+        background-size: cover;
+        background-position: center;
+        max-width: 76rem;
+        height: 25rem;
+        padding: 3.125rem;
+        margin: 0 auto;
+        border-radius: 6.25rem 0 18.75rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: .625rem;
+        color: $colorSecundario;
+
+        H2 {
+            color: transparent;
+            background: linear-gradient(red, orange, yellow, green, blue, indigo, violet);
+            background-clip: text;
+        }
+    }
+}
+
+.segundaSection {
+    width: 100%;
+    background-color: $colorSecundario;
+    border: solid .0625rem $colorPrincipal;
+
+    article {
+        max-width: 76rem;
+        padding: 1.25rem;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-wrap: wrap;
+        color: $colorPrincipal;
+    }
+}
+
+.terceraSection {
+    max-width: 76rem;
+    margin: 2.5rem auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .625rem;
+
+    article {
+        flex: 1;
+        padding: 1.25rem;
+        border: solid .0625rem #4b0082;
+        border-radius: 1.875rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+
+        img {
+            width: 15.625rem;
+            height: 15.625rem;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        p {
+            height: 3.125rem;
+            text-align: justify;
+        }
+
+        .pDerecha {
+            align-self: flex-end;
+            color: $colorPrincipal;
+        }
+
+    }
+}
+
+.sectionDonar {
+    max-width: 76rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    h2 {
+        text-align: center;
+        color: $colorPrincipal;
+    }
+
+    article {
+        width: 50rem;
+        padding: 1.25rem;
+        background-color: $colorPrincipal;
+        color: $colorSecundario;
+        border-radius: 1.875rem 0 6.25rem 0;
+        display: flex;
+        flex-direction: column;
+        // justify-content: center;
+        align-items: center;
+        gap: 1.25rem;
+
+        //Contenedor quiero donar y form
+        div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1.25rem;
+
+            p {
+                align-self: flex-start;
+            }
+
+            //Contendor form       
+            div {
+                width: 31.25rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex: 1;
+                gap: .625rem;
+
+                input {
+                    color: $colorSecundario;
+                    border: 2px solid $colorSecundario;
+                    border-radius: 10px;
+                    padding: 10px 25px;
+                    background: transparent;
+                    width: 500px;
+
+                    &:active {
+                        box-shadow: 2px 2px 15px $colorTerciario inset;
+                    }
+                }
+
+                div {
+                    display: flex;
+                    flex-direction: row;
+                    gap: .625rem;
+                }
+            }
+        }
+
+    }
+}
+
+.cuartaSection {
+    max-width: 76rem;
+    margin: 2.5rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5rem;
+
+    h2 {
+        color: $colorPrincipal;
+        align-self: self-start;
+    }
+
+    article {
+        max-width: 100%;
+        display: flex;
+        gap: .625rem;
+        flex-wrap: wrap;
+
+        article {
+            flex: 1;
+            padding: 1.25rem;
+            border-radius: 1.875rem;
+            background-color: #4b0082;
+            color: #f5f5dc;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-content: space-between;
+            gap: 1.25rem;
+            text-align: justify;
+            box-sizing: border-box;
+
+            p {
+                height: 6.25rem;
+            }
+
+            img {
+                height: 9.375rem;
+                border: solid 1px #f5f5dc;
+                margin: 5px;
+                border-radius: 20px;
+            }
+
+            div {
+                width: 12.5rem;
+            }
+        }
+    }
+}
+
+.quintaSection {
+    max-width: 100%;
+    display: flex;
+
+    .backgroundQuintaSection {
+        width: 76rem;
+        height: 31.25rem;
+        margin: 1.25rem auto;
+        background-image:
+            linear-gradient(to left, #4c0082ce, #f5f5f53b),
+            url(../assets/fotoSection5.jpg);
+        background-size: cover;
+        background-position: center;
+        border: solid .0625rem #4b0082;
+        border-radius: 6.25rem 0 18.75rem 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+
+        article {
+            max-width: 31.25rem;
+            margin: 6.25rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.875rem;
+            flex-wrap: wrap;
+            color: $colorSecundario;
+
+            p {
+                text-align: justify;
+            }
+
+            h2{
+                text-align: center;
+            }
+
+            div {
+                width: 9.375rem;
+                align-self: center;
+            }
+        }
+    }
+}

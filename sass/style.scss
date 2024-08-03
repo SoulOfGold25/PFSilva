@@ -1,27 +1,34 @@
-*{
+@import"./utilities/variables";
+@import"./base/reset";
+@import"./base/fonts";
+@import"./components/navbar";
+@import"./components/buttons";
+@import"./layout/index.scss";
+@import"./layout/footer";
+
+ul{
+    list-style: none;
+    font-family: "Merriweather", serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.6;
+}
+
+
+
+ol {
+    font-family: "Merriweather", serif;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.6;
+    /* altura de linea */
     margin: 0;
-    padding: 0;
-    box-sizing: border-box;
 }
 
-h1{
-    font-family: 'Roboto Slab, serif';
+a {
+    text-decoration: none;
+    color: inherit;
+    font-family: "Merriweather", serif;
+    font-size: 14px;
 }
 
-header{
-    width: 100%;
-    nav{
-        display: flex;
-        justify-content: space-between;
-        a{
-            img{
-                width: 6.25rem;
-            }
-        }
-    ul{
-        width: 31.25rem;
-        display: flex;
-        justify-content: space-between;
-    }
-    }
-}
