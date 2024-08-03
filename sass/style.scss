@@ -1,0 +1,27 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    font-family: 'Roboto Slab, serif';
+}
+
+header{
+    width: 100%;
+    nav{
+        display: flex;
+        justify-content: space-between;
+        a{
+            img{
+                width: 6.25rem;
+            }
+        }
+    ul{
+        width: 31.25rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    }
+}
