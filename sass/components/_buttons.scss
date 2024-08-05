@@ -1,5 +1,5 @@
 .btnBlanco {
-    width: 7.5rem;
+    width: 120px;
     padding: .625rem;
     color: $colorPrincipal;
     border: solid .0625rem $colorPrincipal;
@@ -39,4 +39,54 @@
         transition-duration: 2s;
         transition-property: width, left;
     }
+    }
+
+
+    @media screen and (max-width: 600px) {
+        .btnBlanco {
+            width: 4.375rem;
+            height: 1.875rem;
+            padding: .3125rem;
+            color: $colorPrincipal;
+            border: solid .0625rem $colorPrincipal;
+            border-radius: 20px 0px 20px 0px;
+            text-align: center;
+            cursor: pointer;
+            position: relative;
+            background-color: $colorSecundario;
+            text-transform: uppercase;
+            transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            transition-duration: 2s;
+            transition-property: color;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:focus, 
+            &:hover{
+                color: $colorSecundario;
+                background-color: $colorPrincipal;
+                border: solid .0625rem $colorSecundario;
+                transition-duration: 2s;
+                transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+            }
+            &:focus:after,
+            &:hover:after {
+                width: 90%;
+                left: 0%;
+            }
+        
+            &:after {
+                content: "";
+                pointer-events: none;
+                bottom: -2px;
+                left: 50%;
+                position: absolute;
+                width: 0%;
+                height: 2px;
+                background-color: $colorSecundario;
+                transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+                transition-duration: 2s;
+                transition-property: width, left;
+            }
+            }
     }

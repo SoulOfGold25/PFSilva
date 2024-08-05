@@ -242,13 +242,155 @@
                 text-align: justify;
             }
 
-            h2{
+            h2 {
                 text-align: center;
             }
 
             div {
                 width: 9.375rem;
                 align-self: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .primeraSection {
+        width: 100%;
+        margin: .625rem 0;
+        padding: 0 .625rem;
+
+        article {
+            max-width: 30rem;
+            height: 15.625rem;
+            padding: 3.125rem;
+            border-radius: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .3125rem;
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    .segundaSection {
+        article {
+            max-width: 30rem;
+            padding: .625rem;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: .625rem;
+        }
+    }
+
+    .terceraSection {
+        max-width: 30rem;
+        padding: 0 .625rem;
+        margin: .625rem auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .625rem;
+
+        article {
+            padding: .3125rem;
+            gap: .3125rem;
+
+            img {
+                width: 7.8125rem;
+                height: 7.8125rem;
+            }
+
+        }
+    }
+
+    .sectionDonar {
+        max-width: 30rem;
+        padding: 0 .625rem;
+        gap: .625rem;
+
+        article {
+            width: 100%;
+            padding: 1.25rem;
+            border-radius: 1.875rem;
+            gap: .3125rem;
+
+            //Contenedor quiero donar y form
+            div {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1.25rem;
+
+                p {
+                    display: none;
+                }
+
+                //Contendor form       
+                div {
+                    width: 13rem;
+                    gap: .3125rem;
+
+                    input {
+                        width: fit-content;
+
+                    }
+
+                }
+            }
+
+        }
+    }
+
+    .cuartaSection {
+        max-width: 30rem;
+        margin: .625rem auto;
+        display: flex;
+        gap: .625rem;
+        padding: .625rem;
+
+        h2 {
+            align-self: center;
+        }
+
+        article {
+
+            article {
+                padding: 1.25rem;
+                gap: .625rem;
+
+                p {
+                    height: 3.75rem;
+                }
+
+                img {
+                    height: 5rem;
+                }
+
+            }
+        }
+    }
+
+    .quintaSection {
+        padding: 0 .625rem;
+
+        .backgroundQuintaSection {
+            width: 30rem;
+            height: 25rem;
+            margin: .625rem auto;
+            border-radius: 1.875rem;
+
+            article {
+                max-width: 100%;
+                margin: 0;
+                padding: 1.25rem;
+                color: black;
             }
         }
     }

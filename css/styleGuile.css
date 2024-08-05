@@ -653,10 +653,7 @@ footer {
     text-align: justify;
 }
 
-.articuloNeurodivergenciaTea div {
-    align-self: flex-end;
-}
-
+.articuloNeurodivergenciaT_mediaQuerieMobile
 .articuloNeurodivergencia {
     width: 100%;
     padding: 3.125rem;

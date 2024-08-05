@@ -65,3 +65,74 @@ body {
         margin: 0;
     }
 }
+
+@media screen and (max-width: 600px) {
+    body{
+        ul {
+            font-family: "Merriweather", serif;
+            font-size: .75rem;
+            font-weight: 300;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        ol {
+            font-family: "Merriweather", serif;
+            font-size: .75rem;
+            font-weight: 300;
+            line-height: 1.6;
+            margin: 0;
+        }
+        
+        a {
+            font-family: "Merriweather", serif;
+            font-size: .75rem;
+            font-weight: 300;
+        }
+        
+        h1 {
+            font-family: 'Roboto Slab, serif';
+            font-size: 1.25rem;
+            font-weight: 700;
+        }
+        
+        h2 {
+            font-family: 'Roboto Slab, serif';
+            font-size: 1.125rem;
+            font-weight: 600;
+        }
+        
+        h3 {
+            font-family: 'Roboto Slab, serif';
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        
+        h4 {
+            font-family: 'Roboto Slab, serif';
+            font-size: .875rem;
+            font-weight: 500;
+        }
+        
+        h5 {
+            font-family: 'Roboto Slab, serif';
+            font-size: .75rem;
+            font-weight: 400;
+        }
+        
+        h6 {
+            font-family: 'Roboto Slab, serif';
+            font-size: .625rem;
+            font-weight: 300;
+        }
+        
+        p {
+            font-family: "Merriweather", serif;
+            font-size: .875rem;
+            font-weight: 300;
+            line-height: 1.6;
+            margin: 0;
+        }
+    }
+    
+}

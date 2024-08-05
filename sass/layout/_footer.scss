@@ -7,13 +7,15 @@ footer {
     justify-content: center;
     align-items: center;
     margin: 2.5rem 0 0 0;
-    div{
+
+    div {
         max-width: 76rem;
         margin: 0 auto;
+
         .primerContenedorFooter {
             display: flex;
             flex-wrap: wrap;
-    
+
             article {
                 flex: 1;
                 padding: 1.25rem;
@@ -22,15 +24,15 @@ footer {
                 justify-content: start;
                 align-items: center;
                 gap: .625rem;
-    
+
                 p {
                     text-align: justify;
                 }
-    
+
                 .input-group {
                     display: flex;
                     align-items: center;
-    
+
                     .input {
                         min-height: 50px;
                         max-width: 150px;
@@ -40,14 +42,14 @@ footer {
                         border: 1px solid $colorSecundario;
                         border-radius: 1.25rem 0 0 0;
                         background-color: transparent;
-    
+
                         &:focus,
                         &:focus-visible {
                             border-color: $colorTerciario;
                             outline: none;
                         }
                     }
-    
+
                     .button--submit {
                         min-height: 50px;
                         padding: .5em 1em;
@@ -58,17 +60,17 @@ footer {
                         font-size: 15px;
                         cursor: pointer;
                         transition: background-color .3s ease-in-out;
-    
+
                         &:hover {
                             background-color: $colorTerciario;
                             color: $colorSecundario;
                         }
                     }
                 }
-    
+
             }
         }
-    
+
         .segundoContenedorFooter {
             display: flex;
             padding: 1.25rem;
@@ -77,11 +79,11 @@ footer {
             gap: .625rem;
             justify-content: center;
             align-items: center;
-    
+
             div {
                 display: flex;
                 gap: .625rem;
-    
+
                 a {
                     img {
                         &:hover {
@@ -90,9 +92,113 @@ footer {
                         }
                     }
                 }
-    
+
             }
         }
     }
-    
+
+}
+
+@media screen and (max-width: 600px) {
+    footer {
+        padding: 0 .625rem;
+
+        div {
+            max-width: 30rem;
+
+            .primerContenedorFooter {
+                flex-direction: column;
+
+                article {
+                    flex: 1;
+                    padding: .625rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    p {
+                        text-align: center;
+                    }
+
+                    ul {
+                        li {
+                            &:hover {
+                                color: $colorTerciario;
+                            }
+                        }
+                    }
+
+                    .btnBlanco {
+                        width: 6.25rem;
+                    }
+
+                    .input-group {
+                        display: flex;
+                        align-items: center;
+
+                        .input {
+                            min-height: 50px;
+                            max-width: 150px;
+                            padding: 0 1rem;
+                            color: #fff;
+                            font-size: 15px;
+                            border: 1px solid $colorSecundario;
+                            border-radius: 1.25rem 0 0 0;
+                            background-color: transparent;
+
+                            &:focus,
+                            &:focus-visible {
+                                border-color: $colorTerciario;
+                                outline: none;
+                            }
+                        }
+
+                        .button--submit {
+                            min-height: 50px;
+                            padding: .5em 1em;
+                            border: none;
+                            border-radius: 0 0 1.25rem 0;
+                            background-color: $colorSecundario;
+                            color: $colorPrincipal;
+                            font-size: 15px;
+                            cursor: pointer;
+                            transition: background-color .3s ease-in-out;
+
+                            &:hover {
+                                background-color: $colorTerciario;
+                                color: $colorSecundario;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .segundoContenedorFooter {
+                display: flex;
+                padding: 1.25rem;
+                flex-wrap: wrap;
+                flex-direction: column;
+                gap: .625rem;
+                justify-content: center;
+                align-items: center;
+
+                div {
+                    display: flex;
+                    gap: .625rem;
+
+                    a {
+                        img {
+                            &:hover {
+                                transition: transform 0.3s;
+                                transform: scale(1.1);
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+
+    }
 }
