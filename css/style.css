@@ -169,7 +169,7 @@ header {
   width: 100%;
   background-color: #4b0082; }
   header nav {
-    max-width: 76rem;
+    max-width: 80%;
     padding: 1.25rem .625rem;
     margin: 0 auto;
     box-sizing: border-box;
@@ -244,12 +244,12 @@ header {
       width: 50px; }
     header nav ul {
       display: none; }
-    header nav article .btnBlanco {
+    header nav article .btnBlanco, header nav article .botonPurpura {
       display: none; }
     header nav article svg {
       display: flex; } }
 
-.btnBlanco {
+.btnBlanco, .botonPurpura {
   width: 120px;
   padding: .625rem;
   color: #4b0082;
@@ -266,16 +266,16 @@ header {
   display: flex;
   justify-content: center;
   align-content: center; }
-  .btnBlanco:focus, .btnBlanco:hover {
+  .btnBlanco:focus, .botonPurpura:focus, .btnBlanco:hover, .botonPurpura:hover {
     color: #f5f5dc;
     background-color: #4b0082;
     border: solid 0.0625rem #f5f5dc;
     transition-duration: 2s;
     transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1); }
-  .btnBlanco:focus:after, .btnBlanco:hover:after {
+  .btnBlanco:focus:after, .botonPurpura:focus:after, .btnBlanco:hover:after, .botonPurpura:hover:after {
     width: 90%;
     left: 0%; }
-  .btnBlanco:after {
+  .btnBlanco:after, .botonPurpura:after {
     content: "";
     pointer-events: none;
     bottom: -2px;
@@ -288,13 +288,23 @@ header {
     transition-duration: 2s;
     transition-property: width, left; }
 
+.botonPurpura {
+  background-color: #4b0082;
+  color: #f5f5dc; }
+  .botonPurpura:focus, .botonPurpura:hover {
+    color: #4b0082;
+    background-color: #f5f5dc;
+    border: solid 0.0625rem #4b0082; }
+  .botonPurpura:after {
+    background-color: #4b0082; }
+
 @media screen and (min-width: 30rem) and (max-width: 60rem) {
-  .btnBlanco {
+  .btnBlanco, .botonPurpura {
     padding: .4375rem;
     width: 5.4375rem; } }
 
 @media screen and (max-width: 30rem) {
-  .btnBlanco {
+  .btnBlanco, .botonPurpura {
     padding: .3125rem;
     width: 5.4375rem; } }
 
@@ -699,7 +709,7 @@ footer {
             text-align: center; }
           footer div .primerContenedorFooter article ul li:hover {
             color: #d19300; }
-          footer div .primerContenedorFooter article .btnBlanco {
+          footer div .primerContenedorFooter article .btnBlanco, footer div .primerContenedorFooter article .botonPurpura {
             width: 6.25rem; }
           footer div .primerContenedorFooter article .input-group {
             display: flex;
@@ -743,3 +753,237 @@ footer {
           footer div .segundoContenedorFooter div a img:hover {
             transition: transform 0.3s;
             transform: scale(1.1); } }
+
+.primeraSectionAprende {
+  max-width: 80%;
+  padding: .625rem;
+  margin: 2.5rem auto; }
+  .primeraSectionAprende article {
+    padding: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; }
+    .primeraSectionAprende article h1 {
+      color: #4b0082; }
+
+.segundaSectionAprende {
+  max-width: 80%;
+  padding: .625rem;
+  margin: 0 auto; }
+  .segundaSectionAprende article {
+    padding: 1.25rem;
+    border: solid 0.0625rem #4b0082;
+    border-radius: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; }
+    .segundaSectionAprende article h2 {
+      color: #4b0082; }
+    .segundaSectionAprende article p {
+      text-align: justify; }
+
+.terceraSectionAprende {
+  max-width: 80%;
+  padding: .625rem;
+  margin: 2.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; }
+  .terceraSectionAprende > :first-child {
+    display: flex;
+    gap: 1.25rem; }
+    .terceraSectionAprende > :first-child ol {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem; }
+      .terceraSectionAprende > :first-child ol ul {
+        text-indent: 2em;
+        list-style: disc;
+        list-style-position: inside; }
+  .terceraSectionAprende article {
+    padding: 1.25rem;
+    border: solid 0.0625rem #4b0082;
+    border-radius: 1.875rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem; }
+    .terceraSectionAprende article h3 {
+      color: #4b0082; }
+    .terceraSectionAprende article p {
+      text-align: justify; }
+    .terceraSectionAprende article div {
+      align-self: flex-end; }
+
+.cuartaSectionAprende {
+  max-width: 80%;
+  padding: .625rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 1.25rem; }
+  .cuartaSectionAprende article {
+    width: 300px; }
+    .cuartaSectionAprende article img {
+      width: 100%;
+      border-radius: 1.875rem; }
+  .cuartaSectionAprende > :nth-child(2) p {
+    text-align: justify; }
+  .cuartaSectionAprende > :nth-child(2) > :nth-child(3) {
+    color: #4b0082; }
+
+.quintaSectionAprende {
+  max-width: 100%;
+  padding: .625rem;
+  margin: 2.5rem auto;
+  background-color: #4b0082; }
+  .quintaSectionAprende article {
+    max-width: 80%;
+    padding: .625rem;
+    margin: 0 auto;
+    background-color: #4b0082;
+    color: #f5f5dc;
+    display: flex;
+    justify-content: space-between; }
+    .quintaSectionAprende article h2 {
+      text-align: left; }
+    .quintaSectionAprende article div {
+      width: fit-content;
+      justify-content: center;
+      align-items: center; }
+
+.sextaSectionAprende {
+  max-width: 80%;
+  padding: .625rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem; }
+  .sextaSectionAprende h2 {
+    color: #4b0082; }
+  .sextaSectionAprende .contenedorSextaSectionAprende {
+    display: flex;
+    gap: 1.25rem; }
+    .sextaSectionAprende .contenedorSextaSectionAprende > :first-child {
+      max-width: 50%;
+      padding: 1.25rem;
+      border: solid 0.0625rem #f5f5dc;
+      border-radius: 1.875rem 0 6.25rem 0;
+      background-color: #4b0082;
+      color: #f5f5dc;
+      display: flex;
+      flex-direction: column;
+      gap: .625rem; }
+      .sextaSectionAprende .contenedorSextaSectionAprende > :first-child div {
+        align-self: center; }
+      .sextaSectionAprende .contenedorSextaSectionAprende > :first-child p {
+        text-align: justify; }
+    .sextaSectionAprende .contenedorSextaSectionAprende > :last-child {
+      max-width: 50%;
+      padding: 1.25rem;
+      border: solid 0.0625rem #4b0082;
+      border-radius: 1.875rem 0 6.25rem 0;
+      background-color: #f5f5dc;
+      color: #4b0082;
+      display: flex;
+      flex-direction: column;
+      gap: .625rem; }
+      .sextaSectionAprende .contenedorSextaSectionAprende > :last-child div {
+        align-self: center; }
+      .sextaSectionAprende .contenedorSextaSectionAprende > :last-child p {
+        text-align: justify; }
+
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+  .primeraSectionAprende {
+    max-width: 90%;
+    margin: 1.25rem auto; }
+    .primeraSectionAprende article {
+      padding: .625rem;
+      gap: .625rem; }
+      .primeraSectionAprende article h1 {
+        color: #4b0082; }
+      .primeraSectionAprende article p {
+        text-align: justify; }
+  .segundaSectionAprende {
+    max-width: 90%; }
+    .segundaSectionAprende article {
+      gap: .625rem; }
+  .terceraSectionAprende {
+    max-width: 90%;
+    margin: 1.25rem auto; }
+    .terceraSectionAprende > :first-child {
+      display: flex;
+      gap: 1.25rem; }
+      .terceraSectionAprende > :first-child ol {
+        gap: .625rem; }
+      .terceraSectionAprende > :first-child div {
+        align-self: center; }
+      .terceraSectionAprende > :first-child p {
+        text-align: justify; }
+    .terceraSectionAprende article div {
+      width: fit-content;
+      align-self: center; }
+  .quintaSectionAprende {
+    margin: 1.25rem auto; }
+    .quintaSectionAprende article {
+      max-width: 90%;
+      flex-direction: column; }
+      .quintaSectionAprende article h2 {
+        text-align: center; }
+  .sextaSectionAprende {
+    max-width: 90%; }
+    .sextaSectionAprende .contenedorSextaSectionAprende {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem; }
+      .sextaSectionAprende .contenedorSextaSectionAprende > :first-child {
+        max-width: 100%; }
+      .sextaSectionAprende .contenedorSextaSectionAprende > :last-child {
+        max-width: 100%; } }
+
+@media screen and (max-width: 30rem) {
+  .primeraSectionAprende {
+    max-width: 95%;
+    margin: .625rem auto; }
+    .primeraSectionAprende article {
+      padding: .625rem;
+      gap: .625rem; }
+  .segundaSectionAprende {
+    max-width: 95%; }
+  .terceraSectionAprende {
+    max-width: 95%;
+    margin: .625rem auto; }
+    .terceraSectionAprende > :first-child {
+      display: flex;
+      gap: .625rem; }
+      .terceraSectionAprende > :first-child ol {
+        gap: .625rem; }
+      .terceraSectionAprende > :first-child div {
+        align-self: center; }
+      .terceraSectionAprende > :first-child p {
+        text-align: justify; }
+    .terceraSectionAprende article div {
+      width: fit-content;
+      align-self: center; }
+  .cuartaSectionAprende {
+    max-width: 95%;
+    flex-direction: column; }
+    .cuartaSectionAprende article {
+      max-width: 12.5rem; }
+  .quintaSectionAprende {
+    margin: .625rem auto; }
+    .quintaSectionAprende article {
+      max-width: 95%;
+      flex-direction: column; }
+      .quintaSectionAprende article h2 {
+        text-align: center; }
+  .sextaSectionAprende {
+    max-width: 95%; }
+    .sextaSectionAprende .contenedorSextaSectionAprende {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem; }
+      .sextaSectionAprende .contenedorSextaSectionAprende > :first-child {
+        max-width: 100%; }
+      .sextaSectionAprende .contenedorSextaSectionAprende > :last-child {
+        max-width: 100%; } }

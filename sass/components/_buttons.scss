@@ -47,6 +47,23 @@
 
 }
 
+.botonPurpura {
+    @extend.btnBlanco;
+    background-color: $colorPrincipal;
+    color: $colorSecundario;
+
+    &:focus,
+    &:hover {
+        color: $colorPrincipal;
+        background-color: $colorSecundario;
+        border: solid .0625rem $colorPrincipal;
+    }
+
+    &:after {
+        background-color: $colorPrincipal;
+    }
+}
+
 @media screen and (min-width: 30rem) and (max-width: 60rem) {
     .btnBlanco {
         padding: .4375rem;
