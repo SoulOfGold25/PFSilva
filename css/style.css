@@ -69,7 +69,55 @@ body p {
   line-height: 1.6;
   margin: 0; }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+  body ul {
+    font-family: "Merriweather", serif;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0; }
+  body ol {
+    font-family: "Merriweather", serif;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0; }
+  body a {
+    font-family: "Merriweather", serif;
+    font-size: .875rem;
+    font-weight: 300; }
+  body h1 {
+    font-family: 'Roboto Slab, serif';
+    font-size: 1.5rem;
+    font-weight: 700; }
+  body h2 {
+    font-family: 'Roboto Slab, serif';
+    font-size: 1.375rem;
+    font-weight: 600; }
+  body h3 {
+    font-family: 'Roboto Slab, serif';
+    font-size: 1.25rem;
+    font-weight: 500; }
+  body h4 {
+    font-family: 'Roboto Slab, serif';
+    font-size: 1.125rem;
+    font-weight: 500; }
+  body h5 {
+    font-family: 'Roboto Slab, serif';
+    font-size: 1rem;
+    font-weight: 400; }
+  body h6 {
+    font-family: 'Roboto Slab, serif';
+    font-size: .875rem;
+    font-weight: 400; }
+  body p {
+    font-family: "Merriweather", serif;
+    font-size: .875rem;
+    font-weight: 300;
+    line-height: 1.5;
+    margin: 0; } }
+
+@media screen and (max-width: 30rem) {
   body ul {
     font-family: "Merriweather", serif;
     font-size: .75rem;
@@ -122,7 +170,7 @@ header {
   background-color: #4b0082; }
   header nav {
     max-width: 76rem;
-    padding: 1.25rem 0;
+    padding: 1.25rem .625rem;
     margin: 0 auto;
     box-sizing: border-box;
     display: flex;
@@ -167,33 +215,39 @@ header {
           transition-property: width, left; }
     header nav article {
       display: flex;
-      gap: .625rem; }
-
-@media screen and (max-width: 600px) {
-  header {
-    max-width: 100%; }
-    header nav {
-      max-width: 30rem;
-      padding: .3125rem .625rem;
-      margin: 0 auto; }
-      header nav a img {
-        width: 4.375rem; }
-        header nav a img:hover {
-          transition: transform 0.3s;
-          transform: scale(1.1); }
-      header nav ul {
+      gap: .625rem;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      header nav article svg {
         display: none; }
-      header nav article {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        gap: .3125rem; }
-        header nav article div {
-          display: none; }
-        header nav article svg:hover {
-          transition: transform 0.3s;
-          transform: scale(1.1);
-          cursor: pointer; } }
+
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+  header nav {
+    max-width: 90%;
+    padding: .625rem .3125rem; }
+    header nav a img {
+      width: 4.5625rem; }
+    header nav ul {
+      gap: .625rem;
+      flex-wrap: nowrap; }
+      header nav ul > :first-child {
+        display: none; }
+    header nav article svg {
+      display: none; } }
+
+@media screen and (max-width: 30rem) {
+  header nav {
+    max-width: 95%;
+    padding: .625rem .3125rem; }
+    header nav a img {
+      width: 50px; }
+    header nav ul {
+      display: none; }
+    header nav article .btnBlanco {
+      display: none; }
+    header nav article svg {
+      display: flex; } }
 
 .btnBlanco {
   width: 120px;
@@ -208,7 +262,10 @@ header {
   text-transform: uppercase;
   transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
   transition-duration: 2s;
-  transition-property: color; }
+  transition-property: color;
+  display: flex;
+  justify-content: center;
+  align-content: center; }
   .btnBlanco:focus, .btnBlanco:hover {
     color: #f5f5dc;
     background-color: #4b0082;
@@ -231,56 +288,25 @@ header {
     transition-duration: 2s;
     transition-property: width, left; }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
   .btnBlanco {
-    width: 4.375rem;
-    height: 1.875rem;
+    padding: .4375rem;
+    width: 5.4375rem; } }
+
+@media screen and (max-width: 30rem) {
+  .btnBlanco {
     padding: .3125rem;
-    color: #4b0082;
-    border: solid 0.0625rem #4b0082;
-    border-radius: 20px 0px 20px 0px;
-    text-align: center;
-    cursor: pointer;
-    position: relative;
-    background-color: #f5f5dc;
-    text-transform: uppercase;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 2s;
-    transition-property: color;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-    .btnBlanco:focus, .btnBlanco:hover {
-      color: #f5f5dc;
-      background-color: #4b0082;
-      border: solid 0.0625rem #f5f5dc;
-      transition-duration: 2s;
-      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1); }
-    .btnBlanco:focus:after, .btnBlanco:hover:after {
-      width: 90%;
-      left: 0%; }
-    .btnBlanco:after {
-      content: "";
-      pointer-events: none;
-      bottom: -2px;
-      left: 50%;
-      position: absolute;
-      width: 0%;
-      height: 2px;
-      background-color: #f5f5dc;
-      transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-      transition-duration: 2s;
-      transition-property: width, left; } }
+    width: 5.4375rem; } }
 
 .primeraSection {
   width: 100%;
-  margin: 2.5rem 0; }
+  margin: 2.5rem 0;
+  padding: .625rem; }
   .primeraSection article {
     background-image: linear-gradient(to bottom right, #4c0082d3, #f5f5f500), url(../assets/fotoTitulo1.jpg);
     background-size: cover;
     background-position: center;
-    max-width: 76rem;
-    height: 25rem;
+    max-width: 80%;
     padding: 3.125rem;
     margin: 0 auto;
     border-radius: 6.25rem 0 18.75rem 0;
@@ -298,9 +324,10 @@ header {
 .segundaSection {
   width: 100%;
   background-color: #f5f5dc;
-  border: solid 0.0625rem #4b0082; }
+  border: solid 0.0625rem #4b0082;
+  padding: 0 .625rem; }
   .segundaSection article {
-    max-width: 76rem;
+    max-width: 80%;
     padding: 1.25rem;
     margin: 0 auto;
     display: flex;
@@ -310,8 +337,9 @@ header {
     color: #4b0082; }
 
 .terceraSection {
-  max-width: 76rem;
+  max-width: 80%;
   margin: 2.5rem auto;
+  padding: .625rem;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -340,8 +368,9 @@ header {
       color: #4b0082; }
 
 .sectionDonar {
-  max-width: 76rem;
+  max-width: 80%;
   margin: 0 auto;
+  padding: .625rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -390,13 +419,14 @@ header {
           gap: .625rem; }
 
 .cuartaSection {
-  max-width: 76rem;
+  max-width: 80%;
   margin: 2.5rem auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2.5rem; }
+  gap: 2.5rem;
+  padding: .625rem; }
   .cuartaSection h2 {
     color: #4b0082;
     align-self: self-start; }
@@ -419,7 +449,8 @@ header {
       text-align: justify;
       box-sizing: border-box; }
       .cuartaSection article article p {
-        height: 6.25rem; }
+        height: 6.25rem;
+        padding: .625rem; }
       .cuartaSection article article img {
         height: 9.375rem;
         border: solid 1px #f5f5dc;
@@ -430,12 +461,12 @@ header {
 
 .quintaSection {
   max-width: 100%;
-  display: flex; }
+  display: flex;
+  padding: .625rem; }
   .quintaSection .backgroundQuintaSection {
-    width: 76rem;
-    height: 31.25rem;
+    width: 80%;
     margin: 1.25rem auto;
-    background-image: linear-gradient(to left, #4c0082ce, #f5f5f53b), url(../assets/fotoSection5.jpg);
+    background-image: linear-gradient(to left, #4c0082, #f5f5f52a), url(../assets/fotoSection5.jpg);
     background-size: cover;
     background-position: center;
     border: solid .0625rem #4b0082;
@@ -461,93 +492,127 @@ header {
         width: 9.375rem;
         align-self: center; }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
   .primeraSection {
-    width: 100%;
-    margin: .625rem 0;
+    margin: 1.25rem auto;
     padding: 0 .625rem; }
     .primeraSection article {
-      max-width: 30rem;
-      height: 15.625rem;
-      padding: 3.125rem;
-      border-radius: 1.25rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      gap: .3125rem; }
-      .primeraSection article p {
-        text-align: justify; }
+      max-width: 90%;
+      border-radius: 3.125rem 0 12.5rem 0; }
+      .primeraSection article div {
+        align-self: center; }
   .segundaSection article {
-    max-width: 30rem;
-    padding: .625rem;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .625rem; }
+    max-width: 90%;
+    padding: .625rem; }
   .terceraSection {
-    max-width: 30rem;
-    padding: 0 .625rem;
-    margin: .625rem auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: .625rem; }
-    .terceraSection article {
-      padding: .3125rem;
-      gap: .3125rem; }
-      .terceraSection article img {
-        width: 7.8125rem;
-        height: 7.8125rem; }
+    max-width: 90%;
+    margin: 1.25rem auto; }
+    .terceraSection article img {
+      width: 11.25rem;
+      height: 11.25rem; }
   .sectionDonar {
-    max-width: 30rem;
-    padding: 0 .625rem;
-    gap: .625rem; }
+    max-width: 90%;
+    gap: 1.25rem; }
     .sectionDonar article {
-      width: 100%;
+      width: 70%;
+      border-radius: .9375rem 0 3.125rem 0; }
+      .sectionDonar article div div {
+        width: 70%; }
+        .sectionDonar article div div input {
+          width: 100%; }
+        .sectionDonar article div div div {
+          width: 100%; }
+  .cuartaSection {
+    max-width: 90%;
+    margin: 1.25rem auto;
+    gap: 1.25rem; }
+    .cuartaSection article {
+      max-width: 100%;
+      display: flex;
+      gap: .625rem;
+      flex-wrap: wrap; }
+      .cuartaSection article article {
+        flex: 1;
+        padding: 1.25rem; }
+        .cuartaSection article article img {
+          height: 6.75rem; }
+        .cuartaSection article article div {
+          width: 12.5rem; }
+  .quintaSection {
+    margin: 0; }
+    .quintaSection .backgroundQuintaSection {
+      width: 90%;
+      margin: 1.25rem auto;
+      border-radius: 3.125rem 0 150 0; }
+      .quintaSection .backgroundQuintaSection article p {
+        text-align: justify; } }
+
+@media screen and (max-width: 30rem) {
+  .primeraSection {
+    margin: .625rem auto;
+    padding: 0 .625rem; }
+    .primeraSection article {
+      max-width: 95%;
       padding: 1.25rem;
       border-radius: 1.875rem;
-      gap: .3125rem; }
-      .sectionDonar article div {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1.25rem; }
-        .sectionDonar article div p {
-          display: none; }
-        .sectionDonar article div div {
-          width: 13rem;
-          gap: .3125rem; }
-          .sectionDonar article div div input {
-            width: fit-content; }
-  .cuartaSection {
-    max-width: 30rem;
-    margin: .625rem auto;
-    display: flex;
+      margin: .625rem 0;
+      align-items: center; }
+  .segundaSection article {
+    max-width: 95%;
+    padding: .625rem;
     gap: .625rem;
-    padding: .625rem; }
-    .cuartaSection h2 {
-      align-self: center; }
-    .cuartaSection article article {
-      padding: 1.25rem;
+    text-align: center; }
+  .terceraSection {
+    max-width: 95%;
+    margin: .625rem auto; }
+    .terceraSection article {
+      gap: 1.25rem; }
+      .terceraSection article img {
+        width: 5.625rem;
+        height: 5.625rem; }
+  .sectionDonar {
+    max-width: 95%;
+    gap: .625rem; }
+    .sectionDonar article {
+      width: 80%;
+      border-radius: 1.875rem; }
+      .sectionDonar article div {
+        flex-direction: column; }
+        .sectionDonar article div p {
+          align-self: center; }
+        .sectionDonar article div div {
+          width: 70%; }
+          .sectionDonar article div div input {
+            width: 100%; }
+          .sectionDonar article div div div {
+            width: 100%;
+            flex-direction: column; }
+  .cuartaSection {
+    max-width: 95%;
+    margin: .625rem auto;
+    gap: .625rem; }
+    .cuartaSection article {
+      max-width: 100%;
       gap: .625rem; }
-      .cuartaSection article article p {
-        height: 3.75rem; }
-      .cuartaSection article article img {
-        height: 5rem; }
+      .cuartaSection article article {
+        flex: 1;
+        padding: 1.25rem; }
+        .cuartaSection article article img {
+          height: 6.75rem; }
+        .cuartaSection article article div {
+          width: 12.5rem;
+          margin: .625rem; }
   .quintaSection {
-    padding: 0 .625rem; }
+    margin: 0; }
     .quintaSection .backgroundQuintaSection {
-      width: 30rem;
-      height: 25rem;
-      margin: .625rem auto;
+      width: 95%;
+      margin: 10px auto;
       border-radius: 1.875rem; }
       .quintaSection .backgroundQuintaSection article {
-        max-width: 100%;
         margin: 0;
-        padding: 1.25rem;
-        color: black; } }
+        padding: 30px; }
+        .quintaSection .backgroundQuintaSection article p {
+          text-align: justify; } }
 
 footer {
   max-width: 100%;

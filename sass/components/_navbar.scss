@@ -4,7 +4,7 @@ header {
 
     nav {
         max-width: 76rem;
-        padding: 1.25rem 0;
+        padding: 1.25rem .625rem;
         margin: 0 auto;
         box-sizing: border-box;
         display: flex;
@@ -71,50 +71,77 @@ header {
         article {
             display: flex;
             gap: .625rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            svg {
+                display: none;
+            }
         }
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
     header {
-        max-width: 100%;
 
         nav {
-            max-width: 30rem;
-            padding: .3125rem .625rem;
-            margin: 0 auto;
+            max-width: 90%;
+            padding: .625rem .3125rem;
+
+
 
             a {
                 img {
-                    width: 4.375rem;
+                    width: 4.5625rem;
 
-                    &:hover {
-                        transition: transform 0.3s;
-                        transform: scale(1.1);
-                    }
                 }
             }
 
             ul {
-                display: none;
-            }
+                gap: .625rem;
+                flex-wrap: nowrap;
 
-            article {
-                display: flex;
-                flex-direction: row;
-                align-items: center;
-                gap: .3125rem;
-
-                div {
+                >:first-child {
                     display: none;
                 }
 
+            }
+
+            article {
                 svg {
-                    &:hover {
-                        transition: transform 0.3s;
-                        transform: scale(1.1);
-                        cursor: pointer;
-                    }
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 30rem) {
+    header {
+    
+        nav {
+            max-width: 95%;
+            padding: .625rem .3125rem;
+    
+            a {
+                img {
+                    width:50px;
+
+                }
+            }
+    
+            ul {
+                display: none;
+            }
+    
+            article {
+                .btnBlanco{
+                    display: none;
+                }
+    
+                svg {
+                    display: flex;
                 }
             }
         }
