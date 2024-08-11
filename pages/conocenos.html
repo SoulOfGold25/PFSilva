@@ -40,7 +40,12 @@
             </article>
             <article class="botonesHeader">
                 <div class="btnBlanco"><a href="./unete.html">Unete</a></div>
-                <div class="btnAmarillo"><a href="#">Contacto</a></div>
+                <div class="btnBlanco"><a href="#">Contacto</a></div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="" height="24px" viewBox="0 0 24 24" width="24px"
+                    fill="#f5f5dc">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                </svg>
             </article>
         </nav>
     </header>
@@ -67,7 +72,7 @@
                     en nuestras escuelas y servicios, así como en nuestros
                     equipos de capacitación, recaudación de fondos, políticas y campañas.
                 </p>
-                <div class="btnAmarillo">
+                <div class="btnBlanco">
                     Leer mas
                 </div>
             </article>
@@ -79,7 +84,7 @@
                     Dirigido por nuestra directora ejecutiva, Antonella Cabezas, nuestro grupo
                     de gestión estratégica de siete directores rinde cuentas ante el Consejo de Administración.
                 </p>
-                <div class="btnAmarillo">
+                <div class="btnBlanco">
                     Leer mas
                 </div>
             </article>
@@ -92,7 +97,7 @@
                     de forma gratuita y es responsable de garantizar que nuestra organización
                     benéfica esté haciendo lo que fue creada para hacer.
                 </p>
-                <div class="btnAmarillo">
+                <div class="btnBlanco">
                     Leer mas
                 </div>
             </article>
@@ -105,7 +110,7 @@
                     desde 2023 para ayudar a crear una sociedad que trabaje para
                     las personas neurodivergentes.
                 </p>
-                <div class="btnAmarillo">
+                <div class="btnBlanco">
                     Leer mas
                 </div>
             </article>
@@ -118,7 +123,7 @@
                     Sociedad Nacional de Neurodivergencia en la creación de
                     una sociedad inclusiva para personas neurodivergentes.
                 </p>
-                <div class="btnAmarillo">
+                <div class="btnBlanco">
                     Leer mas
                 </div>
             </article>
@@ -130,7 +135,7 @@
                     Las personas neurodivergentes y sus familias trabajaron
                     con nosotros para crear una visión de una sociedad inclusiva para ellos.
                 </p>
-                <div class="btnAmarillo">
+                <div class="btnBlanco">
                     Leer mas
                 </div>
             </article>
@@ -147,12 +152,12 @@
                         Nuestros embajadores viven y respiran los valores y la visión de nuestra
                         organización de crear una sociedad que funcione para todas las personas .
                     </p>
-                    <div class="btnAmarillo">
+                    <div class="btnBlanco">
                         Aprender mas sobre nuestros embajadores
                     </div>
                 </article>
                 <article id="imagenUnoSectionConocenos">
-                    <div></div>
+                    <img src="../assets/embajadores.jpg" alt="">
                 </article>
             </article>
             <article class="contenedorTerceraSectionConocenos">
@@ -165,12 +170,12 @@
                         recaudamos y gastamos nuestro dinero y el impacto que ha tenido
                         para ayudar a crear una sociedad que funcione para las personas neurodivergentes.
                     </p>
-                    <div class="btnAmarillo">
+                    <div class="btnBlanco">
                         Leer nuestro reporte anual
                     </div>
                 </article>
                 <article id="imagenDosSectionConocenos">
-                    <div></div>
+                    <img src="../assets/informeAnual.jpg" alt="">
                 </article>
             </article>
         </section>
@@ -252,7 +257,7 @@
                     </div>
                 </article>
                 <article id="imagenQuintaSectionConocenos">
-                    <div></div>
+                    <img src="../assets/unidosConocenos.jpg" alt="">
                 </article>
             </article>
         </section>
@@ -261,6 +266,7 @@
         <section class="sextaSectionConocenos">
             <article class="contenedorSextaSectionConocenos">
                 <article>
+                    <img src="../assets/sucursales.jpg" alt="">
                 </article>
                 <article>
                     <p>
@@ -270,17 +276,25 @@
                     </p>
                     <article>
                         <article>
-                            <div class="btnAmarilloRedondo">
-                                <p><</p>
-                                        <!-- <img src="../assets/izquierda.png" alt=""> -->
-                            </div>
-                            <div class="btnAmarilloRedondo">
-                                <p>></p>
-                                <!-- <img src="../assets/derecha.png" alt=""> -->
+                            <div class="button-container">
+                                <button class="button-3d">
+                                    <div class="button-top">
+                                        <span class="material-icons">❮</span>
+                                    </div>
+                                    <div class="button-bottom"></div>
+                                    <div class="button-base"></div>
+                                </button>
+                                <button class="button-3d">
+                                    <div class="button-top">
+                                        <span class="material-icons">❯</span>
+                                    </div>
+                                    <div class="button-bottom"></div>
+                                    <div class="button-base"></div>
+                                </button>
                             </div>
                         </article>
-                        <div class="btnAmarillo">
-                            Ver reporte anual
+                        <div class="botonPurpura">
+                            Leer nuestro reporte anual
                         </div>
                     </article>
                 </article>
@@ -289,91 +303,72 @@
 
     </main>
     <footer>
-        <article class="primerContenedorFooter">
-            <article>
-                <p>
-                    <b>¿Tienes preguntas?</b>
-                    <br>
-                    Ponte en contacto con nosotros:
-                    <br>
-                    Linea gratuita: +56 2 2879 80 00
-                    <br>
-                    <a href="socios.web@miweb.cl">
-                        socios.web@miweb.cl
-                    </a>
-                    <br>
+        <div>
+            <article class="primerContenedorFooter">
+                <article>
+                    <p><b>¿Tienes preguntas?</b></p>
+                    <ul>
+                        <li>Linea gratuita: +56 2 2879 80 00</li>
+                        <li><a href="socios.web@miweb.cl">socios.web@miweb.cl</a></li>
+                    </ul>
+                </article>
+                <article id="articuloTranspariencia">
+                    <p><b>Transpariencia</b></p>
 
-                </p>
-            </article>
-            <article>
-                <p>
-                    <a href="">
-                        Dónde estamos
-                    </a>
-                    <br>
-                    <a href="">
-                        Sobre nosotros
-                    </a>
-                    <br>
-                    <a href="">
-                        Conviértete en Socio
-                    </a>
-                    <br>
-                    <a href="">
-                        Empresas Amigas
-                    </a>
-                </p>
-            </article>
-            <article id="articuloTranspariencia">
-                <h4>
-                    Transpariencia
-                </h4>
-                <p>
-                    Nuestra organización utiliza tus donaciones
-                    de manera responsable.
-                </p>
-                <div class="btnAmarillo">
-                    VER MÁS
-                </div>
-            </article>
-            <article>
-                <h4>
-                    NEWSLETTER!
-                </h4>
-                <p>
-                    Suscríbete y recibe cada mes las noticias sobre nuestra labor.
-                </p>
-                <div class="btnNewsletter">
-                    <input type="text" placeholder="Ingresa tu email">
-                    <div class="btnAmarillo">
-                        SUBSCRIBETE
+                    <p>
+                        Nuestra organización utiliza tus donaciones
+                        de manera responsable.
+                    </p>
+                    <div class="btnBlanco">
+                        VER MÁS
                     </div>
-                </div>
+                </article>
+                <article>
+                    <ul>
+                        <li><a href="#">Dónde estamos</a></li>
+                        <li><a href="#">Sobre nosotros</a></li>
+                        <li><a href="#">Conviértete en Socio</a></li>
+                        <li><a href="#">Empresas Amigas</a></li>
+                    </ul>
+                </article>
+                <article>
+                    <h4>
+                        NEWSLETTER!
+                    </h4>
+                    <p>
+                        Suscríbete y recibe cada mes las noticias sobre nuestra labor.
+                    </p>
+                    <div class="input-group">
+                        <input type="email" class="input" id="Email" name="Email" placeholder="neuro@crecer.cl"
+                            autocomplete="off">
+                        <input class="button--submit" value="Subscribe" type="submit">
+                    </div>
+                </article>
             </article>
-        </article>
-        <article class="segundoContenedorFooter">
-            <div class="redesSociales">
-                <a href="https://www.facebook.com/" target="_blank">
-                    <img src="./assets/facebook.png" alt="facebook">
-                </a>
-                <a href="https://x.com/?lang=en" target="_blank">
-                    <img src="./assets/twitter.png" alt="x">
-                </a>
-                <a href="https://www.instagram.com/" target="_blank">
-                    <img src="./assets/instagram.png" alt="instagram">
-                </a>
-                <a href="https://www.linkedin.com/hp" target="_blank">
-                    <img src="./assets/linkedin.png" alt="linkedin">
-                </a>
-                <a href="https://www.youtube.com/" target="_blank">
-                    <img src="./assets/youtube.png" alt="youtube">
-                </a>
-                <a href="https://www.tiktok.com/">
-                    <img src="./assets/tik-tok.png" alt="tiktok">
-                </a>
-            </div>
-            <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
-        </article>
+            <article class="segundoContenedorFooter">
+                <div class="redesSociales">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <img src="../assets/facebook.png" alt="facebook">
+                    </a>
+                    <a href="https://x.com/?lang=en" target="_blank">
+                        <img src="../assets/twitter.png" alt="x">
+                    </a>
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <img src="../assets/instagram.png" alt="instagram">
+                    </a>
+                    <a href="https://www.linkedin.com/hp" target="_blank">
+                        <img src="../assets/linkedin.png" alt="linkedin">
+                    </a>
+                    <a href="https://www.youtube.com/" target="_blank">
+                        <img src="../assets/youtube.png" alt="youtube">
+                    </a>
+                    <a href="https://www.tiktok.com/">
+                        <img src="../assets/tik-tok.png" alt="tiktok">
+                    </a>
+                </div>
+                <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+            </article>
+        </div>
     </footer>
 </body>
 
