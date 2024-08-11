@@ -1,0 +1,293 @@
+.primerContenedorSectionTienda {
+    max-width: 80%;
+    padding: .625rem;
+    margin: 2.5rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    .sectionTiendaTitulo {
+        h1 {
+            color: $colorPrincipal;
+        }
+    }
+
+    .segundoContenedorSectionTienda {
+        max-width: 100%;
+        display: flex;
+        gap: 1.25rem;
+
+        >:first-child {
+            max-width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            >:first-child {
+                padding: 1.25rem;
+                text-align: justify;
+                border: solid $colorPrincipal 1px;
+                border-radius: 1.875rem;
+            }
+
+            >:nth-child(2) {
+                display: flex;
+                flex-direction: column;
+                padding: 1.25rem;
+                text-align: justify;
+                border: solid $colorPrincipal 1px;
+                border-radius: 1.875rem;
+                gap: 1.25rem;
+
+                div {
+                    width: fit-content;
+                    align-self: center;
+                }
+            }
+
+            >:last-child {
+                border: solid $colorPrincipal .0625rem;
+                padding: 1.25rem;
+                border-radius: 1.875rem;
+
+                div {
+                    width: 100%;
+                }
+            }
+        }
+
+        >:last-child {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 70%;
+            justify-content: center;
+            gap: .625rem;
+
+            .card {
+                --accent-color: #4b0082;
+                position: relative;
+                max-width: 32%;
+                background: $colorSecundario;
+                border-radius: 16px;
+                border: 1px solid $colorPrincipal;
+                padding: .625rem;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 50px 30px -20px;
+                transition: all 0.5s ease-in-out;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                .image-container {
+                    position: relative;
+                    width: 100%;
+                    height: 130px;
+                    border-radius: 0 3.125rem 0 1.875rem;
+                    margin-bottom: 1rem;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        -o-object-fit: cover;
+                        object-fit: cover;
+                        border-radius: inherit;
+                    }
+
+                    div {
+                        position: absolute;
+                        right: 0.7rem;
+                        bottom: -1rem;
+                        background: $colorPrincipal;
+                        color: $colorSecundario;
+                        font-weight: 900;
+                        font-size: 0.9rem;
+                        padding: 0.5rem;
+                        border-radius: .625rem 0 .625rem 0;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 15px 0px;
+                    }
+                }
+
+                label {
+                    position: absolute;
+                    width: 19px;
+                    height: 19px;
+                    top: 10px;
+                    right: 10px;
+                    cursor: pointer;
+
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        width: 0;
+                        height: 0;
+
+                        &:checked+svg {
+                            animation: bouncing 0.5s;
+                            fill: $colorPrincipal;
+                            filter: drop-shadow(0px 3px 1px rgba(53, 53, 53, 0.14));
+                        }
+                    }
+
+                    svg {
+                        fill: gray;
+                    }
+                }
+
+                .content {
+                    padding: 0px 0.8rem;
+                    margin-bottom: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+                    gap: .625rem;
+
+                    >:first-child {
+                        p {
+                            font-weight: 900;
+                            color: $colorPrincipal;
+                        }
+                    }
+
+                    >:last-child {
+                        p {
+                            color: black;
+                            margin-bottom: 1rem;
+                            font-size: .75rem;
+                        }
+                    }
+                }
+
+                .button-container {
+                    display: flex;
+                    gap: 0.3rem;
+                    flex-direction: column;
+
+                    button {
+                        border-radius: 1.25rem 0 1.25rem 0;
+                        border: none;
+                        padding: 0.5rem 0;
+                        background: var(--accent-color);
+                        border: .0625rem $colorSecundario solid;
+                        color: white;
+                        font-weight: 900;
+                        cursor: pointer;
+                        display: 1;
+
+                        &:hover {
+                            background: $colorSecundario;
+                            border: 1px $colorPrincipal solid;
+                            color: $colorPrincipal;
+                        }
+                    }
+
+                    button {
+                        flex: auto;
+                    }
+                }
+
+                &:hover {
+                    transform: scale(1.03);
+                }
+
+            }
+        }
+
+        @keyframes bouncing {
+
+            from,
+            to {
+                transform: scale(1, 1);
+            }
+
+            25% {
+                transform: scale(1.5, 2.1);
+            }
+
+            50% {
+                transform: scale(2.1, 1.5);
+            }
+
+            75% {
+                transform: scale(1.5, 2.05);
+            }
+        }
+    }
+
+    >:last-child {
+        width: 100%;
+        padding: 1.25rem;
+        color: $colorPrincipal;
+        border: solid .0625rem $colorPrincipal;
+        border-radius: 1.5625rem;
+    }
+}
+
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+    .primerContenedorSectionTienda {
+        max-width: 90%;
+        margin: 1.25rem auto;
+        gap: 1.25rem;
+
+        .segundoContenedorSectionTienda {
+            max-width: 100%;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            >:first-child {
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 1.25rem;
+
+                >:first-child {
+                    border: solid $colorSecundario 1px;
+                    background-color: $colorPrincipal;
+                    color: $colorSecundario;
+                }
+            }
+
+            >:last-child {
+                max-width: 100%;
+
+                .card {
+                    max-width: 32%;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 30rem) {
+    .primerContenedorSectionTienda {
+        max-width: 95%;
+        margin: .625rem auto;
+        gap: .625rem;
+
+        .segundoContenedorSectionTienda {
+            max-width: 100%;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            >:first-child {
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: .625rem;
+
+                >:first-child {
+                    border: solid $colorSecundario 1px;
+                    background-color: $colorPrincipal;
+                    color: $colorSecundario;
+                }
+            }
+
+            >:last-child {
+                max-width: 100%;
+                flex-direction: column;
+
+                .card {
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}
