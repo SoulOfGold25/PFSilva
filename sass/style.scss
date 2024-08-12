@@ -1,16 +1,30 @@
 @import"./utilities/variables";
+@import"./utilities/mixin";
+
 @import"./base/reset";
 @import"./base/fonts";
-@import"./components/navbar";
-@import"./components/buttons";
+
 @import"./layout/index.scss";
 @import"./layout/footer";
 @import"./layout/aprende";
 @import"./layout/tienda";
 @import"./layout/conocenos";
 @import"./layout/unete";
+
+@import"./components/navbar";
+@import"./components/buttons";
 @import"./components/inputText";
 
+@import"./layout/indexMobile";
+@import"./layout/indexTablet";
+@import"./layout/aprendeMobile";
+@import"./layout/aprendeTablet";
+@import"./layout/tiendaMobile";
+@import"./layout/tiendaTablet";
+@import"./layout/conocenosMobile";
+@import"./layout/conocenosTablet";
+@import"./layout/uneteMobile";
+@import"./layout/uneteTablet";
 
 
 

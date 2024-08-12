@@ -1,0 +1,12 @@
+@mixin flex-container($padding: 1.25rem, $border-width: 0.0625rem, $border-color: #4b0082, $border-radius: 1.875rem, $gap: 1.25rem) {
+    flex: 1;
+    padding: $padding;
+    border: solid $border-width $border-color;
+    border-radius: $border-radius;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: $gap;
+}

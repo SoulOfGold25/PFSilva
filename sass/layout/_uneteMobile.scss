@@ -1,0 +1,127 @@
+@media screen and (max-width: 30rem) {
+    .primeraSectionUnete {
+        max-width: 19rem;
+        margin: .625rem auto;
+        text-align: center;
+        gap: 1.25rem;
+
+        h2 {
+            padding: .625rem;
+            border-radius: .625rem;
+        }
+    }
+
+    .segundaSectionUnete {
+        max-width: 19rem;
+        flex-direction: column;
+
+        >:first-child {
+            order: 2;
+            width: 100%;
+            padding: 1.25rem;
+            border-radius: 0 0 1.875rem 1.875rem;
+            border: .0625rem $colorPrincipal solid;
+            border-top: none;
+            justify-content: center;
+            align-items: center;
+
+            >:last-child {
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: .625rem;
+
+                >:first-child {
+                    div {
+                        div {
+                            width: auto;
+                        }
+                    }
+
+                }
+
+                >:nth-child(2) {
+                    max-width: 100%;
+                    margin: 0 auto;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    gap: .625rem;
+
+                    div {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: .625rem;
+                        flex-wrap: wrap;
+                    }
+                }
+
+                >:last-child {
+                    text-align: center;
+                }
+            }
+        }
+
+        >:last-child {
+            width: 100%;
+
+            img {
+                border-radius: 1.875rem 1.875rem 0 0;
+                border: .0625rem $colorPrincipal solid;
+                border-bottom: none;
+            }
+        }
+    }
+
+    .terceraSectionUnete {
+        max-width: 19rem;
+        margin: .625rem auto;
+        flex-direction: column;
+    }
+
+    .cuartaSectionUnete {
+
+        >:first-child {
+            max-width: 19rem;
+            padding: .625rem;
+            flex-direction: column;
+            gap: .625rem;
+            div{
+                width: auto;
+            }
+        }
+    }
+
+    .quintaSectionUnete {
+        max-width: 19rem;
+        margin: .625rem auto;
+        flex-direction: column;
+        >:first-child {
+            order: 2;
+            width: 100%;
+            padding: 1.25rem;
+            border: solid .0625rem $colorPrincipal;
+            border-radius: 0 0 1.875rem 1.875rem;
+            border-top: none;
+            gap: .625rem;
+            h2 {
+                align-self: center;
+            }
+
+            div {
+                align-self: center;
+                width: auto;
+            }
+        }
+
+        >:last-child {
+            width: 100%;
+            img {
+                border-radius: 1.875rem 1.875rem 0 0;
+                border: solid .0625rem $colorPrincipal;
+                border-bottom: none;
+            }
+        }
+    }
+}

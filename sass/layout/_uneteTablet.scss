@@ -1,0 +1,69 @@
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+    .primeraSectionUnete {
+        max-width: 41.875rem;
+        margin: 1.25rem auto;
+        justify-content: center;
+        align-items: center;
+        gap: .625rem;
+
+        h2 {
+            border-radius: 1.25rem;
+        }
+    }
+
+    .segundaSectionUnete {
+        max-width: 41.875rem;
+
+        >:first-child {
+            >:last-child {
+                >:first-child {
+                    div {
+                        div {
+                            width: auto;
+                        }
+                    }
+                }
+
+                >:last-child {
+                    text-align: center;
+                }
+            }
+        }
+
+        >:last-child {
+            width: 50%;
+            display: flex;
+
+            img {
+                border-radius: 0 0 6.25rem 0;
+            }
+        }
+    }
+
+    .terceraSectionUnete {
+        max-width: 41.875rem;
+        margin: 1.25rem auto;
+    }
+
+    .cuartaSectionUnete {
+        >:first-child {
+            max-width: 41.875rem;
+
+            div {
+                width: auto;
+            }
+        }
+    }
+
+    .quintaSectionUnete {
+        max-width: 41.875rem;
+        margin: 1.25rem auto;
+
+        >:first-child {
+            div {
+                width: auto;
+            }
+        }
+
+    }
+}

@@ -1,3 +1,4 @@
+@import"../utilities/mixin";
 .primeraSection {
     width: 100%;
     margin: 2.5rem 0;
@@ -56,16 +57,7 @@
     gap: .625rem;
 
     article {
-        flex: 1;
-        padding: 1.25rem;
-        border: solid .0625rem #4b0082;
-        border-radius: 1.875rem;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        flex-wrap: wrap;
-        gap: 1.25rem;
+        @include flex-container;
 
         img {
             width: 15.625rem;
@@ -182,7 +174,7 @@
             box-sizing: border-box;
 
             p {
-                height: 6.25rem;
+                height: auto;
                 padding: .625rem;
             }
 
@@ -246,230 +238,5 @@
     }
 }
 
-@media screen and (min-width: 30rem) and (max-width: 60rem) {
-    .primeraSection {
-        margin: 1.25rem auto;
-        padding: 0 .625rem;
-
-        article {
-            max-width: 90%;
-            border-radius: 3.125rem 0 12.5rem 0;
-
-            div {
-                align-self: center;
-            }
-        }
-    }
-
-    .segundaSection {
-
-        article {
-            max-width: 90%;
-            padding: .625rem;
-        }
-    }
-
-    .terceraSection {
-        max-width: 90%;
-        margin: 1.25rem auto;
-
-        article {
-
-            img {
-                width: 11.25rem;
-                height: 11.25rem;
-
-            }
-        }
-    }
-
-    .sectionDonar {
-        max-width: 90%;
-        gap: 1.25rem;
-
-        article {
-            width: 70%;
-            border-radius: .9375rem 0 3.125rem 0;
-
-            //Contenedor quiero donar y form
-            div {
-
-                //Contendor form       
-                div {
-                    width: 70%;
-
-                    input {
-                        width: 100%;
-                    }
-
-                    div {
-                        width: 100%;
-                    }
-                }
-            }
-
-        }
-    }
-
-    .cuartaSection {
-        max-width: 90%;
-        margin: 1.25rem auto;
-        gap: 1.25rem;
-
-        article {
-            max-width: 100%;
-            display: flex;
-            gap: .625rem;
-            flex-wrap: wrap;
-
-            article {
-                flex: 1;
-                padding: 1.25rem;
-
-                img {
-                    height: 6.75rem;
-
-                }
-
-                div {
-                    width: 12.5rem;
-                }
-            }
-        }
-    }
-
-    .quintaSection {
-        margin: 0;
-
-        .backgroundQuintaSection {
-            width: 90%;
-            margin: 1.25rem auto;
-            border-radius: 3.125rem 0 150 0;
-
-            article {
-
-                p {
-                    text-align: justify;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 30rem) {
-    .primeraSection {
-        margin: .625rem auto;
-        padding: 0 .625rem;
-
-        article {
-            max-width: 95%;
-            padding: 1.25rem;
-            border-radius: 1.875rem;
-            margin: .625rem 0;
-            align-items: center;
-        }
-    }
-
-    .segundaSection {
-        article {
-            max-width: 95%;
-            padding: .625rem;
-            gap: .625rem;
-            text-align: center;
-        }
-    }
-
-    .terceraSection {
-        max-width: 95%;
-        margin: .625rem auto;
-
-        article {
-            gap: 1.25rem;
-
-            img {
-                width: 5.625rem;
-                height: 5.625rem;
-            }
-        }
-    }
-
-    .sectionDonar {
-        max-width: 95%;
-        gap: .625rem;
-
-        article {
-            width: 80%;
-            border-radius: 1.875rem;
-
-            //Contenedor quiero donar y form
-            div {
-                flex-direction: column;
-
-                p {
-                    align-self: center;
-                }
-
-                //Contendor form       
-                div {
-                    width: 70%;
 
 
-                    input {
-                        width: 100%;
-                    }
-
-                    div {
-                        width: 100%;
-                        flex-direction: column;
-                    }
-                }
-            }
-
-        }
-    }
-
-    .cuartaSection {
-        max-width: 95%;
-        margin: .625rem auto;
-        gap: .625rem;
-
-        article {
-            max-width: 100%;
-            gap: .625rem;
-
-            article {
-                flex: 1;
-                padding: 1.25rem;
-
-                img {
-                    height: 6.75rem;
-
-                }
-
-                div {
-                    width: 12.5rem;
-                    margin: .625rem;
-                }
-            }
-        }
-    }
-
-    .quintaSection {
-        margin: 0;
-
-        .backgroundQuintaSection {
-            width: 95%;
-            margin: 10px auto;
-            border-radius: 1.875rem;
-
-            article {
-                margin: 0;
-                padding: 30px;
-
-                p {
-                    text-align: justify;
-                }
-            }
-        }
-    }
-}
