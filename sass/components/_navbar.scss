@@ -111,6 +111,10 @@ header {
             article {
                 svg {
                     display: none;
+                                    &:hover {
+                    transition: transform 0.3s;
+                    transform: scale(1.1);
+                }
                 }
             }
         }
@@ -142,6 +146,10 @@ header {
     
                 svg {
                     display: flex;
+                    &:hover {
+                        transition: transform 0.3s;
+                        transform: scale(1.1);
+                    }
                 }
             }
         }

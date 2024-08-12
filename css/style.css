@@ -1151,7 +1151,10 @@ header {
       header nav ul > :first-child {
         display: none; }
     header nav article svg {
-      display: none; } }
+      display: none; }
+      header nav article svg:hover {
+        transition: transform 0.3s;
+        transform: scale(1.1); } }
 
 @media screen and (max-width: 30rem) {
   header nav {
@@ -1164,7 +1167,10 @@ header {
     header nav article .btnBlanco, header nav article .botonPurpura {
       display: none; }
     header nav article svg {
-      display: flex; } }
+      display: flex; }
+      header nav article svg:hover {
+        transition: transform 0.3s;
+        transform: scale(1.1); } }
 
 .btnBlanco, .botonPurpura {
   width: 120px;
@@ -1316,7 +1322,8 @@ header {
     text-align: center; }
   .terceraSection {
     max-width: 95%;
-    margin: .625rem auto; }
+    margin: .625rem auto;
+    flex-direction: column; }
     .terceraSection article {
       gap: 1.25rem; }
       .terceraSection article img {
@@ -1380,7 +1387,8 @@ header {
     padding: .625rem; }
   .terceraSection {
     max-width: 90%;
-    margin: 1.25rem auto; }
+    margin: 1.25rem auto;
+    flex-direction: column; }
     .terceraSection article img {
       width: 11.25rem;
       height: 11.25rem; }
