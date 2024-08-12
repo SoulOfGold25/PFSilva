@@ -1,0 +1,12 @@
+#inputDinero {
+    color: $colorSecundario;
+    border: 2px solid $colorSecundario;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    display: flex;
+
+    &:active {
+        box-shadow: 2px 2px 15px $colorTerciario inset;
+    }
+}
