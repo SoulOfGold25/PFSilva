@@ -10,3 +10,59 @@
     flex-wrap: wrap;
     gap: $gap;
 }
+
+@mixin boxModelingMobile {
+    max-width: 21.25rem;
+    padding: .625rem;
+    margin: .625rem auto;
+}
+
+@mixin boxModelingTablet{
+    max-width: 37.5rem;
+    padding: .625rem;
+    margin: 1.25rem auto;
+}
+
+@mixin boxModelingDesktop {
+    max-width: 71.25rem;
+    padding: .625rem;
+    margin: 2.5rem auto;
+}
+
+@mixin fontSizeMixin($sizeName) {
+    font-size: fontSizeFunction($sizeName);
+    line-height: 1.5;
+    font-family: "Roboto Slab", serif;
+
+    @media screen and (min-width: 30.0625rem) and (max-width: 60rem) {
+        font-size: fontSizeFunctionTablet($sizeName);
+        line-height: 1.5;
+        font-family: "Roboto Slab", serif;
+    }
+
+    @media screen and (max-width: 30rem) {
+        font-size: fontSizeFunctionPhone($sizeName);
+        line-height: 1.5;
+        font-family: "Roboto Slab", serif; 
+    }
+}
+
+@mixin font2SizeMixin($sizeName) {
+    font-size: fontSizeFunction($sizeName);
+    line-height: 1.5;
+    font-family: "Merriweather", serif;
+
+    @media screen and (min-width: 30.0625rem) and (max-width: 60rem) {
+        font-size: fontSizeFunctionTablet($sizeName);
+        line-height: 1.5;
+        font-family: "Merriweather", serif;
+    }
+
+    @media screen and (max-width: 30rem) {
+        font-size: fontSizeFunctionPhone($sizeName);
+        line-height: 1.5;
+        font-family: "Merriweather", serif; 
+    }
+}
+
+

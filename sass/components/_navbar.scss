@@ -1,157 +1,88 @@
-header {
-    width: 100%;
+header{
+    max-width: 100%;
+    padding: .625rem;
     background-color: $colorPrincipal;
-
-    nav {
-        max-width: 80%;
-        padding: 1.25rem .625rem;
+    nav{
+        @include boxModelingMobile;
         margin: 0 auto;
-        box-sizing: border-box;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
-
-        a {
-            img {
-                width: 6.25rem;
-
-                &:hover {
-                    transition: transform 0.3s;
-                    transform: scale(1.1);
-                }
-            }
+        gap: .625rem;
+        img{
+            width: 3.75rem;
         }
-
-        ul {
-            display: flex;
-            gap: 1.25rem;
-            flex-wrap: wrap;
-
-            li {
-                a {
-                    color: $colorSecundario;
-                    cursor: pointer;
-                    position: relative;
-                    border: none;
-                    background: none;
-                    text-transform: uppercase;
-                    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-                    transition-duration: 400ms;
-                    transition-property: color;
-
-                    &:focus,
-                    &:hover {
-                        color: $colorSecundario;
-                    }
-
-                    &:focus::after,
-                    &:hover::after {
-                        width: 100%;
-                        left: 0%;
-                    }
-
-                    &:after {
-                        content: "";
-                        pointer-events: none;
-                        bottom: -2px;
-                        left: 50%;
-                        position: absolute;
-                        width: 0%;
-                        height: 2px;
-                        background-color: $colorTerciario;
-                        transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-                        transition-duration: 400ms;
-                        transition-property: width, left;
-                    }
-                }
-            }
-        }
-
-        article {
-            display: flex;
-            gap: .625rem;
+        ul{
             display: flex;
             justify-content: center;
             align-items: center;
-
-            svg {
-                display: none;
-            }
+            gap: .625rem;
+            color: $colorSecundario;
+        }
+        article{
+            display: none;
         }
     }
 }
 
-@media screen and (min-width: 30rem) and (max-width: 60rem) {
-    header {
-
-        nav {
-            max-width: 90%;
-            padding: .625rem .3125rem;
-
-
-
-            a {
-                img {
-                    width: 4.5625rem;
-
-                }
+@media screen and (min-width: 30rem) and (max-width: 60rem){
+    header{
+        max-width: 100%;
+        padding: .625rem;
+        background-color: $colorPrincipal;
+        nav{
+            @include boxModelingTablet;
+            margin: 0 auto;
+            flex-direction: row;
+            justify-content: space-evenly;
+            align-items: center;
+            gap: .625rem;
+            img{
+                width: 5rem;
             }
-
-            ul {
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 gap: .625rem;
-                flex-wrap: nowrap;
-
-                >:first-child {
-                    display: none;
-                }
-
+                color: $colorSecundario;
             }
-
-            article {
-                svg {
-                    display: none;
-                                    &:hover {
-                    transition: transform 0.3s;
-                    transform: scale(1.1);
-                }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 30rem) {
-    header {
-    
-        nav {
-            max-width: 95%;
-            padding: .625rem .3125rem;
-    
-            a {
-                img {
-                    width:50px;
-
-                }
-            }
-    
-            ul {
+            article{
                 display: none;
             }
-    
-            article {
-                .btnBlanco{
-                    display: none;
-                }
-    
-                svg {
-                    display: flex;
-                    &:hover {
-                        transition: transform 0.3s;
-                        transform: scale(1.1);
-                    }
-                }
+        }
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    header{
+        max-width: 100%;
+        padding: .625rem;
+        background-color: $colorPrincipal;
+        nav{
+            @include boxModelingDesktop;
+            margin: 0 auto;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            img{
+                width: 6.25rem;
+            }
+            ul{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .625rem;
+                color: $colorSecundario;
+            }
+            article{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: .625rem;
             }
         }
     }
 }
+

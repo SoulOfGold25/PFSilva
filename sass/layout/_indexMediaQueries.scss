@@ -1,0 +1,168 @@
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+    .primeraSection {
+        @include boxModelingTablet;
+
+        >:first-child {
+            padding: 2.5rem;
+            border-radius: 3.125rem 0 9.375rem 0;
+
+            >:first-child {
+                @include fontSizeMixin("xxl");
+            }
+        }
+    }
+
+    .segundaSection {
+        article {
+            @include boxModelingTablet;
+        }
+    }
+
+    .terceraSection {
+        @include boxModelingTablet;
+        flex-direction: row;
+
+        article {
+            p {
+                height: 5rem;
+            }
+        }
+    }
+
+    .sectionDonar {
+        @include boxModelingTablet;
+    }
+
+    .cuartaSection {
+        @include boxModelingTablet;
+
+        >:last-child {
+            article {
+                >:first-child {
+                    height: 7.5rem;
+
+                }
+
+                >:nth-child(3) {
+                    height: 5rem;
+                }
+            }
+        }
+    }
+
+    .quintaSection {
+        @include boxModelingTablet;
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    .primeraSection {
+        @include boxModelingDesktop;
+
+        >:first-child {
+            height: 28.125rem;
+            padding: 3.75rem;
+            border-radius: 6.25rem 0 18.75rem 0;
+            
+            >:first-child {
+                @include fontSizeMixin("xxl");
+            }
+            >:last-child{
+                margin: 1.25rem;
+            }
+        }
+    }
+
+    .segundaSection {
+        article {
+            @include boxModelingDesktop;
+            padding: 1.875rem;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    .terceraSection {
+        @include boxModelingDesktop;
+        flex-direction: row;
+
+        article {
+            img{
+                width: 15.625rem;
+                height: 15.625rem;
+            }
+            p {
+                height: 5rem;
+            }
+        }
+    }
+
+    .sectionDonar {
+        @include boxModelingDesktop;
+        gap: 2.5rem;
+    
+        //Imagen y form
+        >:last-child {
+            flex-direction: row;
+    
+            >:first-child {
+                width: 50%;
+                padding: 2.5rem;
+                border-radius: 3.125rem 0 0 0;    
+                >:nth-child(2) {
+                    flex-direction: row;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: nowrap;
+                    gap: .625rem;
+                    div{
+                        width: 6.875rem;
+                    }
+
+                }
+            }
+    
+            >:last-child {
+                width: 50%;
+                order: 2;
+    
+                img {
+                    border-radius: 0 0 9.375rem 0;
+                }
+            }
+        }
+    
+    }
+
+    .cuartaSection {
+        @include boxModelingDesktop;
+        gap: 2.5rem;
+        >:first-child{
+            align-self: flex-start;
+        }
+        >:last-child {
+            flex-direction: row;
+            article {
+                >:first-child {
+                    height: 12.5rem;
+                }
+
+                >:nth-child(3) {
+                    height: 6.25rem;
+                    margin-bottom: 1.25rem
+                }
+            }
+        }
+    }
+
+    .quintaSection {
+        @include boxModelingDesktop;
+        >:first-child{
+            height: 31.25rem;
+            border-radius: 6.25rem 0 18.75rem 0;
+            >:first-child{
+                width: 50%;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+$mapFontSizes: (
+    "xs": $fontSizeBase * (1 / $fontScale),
+    "sm": $fontSizeBase ,
+    "md": $fontSizeBase * $fontScale,
+    "lg": $fontSizeBase * ($fontScale * $fontScale),
+    "xl": $fontSizeBase * ($fontScale * $fontScale * $fontScale),
+    "xxl": $fontSizeBase * ($fontScale * $fontScale * $fontScale * $fontScale)
+);
+
+$mapFontSizesTablet: (
+    "xs": $fontSizeTablet * (1 / $fontScale),
+    "sm": $fontSizeTablet ,
+    "md": $fontSizeTablet * $fontScale,
+    "lg": $fontSizeTablet * ($fontScale * $fontScale),
+    "xl": $fontSizeTablet * ($fontScale * $fontScale * $fontScale),
+    "xxl": $fontSizeTablet * ($fontScale * $fontScale * $fontScale * $fontScale)
+);
+
+$mapFontSizesPhone: (
+    "xs": $fontSizePhone * (1 / $fontScale),
+    "sm": $fontSizePhone ,
+    "md": $fontSizePhone * $fontScale,
+    "lg": $fontSizePhone * ($fontScale * $fontScale),
+    "xl": $fontSizePhone * ($fontScale * $fontScale * $fontScale),
+    "xxl": $fontSizePhone * ($fontScale * $fontScale * $fontScale * $fontScale)
+);

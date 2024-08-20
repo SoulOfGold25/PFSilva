@@ -30,32 +30,28 @@
 <body>
     <header>
         <nav class="navBar">
-            <a href="#"><img src="./assets/onePieceLogo.webp" alt="Logo de la organización"></a>
-            <ul>
-                <li>
+            <a class="logo" href="#"><img src="./assets/onePieceLogo.webp" alt="Logo de la organización"></a>
+            <ul class="menu">
+                <li class="botonMenu">
                     <a href="#">Inicio</a>
                 </li>
-                <li>
+                <li class="botonMenu">
                     <a href="./pages/aprende.html">Aprende</a>
                 </li>
-                <li>
+                <li class="botonMenu">
                     <a href="./pages/tienda.html">Tienda</a>
                 </li>
-                <li>
+                <li class="botonMenu">
                     <a href="./pages/conocenos.html">Conocenos</a>
                 </li>
             </ul>
             <article class="botonesHeader">
                 <div class="btnBlanco"><a href="./pages/unete.html">Unete</a></div>
                 <div class="btnBlanco"><a href="#">Contacto</a></div>
-                <svg xmlns="http://www.w3.org/2000/svg" class="" height="24px" viewBox="0 0 24 24" width="24px"
-                    fill="#f5f5dc">
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-                </svg>
             </article>
         </nav>
     </header>
+
     <main>
         <section class="primeraSection">
             <article class="flexPrimeraSection">
@@ -63,12 +59,11 @@
                     NEURODIVERGENCIA
                 </h1>
                 <H2>
-                    #CadaMenteEsUnicaYValiosa
+                    Cada Mente Es Unica y Valiosa
                 </H2>
                 <p class="pPrimerTitulo">
                     <b>
-                        Forma parte de nuestra misión:
-                        <br>
+                        Forma parte de nuestra misión,
                         apoya la neurodiversidad y ayuda
                         a crear una sociedad inclusiva para todos.
                     </b>
@@ -85,7 +80,7 @@
                     ¿Qué es la neurodivergencia?
                 </h2>
                 <div class="btnBlanco">
-                    <a href="./pages/aprende.html">SABER</a>
+                    <a href="./pages/aprende.html">Saber más</a>
                 </div>
             </article>
         </section>
@@ -126,30 +121,32 @@
                 Participa y contribuye a construir una sociedad que sea inclusiva y funcional para todos.
             </h2>
             <article>
-                <h3>
-                    Haz una donación!
-                </h3>
-                <div>
-                    <p>
-                        Quiero donar
-                    </p>
+                <article>
+                    <h3>
+                        Haz una donación!
+                    </h3>
                     <div>
-                        <div>
-                            <div class="btnBlanco">
-                                $5.000
-                            </div>
-                            <div class="btnBlanco">
-                                $10.000
-                            </div>
-                            <div class="btnBlanco">
-                                $20.000
-                            </div>
+                        <p>Quiero donar</p>
+                        <div class="btnBlanco">
+                            <p>$5.000</p>
                         </div>
-                        <input type="text" placeholder="Ingresa tu propio monto" id="inputDinero">
-                        <div class="btnBlanco">Donar</div>
+                        <div class="btnBlanco">
+                            <p>$10.000</p>
+                        </div>
+                        <div class="btnBlanco">
+                            <p>$20.000</p>
+                        </div>
                     </div>
-                </div>
+                    <input type="text" placeholder="Ingresa tu propio monto" id="inputDinero">
+                    <div class="btnBlanco">
+                        <p>Donar</p>
+                    </div>
+                </article>
+                <article>
+                    <img src="./assets/madre.jpg" alt="">
+                </article>
             </article>
+
         </section>
 
         <section class="cuartaSection">
@@ -158,7 +155,8 @@
             </h2>
             <article class="contenedorCuartaSection">
                 <article class="articuloCuartaSection">
-                    <img src="./assets/fotoSection4Articulo1.jpg" alt="muchas manos con un corazon pintado de rojo en el centro" class="fotoArticuloSection4">
+                    <img src="./assets/fotoSection4Articulo1.jpg"
+                        alt="muchas manos con un corazon pintado de rojo en el centro" class="fotoArticuloSection4">
                     <h3>
                         Hazte miembro
                     </h3>
@@ -167,11 +165,12 @@
                         inclusiva.
                     </p>
                     <div class="btnBlanco" id="btnUnete">
-                        Únete ahora
+                        <p>Únete ahora</p>
                     </div>
                 </article>
                 <article class="articuloCuartaSection">
-                    <img src="./assets/fotoSection4Articulo2.jpg" alt="monedas en las manos de una persona" class="fotoArticuloSection4">
+                    <img src="./assets/fotoSection4Articulo2.jpg" alt="monedas en las manos de una persona"
+                        class="fotoArticuloSection4">
                     <h3>
                         Recauda dinero
                     </h3>
@@ -181,11 +180,12 @@
                         funcione para las personas neurodivergentes.
                     </p>
                     <div class="btnBlanco" id="btnUnete">
-                        Únete ahora
+                        <p>Únete ahora</p>
                     </div>
                 </article>
                 <article class="articuloCuartaSection">
-                    <img src="./assets/fotoSection4Articulo3.jpg" alt="mujeres preparando bolsas para regalar" class="fotoArticuloSection4">
+                    <img src="./assets/fotoSection4Articulo3.jpg" alt="mujeres preparando bolsas para regalar"
+                        class="fotoArticuloSection4">
                     <h3>
                         Sea voluntario
                     </h3>
@@ -194,7 +194,7 @@
                         neurodivergentes, conozca gente nueva y aprenda nuevas habilidades.
                     </p>
                     <div class="btnBlanco" id="btnUnete">
-                        Únete ahora
+                        <p>Únete ahora</p>
                     </div>
                 </article>
             </article>
@@ -215,7 +215,7 @@
                         de estas acciones, la comunicación y difusión de la obra en la sociedad.
                     </p>
                     <div class="btnBlanco">
-                        Ùnete ahora
+                        <p>Ùnete ahora</p>
                     </div>
                 </article>
             </article>

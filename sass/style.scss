@@ -1,5 +1,8 @@
 @import"./utilities/variables";
 @import"./utilities/mixin";
+@import"./utilities/map";
+@import"./utilities/function";
+
 
 @import"./base/reset";
 @import"./base/fonts";
@@ -15,8 +18,8 @@
 @import"./components/buttons";
 @import"./components/inputText";
 
-@import"./layout/indexMobile";
-@import"./layout/indexTablet";
+
+@import"./layout/indexMediaQueries";
 @import"./layout/aprendeMobile";
 @import"./layout/aprendeTablet";
 @import"./layout/tiendaMobile";

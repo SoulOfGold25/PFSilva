@@ -1,0 +1,11 @@
+@function fontSizeFunction($sizeName){
+    @return map-get($mapFontSizes, $sizeName);
+}
+
+@function fontSizeFunctionTablet($sizeName){
+    @return map-get($mapFontSizesTablet, $sizeName);
+}
+
+@function fontSizeFunctionPhone($sizeName){
+    @return map-get($mapFontSizesPhone, $sizeName);
+}
