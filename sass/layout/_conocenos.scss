@@ -1,47 +1,48 @@
 .primeraSectionConocenos {
-    max-width: 100%;
-    margin: 2.5rem 0;
-    background-color: $colorPrincipal;
-    color: $colorSecundario;
+    @include boxModelingMobile;
 
     article {
-        max-width: 80%;
-        margin: 0 auto;
-        padding: .625rem;
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
         text-align: center;
+
+        h1 {
+            color: $colorPrincipal;
+        }
     }
 }
 
 .segundaSectionConocenos {
-    max-width: 80%;
-    padding: .625rem;
-    margin: 0 auto;
+    @include boxModelingMobile;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     gap: 1.25rem;
     color: $colorSecundario;
 
     article {
-        max-width: 48%;
         padding: 1.25rem;
-        border-radius: 1.875rem 0 6.25rem 0;
+        border-radius: 1.25rem;
         background-color: $colorPrincipal;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         gap: 1.25rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 
         p {
             text-align: justify;
+        }
+
+        div {
+            align-self: center;
         }
     }
 }
 
 .terceraSectionConocenos {
-    max-width: 80%;
-    padding: .625rem;
-    margin: 2.5rem auto;
+    @include boxModelingMobile;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
@@ -49,11 +50,15 @@
     .contenedorTerceraSectionConocenos {
         max-width: 100%;
         display: flex;
+        flex-direction: column;
+        border: .0625rem $colorPrincipal solid;
+        border-radius: 1.875rem;
 
         >:first-child {
-            max-width: 50%;
-            padding: 2.5rem;
-            border-radius: 1.875rem 0 0 1.875rem;
+            order: 2;
+            max-width: 100%;
+            padding: 1.25rem;
+            border-radius: 0 0 1.875rem 1.875rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -62,36 +67,37 @@
             gap: 1.25rem;
             background-color: $colorPrincipal;
             color: $colorSecundario;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
             >:last-child {
                 width: fit-content;
             }
-
-
         }
 
         :last-child {
-            max-width: 50%;
+            max-width: 100%;
             display: flex;
 
             img {
                 max-width: 100%;
                 object-fit: cover;
-                border-radius: 0 1.875rem 1.875rem 0;
+                border-radius: 1.875rem 1.875rem 0 0;
             }
         }
     }
 }
 
 .cuartaSectionConocenos {
-    max-width: 80%;
-    padding: .625rem;
-    margin: 0 auto;
+    @include boxModelingMobile;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
 
     >:first-child {
+        display: flex;
+        flex-direction: column;
+        gap: .625rem;
+
         h2 {
             color: $colorPrincipal;
         }
@@ -107,6 +113,9 @@
         gap: 1.25rem;
 
         article {
+            display: flex;
+            flex-direction: column;
+            gap: .625rem;
 
             h3 {
                 color: $colorPrincipal;
@@ -120,21 +129,21 @@
 }
 
 .quintaSectionConocenos {
-    max-width: 80%;
-    padding: .625rem;
-    margin: 2.5rem auto;
+    @include boxModelingMobile;
 
     >:first-child {
         max-width: 100%;
         display: flex;
+        flex-direction: column;
+        border-radius: 1.875rem;
+        border: $colorPrincipal .0625rem solid;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         >:first-child {
-            max-width: 50%;
-            padding: 2.5rem;
-            border: solid .0625rem $colorPrincipal;
-            border-radius: 1.875rem 0 0 1.875rem;
-            border-right: none;
-            text-align: justify;
+            order: 2;
+            max-width: 100%;
+            padding: 1.25rem;
+            border-radius: 0 0 1.875rem 1.875rem;
             display: flex;
             flex-direction: column;
             gap: 1.25rem;
@@ -145,21 +154,23 @@
                 color: $colorPrincipal
             }
 
+            p {
+                text-align: justify;
+            }
+
             div {
                 width: 100%;
             }
         }
 
         >:last-child {
-            max-width: 50%;
+            max-width: 100%;
             display: flex;
 
             img {
                 max-width: 100%;
                 object-fit: cover;
-                border: solid .0625rem $colorPrincipal;
-                border-left: none;
-                border-radius: 0 1.875rem 1.875rem 0;
+                border-radius: 1.875rem 1.875rem 0 0;
             }
         }
     }
@@ -167,53 +178,48 @@
 }
 
 .sextaSectionConocenos {
-    max-width: 80%;
-    padding: .625rem;
-    margin: 0 auto;
+    @include boxModelingMobile;
 
     >:first-child {
         max-width: 100%;
         display: flex;
+        flex-direction: column;
+        border: solid $colorPrincipal .0625rem;
+        border-radius: 1.875rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         >:first-child {
-            max-width: 50%;
+            max-width: 100%;
             display: flex;
 
             img {
                 max-width: 100%;
                 object-fit: cover;
-                border-radius: 1.875rem 0 0 1.875rem;
-                border: solid .0625rem $colorPrincipal;
+                border-radius: 1.875rem 1.875rem 0 0;
                 border-right: none;
             }
         }
 
         >:last-child {
-            max-width: 50%;
-            padding: 2.5rem;
+            max-width: 100%;
+            padding: 1.25rem;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             text-align: justify;
-            border-radius: 0 1.875rem 1.875rem 0;
-            border: solid .0625rem $colorPrincipal;
-            border-left: none;
+            border-radius: 0 0 1.875rem 1.875rem;
 
             >:last-child {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                gap: .625rem;
+                gap: 0;
 
                 >:last-child {
                     width: 100%;
                 }
             }
-
         }
     }
 }
-
-
-

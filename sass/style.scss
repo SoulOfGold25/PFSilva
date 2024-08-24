@@ -3,7 +3,6 @@
 @import"./utilities/map";
 @import"./utilities/function";
 
-
 @import"./base/reset";
 @import"./base/fonts";
 
@@ -18,14 +17,11 @@
 @import"./components/buttons";
 @import"./components/inputText";
 
-
 @import"./layout/indexMediaQueries";
 @import"./layout/aprendeMediaQueries";
 @import"./layout/tiendaMediaQueries";
-@import"./layout/conocenosMobile";
-@import"./layout/conocenosTablet";
-@import"./layout/uneteMobile";
-@import"./layout/uneteTablet";
+@import"./layout/conocenosMediaQueries";
+@import"./layout/uneteMediaQueries";
 
 
 

@@ -1,0 +1,182 @@
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+    .primeraSectionConocenos {
+        @include boxModelingTablet;
+
+        article {
+            gap: 1.25rem;
+        }
+    }
+
+    .segundaSectionConocenos {
+        @include boxModelingTablet;
+        gap: 2.5rem;
+
+        article {
+            padding: 2.5rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+            border-radius: 3.125rem 0 12.5rem 0;
+        }
+    }
+
+    .terceraSectionConocenos {
+        @include boxModelingTablet;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+
+        .contenedorTerceraSectionConocenos {
+            flex-direction: row;
+            border: .0625rem $colorPrincipal solid;
+            border-radius: 1.875rem;
+
+            >:first-child {
+                order: 1;
+                max-width: 50%;
+                border-radius: 1.875rem 0 0 1.875rem;
+            }
+
+            :last-child {
+                order: 2;
+                max-width: 50%;
+
+                img {
+                    border-radius: 0 1.875rem 1.875rem 0;
+                }
+            }
+        }
+    }
+
+    .cuartaSectionConocenos {
+        @include boxModelingTablet;
+        gap: 2.5rem;
+    }
+
+    .quintaSectionConocenos {
+        @include boxModelingTablet;
+
+        >:first-child {
+            >:first-child {
+                padding: 2.5rem;
+            }
+        }
+    }
+
+    .sextaSectionConocenos {
+        @include boxModelingTablet;
+
+        >:first-child {
+
+            >:last-child {
+                padding: 2.5rem;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    .primeraSectionConocenos {
+        @include boxModelingDesktop;
+
+        article {
+            max-width: 100%;
+            align-items: flex-start;
+        }
+    }
+
+    .segundaSectionConocenos {
+        @include boxModelingDesktop;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.25rem;
+
+        article {
+            width: 48%;
+            padding: 2.5rem;
+            border-radius: 3.125rem 0 6.25rem 0;
+            justify-content: space-between;
+        }
+    }
+
+    .terceraSectionConocenos {
+        @include boxModelingDesktop;
+        gap: 2.5rem;
+
+        .contenedorTerceraSectionConocenos {
+            flex-direction: row;
+            border: .0625rem $colorPrincipal solid;
+            border-radius: 6.25rem 0 12.5rem 0;
+
+            >:first-child {
+                order: 1;
+                max-width: 50%;
+                padding: 2.5rem;
+                border-radius: 6.25rem 0 0 0;
+            }
+
+            :last-child {
+                max-width: 50%;
+                order: 2;
+
+                img {
+                    border-radius: 0 0 12.5rem 0;
+                }
+            }
+        }
+    }
+
+    .cuartaSectionConocenos {
+        @include boxModelingDesktop;
+        gap: 2.5rem;
+    }
+
+    .quintaSectionConocenos {
+        @include boxModelingDesktop;
+
+        >:first-child {
+            display: flex;
+            flex-direction: row;
+            border-radius: 6.25rem 0 12.5rem 0;
+
+            >:first-child {
+                max-width: 50%;
+                padding: 2.5rem;
+                border-radius: 0 0 12.5rem 0;
+
+                div {
+                    width: 25rem;
+                }
+            }
+
+            >:last-child {
+                max-width: 50%;
+
+                img {
+                    border-radius: 6.25rem 0 0 0;
+                }
+            }
+        }
+    }
+
+    .sextaSectionConocenos {
+        @include boxModelingDesktop;
+
+        >:first-child {
+            border-radius: 6.25rem 0 12.5rem 0;
+            flex-direction: row;
+
+            >:first-child {
+                max-width: 50%;
+
+                img {
+                    border-radius: 6.25rem 0 0 0;
+                }
+            }
+
+            >:last-child {
+                max-width: 50%;
+                padding: 2.5rem;
+                border-radius: 0 0 12.5rem 0;
+            }
+        }
+    }
+}

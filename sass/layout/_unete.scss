@@ -1,42 +1,35 @@
 .primeraSectionUnete {
-    max-width: 72rem;
-    padding: .625rem;
-    margin: 2.5rem auto;
+    @include boxModelingMobile;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 1.25rem;
+    gap: .625rem;
+    text-align: center;
 
     h1 {
         color: $colorPrincipal;
     }
 
-    h2 {
-        background-color: $colorPrincipal;
-        color: $colorSecundario;
-        padding: 1.25rem;
-        text-align: center;
-        border-radius: 1.875rem;
-    }
 }
 
 .segundaSectionUnete {
-    max-width: 72rem;
-    margin: 0 auto;
+    @include boxModelingMobile;
     display: flex;
-    padding: .625rem;
+    flex-direction: column;
 
     >:first-child {
-        width: 50%;
-        padding: 3.125rem;
+        order: 2;
+        padding: 1.875rem;
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 1.25rem;
         background-color: $colorPrincipal;
         color: $colorSecundario;
-        border-radius: 6.25rem 0 0 0;
+        border-radius: 0 0 1.875rem 1.875rem;
         border: .0625rem $colorPrincipal solid;
         border-right: none;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         >:last-child {
             max-width: 100%;
@@ -106,35 +99,32 @@
     }
 
     >:last-child {
-        width: 50%;
         display: flex;
 
         img {
             max-width: 100%;
             object-fit: cover;
-            border-radius: 0 0 18.75rem 0;
+            border-radius: 1.875rem 1.875rem 0 0;
             border: .0625rem $colorPrincipal solid;
-            border-left: none;
         }
     }
 }
 
 .terceraSectionUnete {
-    max-width: 72rem;
-    padding: .625rem;
-    margin: 2.5rem auto;
+    @include boxModelingMobile;
     display: flex;
-    gap: .625rem;
+    flex-direction: column;
+    gap: 1.25rem;
 
     article {
-        flex: 1;
-        padding: 2.5rem;
-        border-radius: 1.875rem 0 6.25rem 0;
+        padding: 1.25rem;
+        border-radius: 1.25rem;
         border: solid $colorPrincipal .0625rem;
         display: flex;
         flex-direction: column;
         gap: .625rem;
         text-align: justify;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         h2 {
             color: $colorPrincipal;
@@ -153,38 +143,43 @@
 }
 
 .cuartaSectionUnete {
+    @include boxModelingMobile;
     max-width: 100%;
-    padding: .625rem;
-    margin: 0 auto;
     border: solid $colorPrincipal .0625rem;
     color: $colorPrincipal;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
     >:first-child {
-        max-width: 72rem;
-        margin: 0 auto;
         padding: 1.25rem;
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
         align-items: center;
+        gap: .625rem;
+
+        div {
+            width: 100%;
+        }
     }
 }
 
 .quintaSectionUnete {
-    max-width: 72rem;
-    padding: .625rem;
-    margin: 2.5rem auto;
+    @include boxModelingMobile;
     display: flex;
+    flex-direction: column;
 
     >:first-child {
-        width: 50%;
-        padding: 2.5rem;
+        order: 2;
+        padding: 1.25rem;
         border: solid .0625rem $colorPrincipal;
-        border-radius: 1.875rem 0 0 1.875rem;
+        border-top: none;
+        border-radius: 0 0 1.875rem 1.875rem;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         gap: 1.25rem;
         text-align: justify;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         h2 {
             color: $colorPrincipal;
@@ -196,18 +191,14 @@
     }
 
     >:last-child {
-        width: 50%;
         display: flex;
 
         img {
             width: 100%;
             object-fit: cover;
-            border-radius: 0 1.875rem 1.875rem 0;
+            border-radius: 1.875rem 1.875rem 0 0;
             border: solid .0625rem $colorPrincipal;
-            border-left: none;
+            border-bottom: none;
         }
     }
 }
-
-
-

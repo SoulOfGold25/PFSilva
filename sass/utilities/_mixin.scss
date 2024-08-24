@@ -15,18 +15,23 @@
     max-width: 21.25rem;
     padding: .625rem;
     margin: .625rem auto;
+    transition: all 0.5s ease-in-out;
+
 }
 
 @mixin boxModelingTablet{
     max-width: 37.5rem;
     padding: .625rem;
     margin: 1.25rem auto;
+    transition: all 0.5s ease-in-out;
+
 }
 
 @mixin boxModelingDesktop {
     max-width: 71.25rem;
     padding: .625rem;
     margin: 2.5rem auto;
+    transition: all 0.5s ease-in-out;
 }
 
 @mixin fontSizeMixin($sizeName) {
