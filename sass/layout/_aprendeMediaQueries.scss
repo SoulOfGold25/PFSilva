@@ -1,0 +1,183 @@
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+    .primeraSectionAprende {
+        @include boxModelingTablet;
+        margin-top: 0;
+
+        >:first-child {
+            gap: 1.25rem;
+            text-align: center;
+
+            p {
+                text-align: justify
+            }
+        }
+    }
+
+    .segundaSectionAprende {
+        @include boxModelingTablet;
+
+        >:first-child {
+            gap: 1.25rem;
+
+            p {
+                text-align: justify;
+            }
+        }
+    }
+
+    .terceraSectionAprende {
+        @include boxModelingTablet;
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+
+        >:first-child {
+            gap: 1.25rem;
+
+            >:last-child {
+                width: fit-content;
+            }
+        }
+
+        .articuloNeurodivergencia {
+            gap: 1.25rem;
+        }
+    }
+
+    .cuartaSectionAprende {
+        @include boxModelingTablet;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .quintaSectionAprende {
+        @include boxModelingTablet;
+
+        >:first-child {
+            article {
+                padding: 1.25rem;
+                gap: 1.25rem;
+            }
+        }
+    }
+
+    .sextaSectionAprende {
+        @include boxModelingTablet;
+
+        h2 {
+            text-align: left;
+        }
+
+        >:last-child {
+            flex-direction: row;
+            gap: .625rem;
+
+            article {
+                width: 50%;
+                justify-content: space-between;
+            }
+        }
+
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    .primeraSectionAprende {
+        @include boxModelingDesktop;
+
+        >:first-child {
+            p {
+                padding: 1.25rem;
+                text-align: justify;
+            }
+        }
+    }
+
+    .segundaSectionAprende {
+        @include boxModelingDesktop;
+
+        >:first-child {
+            display: flex;
+            flex-direction: column;
+            gap: 1.25rem;
+
+            h2 {
+                text-align: left;
+            }
+
+            p {
+                padding: 1.25rem;
+                text-align: justify;
+            }
+        }
+    }
+
+    .terceraSectionAprende {
+        @include boxModelingDesktop;
+        gap: 2.5rem;
+
+        >:first-child {
+            padding: 1.25rem;
+            gap: 1.25rem;
+
+            >:nth-child(3) {
+                padding: 1.25rem;
+                gap: 1.25rem;
+            }
+        }
+
+        .articuloNeurodivergencia {
+            padding: 1.25rem;
+            gap: 1.25rem;
+        }
+    }
+
+    .cuartaSectionAprende {
+        @include boxModelingDesktop;
+        justify-content: space-between;
+        align-items: center;
+
+        >:first-child {
+            width: 18.75rem;
+        }
+
+    }
+
+    .quintaSectionAprende {
+        @include boxModelingDesktop;
+
+        >:first-child {
+            article {
+                gap: 1.25rem;
+                padding: 1.25rem;
+
+                div {
+                    width: fit-content;
+                }
+            }
+        }
+    }
+
+    .sextaSectionAprende {
+        @include boxModelingDesktop;
+        gap: 2.5rem;
+        h2 {
+            text-align: left;
+        }
+
+        >:last-child {
+            flex-direction: row;
+            gap: 1.25rem;
+
+            article {
+                width: 50%;
+                padding: 1.25rem;
+                justify-content: space-between;
+                gap: 1.25rem;
+            }
+
+        }
+
+    }
+}

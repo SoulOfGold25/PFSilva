@@ -1,0 +1,53 @@
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+    .primerContenedorSectionTienda {
+        @include boxModelingTablet;
+
+        .segundoContenedorSectionTienda {
+
+            >:last-child {
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .card {
+                    max-width: 48%;
+                    flex-wrap: wrap;
+                    flex-direction: column;
+                    justify-content: space-between;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    .primerContenedorSectionTienda {
+        @include boxModelingDesktop;
+        gap: 2.5rem;
+
+        .sectionTiendaTitulo {
+            h1 {
+                text-align: left;
+            }
+        }
+
+        .segundoContenedorSectionTienda {
+            flex-direction: row;
+
+            >:first-child {
+                max-width: 30%;
+            }
+
+            >:last-child {
+                max-width: 70%;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+
+                .card {
+                    max-width: 31%;
+                }
+            }
+        }
+    }
+}

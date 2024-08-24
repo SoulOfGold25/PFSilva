@@ -1,204 +1,185 @@
 .primeraSectionAprende {
-    max-width: 80%;
-    padding: .625rem;
-    margin: 2.5rem auto;
+    @include boxModelingMobile;
 
-    article {
-        padding: 1.25rem;
+    >:first-child {
         display: flex;
         flex-direction: column;
-        gap: 1.25rem;
+        gap: .625rem;
 
         h1 {
+            padding: .625rem;
             color: $colorPrincipal;
+        }
+
+        p {
+            padding: .625rem;
+            border-radius: 1.25rem;
+            border: $colorPrincipal solid .0625rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
         }
     }
 }
 
 .segundaSectionAprende {
-    max-width: 80%;
-    padding: .625rem;
-    margin: 0 auto;
+    @include boxModelingMobile;
 
-    article {
-        padding: 1.25rem;
-        border: solid .0625rem $colorPrincipal;
-        border-radius: 1.875rem;
+    >:first-child {
         display: flex;
         flex-direction: column;
-        gap: 1.25rem;
+        gap: .625rem;
 
         h2 {
+            padding: .625rem;
+            text-align: center;
             color: $colorPrincipal;
         }
 
         p {
-            text-align: justify;
+            padding: .625rem;
+            border-radius: 1.25rem;
+            border: $colorPrincipal solid .0625rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
         }
     }
 }
 
 .terceraSectionAprende {
-    max-width: 80%;
-    padding: .625rem;
-    margin: 2.5rem auto;
+    @include boxModelingMobile;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
 
     >:first-child {
+        padding: .625rem;
         display: flex;
-        gap: 1.25rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .625rem;
+        border: $colorPrincipal solid .0625rem;
+        border-radius: 1.25rem;
+        text-align: justify;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
-        ol {
+        h3 {
+            text-align: center;
+            color: $colorPrincipal;
+        }
+
+        >:nth-child(3) {
+            padding: .625rem;
             display: flex;
             flex-direction: column;
-            gap: 1.25rem;
+            gap: .625rem;
 
             ul {
-                text-indent: 2em;
                 list-style: disc;
-                list-style-position: inside;
             }
         }
     }
 
-    article {
-        padding: 1.25rem;
-        border: solid .0625rem $colorPrincipal;
-        border-radius: 1.875rem;
+    .articuloNeurodivergencia {
+        padding: .625rem;
         display: flex;
         flex-direction: column;
-        gap: 1.25rem;
+        justify-content: center;
+        align-items: center;
+        gap: .625rem;
+        border: $colorPrincipal solid .0625rem;
+        border-radius: 1.25rem;
+        text-align: justify;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
         h3 {
+            text-align: center;
             color: $colorPrincipal;
-        }
-
-        p {
-            text-align: justify;
-        }
-
-        div {
-            align-self: flex-end;
         }
     }
 }
 
 .cuartaSectionAprende {
-    max-width: 80%;
-    padding: .625rem;
-    margin: 0 auto;
+    @include boxModelingMobile;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap: 1.25rem;
+    flex-direction: column;
+    gap: .625rem;
+    text-align: center;
 
-    article {
-        width: 300px;
+    >:first-child {
+        width: 100%;
 
         img {
             width: 100%;
-            border-radius: 1.875rem;
+            border-radius: 1.25rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         }
     }
 
-    >:nth-child(2) {
-        p {
-            text-align: justify;
-        }
-
-        >:nth-child(3) {
+    >:last-child {
+        >:last-child {
             color: $colorPrincipal;
         }
     }
 }
 
 .quintaSectionAprende {
-    max-width: 100%;
-    padding: .625rem;
-    margin: 2.5rem auto;
-    background-color: $colorPrincipal;
+    @include boxModelingMobile;
 
-    article {
-        max-width: 80%;
-        padding: .625rem;
-        margin: 0 auto;
-        background-color: $colorPrincipal;
-        color: $colorSecundario;
-        display: flex;
-        justify-content: space-between;
-
-        h2 {
-            text-align: left;
-        }
-
-        div {
-            width: fit-content;
+    >:first-child {
+        article {
+            padding: .625rem;
+            display: flex;
+            flex-direction: column;
+            gap: .625rem;
             justify-content: center;
             align-items: center;
+            text-align: center;
+            color: $colorSecundario;
+            border: solid .0625rem $colorPrincipal;
+            background-color: $colorPrincipal;
+            border-radius: 1.25rem;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+            div {
+                width: fit-content;
+            }
         }
     }
 }
 
-.sextaSectionAprende {
-    max-width: 80%;
+.sextaSectionAprende{
+    @include boxModelingMobile;
     padding: .625rem;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
-
-    h2 {
+    h2{
         color: $colorPrincipal;
+        text-align: center;
     }
-
-    .contenedorSextaSectionAprende {
+    >:last-child{
         display: flex;
+        flex-direction: column;
         gap: 1.25rem;
-
-        >:first-child {
-            max-width: 50%;
-            padding: 1.25rem;
-            border: solid .0625rem $colorSecundario;
-            border-radius: 1.875rem 0 6.25rem 0;
+        article{
+            padding: .625rem;
             background-color: $colorPrincipal;
-            color: $colorSecundario;
             display: flex;
             flex-direction: column;
+            justify-content: center;
+            align-items: center;
             gap: .625rem;
-
-            div {
-                align-self: center;
-            }
-
-            p {
-                text-align: justify;
-            }
-        }
-
-        >:last-child {
-            max-width: 50%;
-            padding: 1.25rem;
             border: solid .0625rem $colorPrincipal;
-            border-radius: 1.875rem 0 6.25rem 0;
-            background-color: $colorSecundario;
+            border-radius: 1.25rem;
+            color: $colorSecundario;
+            text-align: center;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        >:last-child{
             color: $colorPrincipal;
-            display: flex;
-            flex-direction: column;
-            gap: .625rem;
-
-            div {
-                align-self: center;
-            }
-
-            p {
-                text-align: justify;
-            }
-
+            background-color: $colorSecundario;
         }
     }
+
 }
-
-
-

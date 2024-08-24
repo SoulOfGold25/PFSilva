@@ -1,33 +1,35 @@
 .primerContenedorSectionTienda {
-    max-width: 80%;
-    padding: .625rem;
-    margin: 2.5rem auto;
+    @include boxModelingMobile;
     display: flex;
     flex-direction: column;
-    gap: 2.5rem;
+    gap: 1.25rem;
 
     .sectionTiendaTitulo {
         h1 {
             color: $colorPrincipal;
+            text-align: center;
         }
     }
 
     .segundoContenedorSectionTienda {
         max-width: 100%;
         display: flex;
+        flex-direction: column;
         gap: 1.25rem;
 
         >:first-child {
-            max-width: 30%;
+            max-width: 100%;
             display: flex;
             flex-direction: column;
             gap: 1.25rem;
+            transition: all 0.5s ease-in-out;
 
             >:first-child {
                 padding: 1.25rem;
                 text-align: justify;
                 border: solid $colorPrincipal 1px;
-                border-radius: 1.875rem;
+                border-radius: 1.25rem;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
             }
 
             >:nth-child(2) {
@@ -36,10 +38,16 @@
                 padding: 1.25rem;
                 text-align: justify;
                 border: solid $colorPrincipal 1px;
-                border-radius: 1.875rem;
-                gap: 1.25rem;
+                border-radius: 1.25rem;
+                gap: .625rem;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                h2 {
+                    color: $colorPrincipal;
+                }
 
                 div {
+                    padding: .625rem;
                     width: fit-content;
                     align-self: center;
                 }
@@ -48,7 +56,8 @@
             >:last-child {
                 border: solid $colorPrincipal .0625rem;
                 padding: 1.25rem;
-                border-radius: 1.875rem;
+                border-radius: 1.25rem;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
                 div {
                     width: 100%;
@@ -57,21 +66,21 @@
         }
 
         >:last-child {
+            max-width: 100%;
             display: flex;
-            flex-wrap: wrap;
-            max-width: 70%;
+            flex-direction: column;
             justify-content: center;
-            gap: .625rem;
+            gap: 1.25rem;
 
             .card {
                 --accent-color: #4b0082;
                 position: relative;
-                max-width: 32%;
+                max-width: 100%;
                 background: $colorSecundario;
                 border-radius: 16px;
                 border: 1px solid $colorPrincipal;
                 padding: .625rem;
-                box-shadow: rgba(100, 100, 111, 0.2) 0px 50px 30px -20px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 transition: all 0.5s ease-in-out;
                 display: flex;
                 flex-direction: column;
@@ -218,8 +227,8 @@
         color: $colorPrincipal;
         border: solid .0625rem $colorPrincipal;
         border-radius: 1.5625rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
     }
 }
-
-
-

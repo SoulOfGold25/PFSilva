@@ -504,199 +504,216 @@ footer {
             transform: scale(1.1); } }
 
 .primeraSectionAprende {
-  max-width: 80%;
+  max-width: 21.25rem;
   padding: .625rem;
-  margin: 2.5rem auto; }
-  .primeraSectionAprende article {
-    padding: 1.25rem;
+  margin: .625rem auto; }
+  .primeraSectionAprende > :first-child {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem; }
-    .primeraSectionAprende article h1 {
+    gap: .625rem; }
+    .primeraSectionAprende > :first-child h1 {
+      padding: .625rem;
       color: #4b0082; }
+    .primeraSectionAprende > :first-child p {
+      padding: .625rem;
+      border-radius: 1.25rem;
+      border: #4b0082 solid 0.0625rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
 
 .segundaSectionAprende {
-  max-width: 80%;
+  max-width: 21.25rem;
   padding: .625rem;
-  margin: 0 auto; }
-  .segundaSectionAprende article {
-    padding: 1.25rem;
-    border: solid 0.0625rem #4b0082;
-    border-radius: 1.875rem;
+  margin: .625rem auto; }
+  .segundaSectionAprende > :first-child {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem; }
-    .segundaSectionAprende article h2 {
+    gap: .625rem; }
+    .segundaSectionAprende > :first-child h2 {
+      padding: .625rem;
+      text-align: center;
       color: #4b0082; }
-    .segundaSectionAprende article p {
-      text-align: justify; }
+    .segundaSectionAprende > :first-child p {
+      padding: .625rem;
+      border-radius: 1.25rem;
+      border: #4b0082 solid 0.0625rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
 
 .terceraSectionAprende {
-  max-width: 80%;
+  max-width: 21.25rem;
   padding: .625rem;
-  margin: 2.5rem auto;
+  margin: .625rem auto;
   display: flex;
   flex-direction: column;
   gap: 1.25rem; }
   .terceraSectionAprende > :first-child {
-    display: flex;
-    gap: 1.25rem; }
-    .terceraSectionAprende > :first-child ol {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem; }
-      .terceraSectionAprende > :first-child ol ul {
-        text-indent: 2em;
-        list-style: disc;
-        list-style-position: inside; }
-  .terceraSectionAprende article {
-    padding: 1.25rem;
-    border: solid 0.0625rem #4b0082;
-    border-radius: 1.875rem;
+    padding: .625rem;
     display: flex;
     flex-direction: column;
-    gap: 1.25rem; }
-    .terceraSectionAprende article h3 {
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+    border: #4b0082 solid 0.0625rem;
+    border-radius: 1.25rem;
+    text-align: justify;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .terceraSectionAprende > :first-child h3 {
+      text-align: center;
       color: #4b0082; }
-    .terceraSectionAprende article p {
-      text-align: justify; }
-    .terceraSectionAprende article div {
-      align-self: flex-end; }
+    .terceraSectionAprende > :first-child > :nth-child(3) {
+      padding: .625rem;
+      display: flex;
+      flex-direction: column;
+      gap: .625rem; }
+      .terceraSectionAprende > :first-child > :nth-child(3) ul {
+        list-style: disc; }
+  .terceraSectionAprende .articuloNeurodivergencia {
+    padding: .625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: .625rem;
+    border: #4b0082 solid 0.0625rem;
+    border-radius: 1.25rem;
+    text-align: justify;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .terceraSectionAprende .articuloNeurodivergencia h3 {
+      text-align: center;
+      color: #4b0082; }
 
 .cuartaSectionAprende {
-  max-width: 80%;
+  max-width: 21.25rem;
   padding: .625rem;
-  margin: 0 auto;
+  margin: .625rem auto;
   display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 1.25rem; }
-  .cuartaSectionAprende article {
-    width: 300px; }
-    .cuartaSectionAprende article img {
+  flex-direction: column;
+  gap: .625rem;
+  text-align: center; }
+  .cuartaSectionAprende > :first-child {
+    width: 100%; }
+    .cuartaSectionAprende > :first-child img {
       width: 100%;
-      border-radius: 1.875rem; }
-  .cuartaSectionAprende > :nth-child(2) p {
-    text-align: justify; }
-  .cuartaSectionAprende > :nth-child(2) > :nth-child(3) {
+      border-radius: 1.25rem;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+  .cuartaSectionAprende > :last-child > :last-child {
     color: #4b0082; }
 
 .quintaSectionAprende {
-  max-width: 100%;
+  max-width: 21.25rem;
   padding: .625rem;
-  margin: 2.5rem auto;
-  background-color: #4b0082; }
-  .quintaSectionAprende article {
-    max-width: 80%;
+  margin: .625rem auto; }
+  .quintaSectionAprende > :first-child article {
     padding: .625rem;
-    margin: 0 auto;
-    background-color: #4b0082;
-    color: #f5f5dc;
     display: flex;
-    justify-content: space-between; }
-    .quintaSectionAprende article h2 {
-      text-align: left; }
-    .quintaSectionAprende article div {
-      width: fit-content;
-      justify-content: center;
-      align-items: center; }
+    flex-direction: column;
+    gap: .625rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #f5f5dc;
+    border: solid 0.0625rem #4b0082;
+    background-color: #4b0082;
+    border-radius: 1.25rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .quintaSectionAprende > :first-child article div {
+      width: fit-content; }
 
 .sextaSectionAprende {
-  max-width: 80%;
+  max-width: 21.25rem;
   padding: .625rem;
-  margin: 0 auto;
+  margin: .625rem auto;
+  padding: .625rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem; }
   .sextaSectionAprende h2 {
-    color: #4b0082; }
-  .sextaSectionAprende .contenedorSextaSectionAprende {
+    color: #4b0082;
+    text-align: center; }
+  .sextaSectionAprende > :last-child {
     display: flex;
+    flex-direction: column;
     gap: 1.25rem; }
-    .sextaSectionAprende .contenedorSextaSectionAprende > :first-child {
-      max-width: 50%;
-      padding: 1.25rem;
-      border: solid 0.0625rem #f5f5dc;
-      border-radius: 1.875rem 0 6.25rem 0;
+    .sextaSectionAprende > :last-child article {
+      padding: .625rem;
       background-color: #4b0082;
-      color: #f5f5dc;
       display: flex;
       flex-direction: column;
-      gap: .625rem; }
-      .sextaSectionAprende .contenedorSextaSectionAprende > :first-child div {
-        align-self: center; }
-      .sextaSectionAprende .contenedorSextaSectionAprende > :first-child p {
-        text-align: justify; }
-    .sextaSectionAprende .contenedorSextaSectionAprende > :last-child {
-      max-width: 50%;
-      padding: 1.25rem;
+      justify-content: center;
+      align-items: center;
+      gap: .625rem;
       border: solid 0.0625rem #4b0082;
-      border-radius: 1.875rem 0 6.25rem 0;
-      background-color: #f5f5dc;
+      border-radius: 1.25rem;
+      color: #f5f5dc;
+      text-align: center;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+    .sextaSectionAprende > :last-child > :last-child {
       color: #4b0082;
-      display: flex;
-      flex-direction: column;
-      gap: .625rem; }
-      .sextaSectionAprende .contenedorSextaSectionAprende > :last-child div {
-        align-self: center; }
-      .sextaSectionAprende .contenedorSextaSectionAprende > :last-child p {
-        text-align: justify; }
+      background-color: #f5f5dc; }
 
 .primerContenedorSectionTienda {
-  max-width: 80%;
+  max-width: 21.25rem;
   padding: .625rem;
-  margin: 2.5rem auto;
+  margin: .625rem auto;
   display: flex;
   flex-direction: column;
-  gap: 2.5rem; }
+  gap: 1.25rem; }
   .primerContenedorSectionTienda .sectionTiendaTitulo h1 {
-    color: #4b0082; }
+    color: #4b0082;
+    text-align: center; }
   .primerContenedorSectionTienda .segundoContenedorSectionTienda {
     max-width: 100%;
     display: flex;
+    flex-direction: column;
     gap: 1.25rem; }
     .primerContenedorSectionTienda .segundoContenedorSectionTienda > :first-child {
-      max-width: 30%;
+      max-width: 100%;
       display: flex;
       flex-direction: column;
-      gap: 1.25rem; }
+      gap: 1.25rem;
+      transition: all 0.5s ease-in-out; }
       .primerContenedorSectionTienda .segundoContenedorSectionTienda > :first-child > :first-child {
         padding: 1.25rem;
         text-align: justify;
         border: solid #4b0082 1px;
-        border-radius: 1.875rem; }
+        border-radius: 1.25rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
       .primerContenedorSectionTienda .segundoContenedorSectionTienda > :first-child > :nth-child(2) {
         display: flex;
         flex-direction: column;
         padding: 1.25rem;
         text-align: justify;
         border: solid #4b0082 1px;
-        border-radius: 1.875rem;
-        gap: 1.25rem; }
+        border-radius: 1.25rem;
+        gap: .625rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
+        .primerContenedorSectionTienda .segundoContenedorSectionTienda > :first-child > :nth-child(2) h2 {
+          color: #4b0082; }
         .primerContenedorSectionTienda .segundoContenedorSectionTienda > :first-child > :nth-child(2) div {
+          padding: .625rem;
           width: fit-content;
           align-self: center; }
       .primerContenedorSectionTienda .segundoContenedorSectionTienda > :first-child > :last-child {
         border: solid #4b0082 0.0625rem;
         padding: 1.25rem;
-        border-radius: 1.875rem; }
+        border-radius: 1.25rem;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
         .primerContenedorSectionTienda .segundoContenedorSectionTienda > :first-child > :last-child div {
           width: 100%; }
     .primerContenedorSectionTienda .segundoContenedorSectionTienda > :last-child {
+      max-width: 100%;
       display: flex;
-      flex-wrap: wrap;
-      max-width: 70%;
+      flex-direction: column;
       justify-content: center;
-      gap: .625rem; }
+      gap: 1.25rem; }
       .primerContenedorSectionTienda .segundoContenedorSectionTienda > :last-child .card {
         --accent-color: #4b0082;
         position: relative;
-        max-width: 32%;
+        max-width: 100%;
         background: #f5f5dc;
         border-radius: 16px;
         border: 1px solid #4b0082;
         padding: .625rem;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 50px 30px -20px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         transition: all 0.5s ease-in-out;
         display: flex;
         flex-direction: column;
@@ -794,7 +811,10 @@ footer {
     padding: 1.25rem;
     color: #4b0082;
     border: solid 0.0625rem #4b0082;
-    border-radius: 1.5625rem; }
+    border-radius: 1.5625rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    text-align: center;
+    transition: all 0.5s ease-in-out; }
 
 .primeraSectionConocenos {
   max-width: 100%;
@@ -1472,147 +1492,167 @@ header {
       .quintaSection > :first-child > :first-child {
         width: 50%; } }
 
-@media screen and (max-width: 30rem) {
-  .primeraSectionAprende {
-    max-width: 95%;
-    margin: .625rem auto; }
-    .primeraSectionAprende article {
-      padding: .625rem;
-      gap: .625rem; }
-  .segundaSectionAprende {
-    max-width: 95%; }
-  .terceraSectionAprende {
-    max-width: 95%;
-    margin: .625rem auto; }
-    .terceraSectionAprende > :first-child {
-      display: flex;
-      gap: .625rem; }
-      .terceraSectionAprende > :first-child ol {
-        gap: .625rem; }
-      .terceraSectionAprende > :first-child div {
-        align-self: center; }
-      .terceraSectionAprende > :first-child p {
-        text-align: justify; }
-    .terceraSectionAprende article div {
-      width: fit-content;
-      align-self: center; }
-  .cuartaSectionAprende {
-    max-width: 95%;
-    flex-direction: column; }
-    .cuartaSectionAprende article {
-      max-width: 12.5rem; }
-  .quintaSectionAprende {
-    margin: .625rem auto; }
-    .quintaSectionAprende article {
-      max-width: 95%;
-      flex-direction: column; }
-      .quintaSectionAprende article h2 {
-        text-align: center; }
-  .sextaSectionAprende {
-    max-width: 95%; }
-    .sextaSectionAprende .contenedorSextaSectionAprende {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem; }
-      .sextaSectionAprende .contenedorSextaSectionAprende > :first-child {
-        max-width: 100%; }
-      .sextaSectionAprende .contenedorSextaSectionAprende > :last-child {
-        max-width: 100%; } }
-
 @media screen and (min-width: 30rem) and (max-width: 60rem) {
   .primeraSectionAprende {
-    max-width: 90%;
-    margin: 1.25rem auto; }
-    .primeraSectionAprende article {
-      padding: .625rem;
-      gap: .625rem; }
-      .primeraSectionAprende article h1 {
-        color: #4b0082; }
-      .primeraSectionAprende article p {
-        text-align: justify; }
-  .segundaSectionAprende {
-    max-width: 90%; }
-    .segundaSectionAprende article {
-      gap: .625rem; }
-  .terceraSectionAprende {
-    max-width: 90%;
-    margin: 1.25rem auto; }
-    .terceraSectionAprende > :first-child {
-      display: flex;
-      gap: 1.25rem; }
-      .terceraSectionAprende > :first-child ol {
-        gap: .625rem; }
-      .terceraSectionAprende > :first-child div {
-        align-self: center; }
-      .terceraSectionAprende > :first-child p {
-        text-align: justify; }
-    .terceraSectionAprende article div {
-      width: fit-content;
-      align-self: center; }
-  .quintaSectionAprende {
-    margin: 1.25rem auto; }
-    .quintaSectionAprende article {
-      max-width: 90%;
-      flex-direction: column; }
-      .quintaSectionAprende article h2 {
-        text-align: center; }
-  .sextaSectionAprende {
-    max-width: 90%; }
-    .sextaSectionAprende .contenedorSextaSectionAprende {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem; }
-      .sextaSectionAprende .contenedorSextaSectionAprende > :first-child {
-        max-width: 100%; }
-      .sextaSectionAprende .contenedorSextaSectionAprende > :last-child {
-        max-width: 100%; } }
-
-@media screen and (max-width: 30rem) {
-  .primerContenedorSectionTienda {
-    max-width: 95%;
-    margin: .625rem auto;
-    gap: .625rem; }
-    .primerContenedorSectionTienda .segundoContenedorSectionTienda {
-      max-width: 100%;
-      flex-direction: column;
-      gap: 1.25rem; }
-      .primerContenedorSectionTienda .segundoContenedorSectionTienda > :first-child {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: .625rem; }
-        .primerContenedorSectionTienda .segundoContenedorSectionTienda > :first-child > :first-child {
-          border: solid #f5f5dc 1px;
-          background-color: #4b0082;
-          color: #f5f5dc; }
-      .primerContenedorSectionTienda .segundoContenedorSectionTienda > :last-child {
-        max-width: 100%;
-        flex-direction: column; }
-        .primerContenedorSectionTienda .segundoContenedorSectionTienda > :last-child .card {
-          max-width: 100%; } }
-
-@media screen and (min-width: 30rem) and (max-width: 60rem) {
-  .primerContenedorSectionTienda {
-    max-width: 90%;
+    max-width: 37.5rem;
+    padding: .625rem;
     margin: 1.25rem auto;
+    margin-top: 0; }
+    .primeraSectionAprende > :first-child {
+      gap: 1.25rem;
+      text-align: center; }
+      .primeraSectionAprende > :first-child p {
+        text-align: justify; }
+  .segundaSectionAprende {
+    max-width: 37.5rem;
+    padding: .625rem;
+    margin: 1.25rem auto; }
+    .segundaSectionAprende > :first-child {
+      gap: 1.25rem; }
+      .segundaSectionAprende > :first-child p {
+        text-align: justify; }
+  .terceraSectionAprende {
+    max-width: 37.5rem;
+    padding: .625rem;
+    margin: 1.25rem auto;
+    display: flex;
+    flex-direction: column;
     gap: 1.25rem; }
-    .primerContenedorSectionTienda .segundoContenedorSectionTienda {
-      max-width: 100%;
+    .terceraSectionAprende > :first-child {
+      gap: 1.25rem; }
+      .terceraSectionAprende > :first-child > :last-child {
+        width: fit-content; }
+    .terceraSectionAprende .articuloNeurodivergencia {
+      gap: 1.25rem; }
+  .cuartaSectionAprende {
+    max-width: 37.5rem;
+    padding: .625rem;
+    margin: 1.25rem auto;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between; }
+  .quintaSectionAprende {
+    max-width: 37.5rem;
+    padding: .625rem;
+    margin: 1.25rem auto; }
+    .quintaSectionAprende > :first-child article {
+      padding: 1.25rem;
+      gap: 1.25rem; }
+  .sextaSectionAprende {
+    max-width: 37.5rem;
+    padding: .625rem;
+    margin: 1.25rem auto; }
+    .sextaSectionAprende h2 {
+      text-align: left; }
+    .sextaSectionAprende > :last-child {
+      flex-direction: row;
+      gap: .625rem; }
+      .sextaSectionAprende > :last-child article {
+        width: 50%;
+        justify-content: space-between; } }
+
+@media screen and (min-width: 60rem) {
+  .primeraSectionAprende {
+    max-width: 71.25rem;
+    padding: .625rem;
+    margin: 2.5rem auto; }
+    .primeraSectionAprende > :first-child p {
+      padding: 1.25rem;
+      text-align: justify; }
+  .segundaSectionAprende {
+    max-width: 71.25rem;
+    padding: .625rem;
+    margin: 2.5rem auto; }
+    .segundaSectionAprende > :first-child {
+      display: flex;
       flex-direction: column;
       gap: 1.25rem; }
-      .primerContenedorSectionTienda .segundoContenedorSectionTienda > :first-child {
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
+      .segundaSectionAprende > :first-child h2 {
+        text-align: left; }
+      .segundaSectionAprende > :first-child p {
+        padding: 1.25rem;
+        text-align: justify; }
+  .terceraSectionAprende {
+    max-width: 71.25rem;
+    padding: .625rem;
+    margin: 2.5rem auto;
+    gap: 2.5rem; }
+    .terceraSectionAprende > :first-child {
+      padding: 1.25rem;
+      gap: 1.25rem; }
+      .terceraSectionAprende > :first-child > :nth-child(3) {
+        padding: 1.25rem;
         gap: 1.25rem; }
-        .primerContenedorSectionTienda .segundoContenedorSectionTienda > :first-child > :first-child {
-          border: solid #f5f5dc 1px;
-          background-color: #4b0082;
-          color: #f5f5dc; }
+    .terceraSectionAprende .articuloNeurodivergencia {
+      padding: 1.25rem;
+      gap: 1.25rem; }
+  .cuartaSectionAprende {
+    max-width: 71.25rem;
+    padding: .625rem;
+    margin: 2.5rem auto;
+    justify-content: space-between;
+    align-items: center; }
+    .cuartaSectionAprende > :first-child {
+      width: 18.75rem; }
+  .quintaSectionAprende {
+    max-width: 71.25rem;
+    padding: .625rem;
+    margin: 2.5rem auto; }
+    .quintaSectionAprende > :first-child article {
+      gap: 1.25rem;
+      padding: 1.25rem; }
+      .quintaSectionAprende > :first-child article div {
+        width: fit-content; }
+  .sextaSectionAprende {
+    max-width: 71.25rem;
+    padding: .625rem;
+    margin: 2.5rem auto;
+    gap: 2.5rem; }
+    .sextaSectionAprende h2 {
+      text-align: left; }
+    .sextaSectionAprende > :last-child {
+      flex-direction: row;
+      gap: 1.25rem; }
+      .sextaSectionAprende > :last-child article {
+        width: 50%;
+        padding: 1.25rem;
+        justify-content: space-between;
+        gap: 1.25rem; } }
+
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+  .primerContenedorSectionTienda {
+    max-width: 37.5rem;
+    padding: .625rem;
+    margin: 1.25rem auto; }
+    .primerContenedorSectionTienda .segundoContenedorSectionTienda > :last-child {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between; }
+      .primerContenedorSectionTienda .segundoContenedorSectionTienda > :last-child .card {
+        max-width: 48%;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: space-between; } }
+
+@media screen and (min-width: 60rem) {
+  .primerContenedorSectionTienda {
+    max-width: 71.25rem;
+    padding: .625rem;
+    margin: 2.5rem auto;
+    gap: 2.5rem; }
+    .primerContenedorSectionTienda .sectionTiendaTitulo h1 {
+      text-align: left; }
+    .primerContenedorSectionTienda .segundoContenedorSectionTienda {
+      flex-direction: row; }
+      .primerContenedorSectionTienda .segundoContenedorSectionTienda > :first-child {
+        max-width: 30%; }
       .primerContenedorSectionTienda .segundoContenedorSectionTienda > :last-child {
-        max-width: 100%; }
+        max-width: 70%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between; }
         .primerContenedorSectionTienda .segundoContenedorSectionTienda > :last-child .card {
-          max-width: 32%; } }
+          max-width: 31%; } }
 
 @media screen and (max-width: 30rem) {
   .primeraSectionConocenos {
