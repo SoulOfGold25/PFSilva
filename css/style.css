@@ -382,32 +382,54 @@ body p {
 footer {
   max-width: 100%;
   background-color: #4b0082;
-  color: #f5f5dc;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 2.5rem 0 0 0; }
-  footer div {
-    max-width: 76rem;
-    margin: 0 auto; }
-    footer div .primerContenedorFooter {
+  color: #f5f5dc; }
+  footer > :first-child {
+    max-width: 21.25rem;
+    padding: .625rem;
+    margin: .625rem auto;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem; }
+    footer > :first-child > :first-child {
       display: flex;
-      flex-wrap: wrap; }
-      footer div .primerContenedorFooter article {
-        flex: 1;
-        padding: 1.25rem;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1.25rem; }
+      footer > :first-child > :first-child > :first-child {
         display: flex;
         flex-direction: column;
-        justify-content: start;
+        gap: 10px;
+        text-align: center; }
+        footer > :first-child > :first-child > :first-child > :last-child li:hover {
+          color: #d19300;
+          cursor: pointer; }
+      footer > :first-child > :first-child > :nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
+        text-align: center;
         gap: .625rem; }
-        footer div .primerContenedorFooter article p {
-          text-align: justify; }
-        footer div .primerContenedorFooter article .input-group {
+      footer > :first-child > :first-child > :nth-child(3) {
+        text-align: center; }
+        footer > :first-child > :first-child > :nth-child(3) > :first-child li:hover {
+          color: #d19300; }
+      footer > :first-child > :first-child > :last-child {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: .625rem; }
+        footer > :first-child > :first-child > :last-child > :last-child {
           display: flex;
           align-items: center; }
-          footer div .primerContenedorFooter article .input-group .input {
+          footer > :first-child > :first-child > :last-child > :last-child > :first-child {
             min-height: 50px;
             max-width: 150px;
             padding: 0 1rem;
@@ -416,10 +438,10 @@ footer {
             border: 1px solid #f5f5dc;
             border-radius: 1.25rem 0 0 0;
             background-color: transparent; }
-            footer div .primerContenedorFooter article .input-group .input:focus, footer div .primerContenedorFooter article .input-group .input:focus-visible {
+            footer > :first-child > :first-child > :last-child > :last-child > :first-child:focus, footer > :first-child > :first-child > :last-child > :last-child > :first-child:focus-visible {
               border-color: #d19300;
               outline: none; }
-          footer div .primerContenedorFooter article .input-group .button--submit {
+          footer > :first-child > :first-child > :last-child > :last-child > :last-child {
             min-height: 50px;
             padding: .5em 1em;
             border: none;
@@ -429,85 +451,23 @@ footer {
             font-size: 15px;
             cursor: pointer;
             transition: background-color .3s ease-in-out; }
-            footer div .primerContenedorFooter article .input-group .button--submit:hover {
+            footer > :first-child > :first-child > :last-child > :last-child > :last-child:hover {
               background-color: #d19300;
               color: #f5f5dc; }
-    footer div .segundoContenedorFooter {
+    footer > :first-child > :last-child {
       display: flex;
       padding: 1.25rem;
-      flex-wrap: wrap;
       flex-direction: column;
-      gap: .625rem;
+      gap: 1.25rem;
       justify-content: center;
-      align-items: center; }
-      footer div .segundoContenedorFooter div {
+      align-items: center;
+      text-align: center; }
+      footer > :first-child > :last-child > :first-child {
         display: flex;
         gap: .625rem; }
-        footer div .segundoContenedorFooter div a img:hover {
+        footer > :first-child > :last-child > :first-child a img:hover {
           transition: transform 0.3s;
           transform: scale(1.1); }
-
-@media screen and (max-width: 600px) {
-  footer {
-    padding: 0 .625rem; }
-    footer div {
-      max-width: 30rem; }
-      footer div .primerContenedorFooter {
-        flex-direction: column; }
-        footer div .primerContenedorFooter article {
-          flex: 1;
-          padding: .625rem;
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-          footer div .primerContenedorFooter article p {
-            text-align: center; }
-          footer div .primerContenedorFooter article ul li:hover {
-            color: #d19300; }
-          footer div .primerContenedorFooter article .btnBlanco, footer div .primerContenedorFooter article .botonPurpura {
-            width: 6.25rem; }
-          footer div .primerContenedorFooter article .input-group {
-            display: flex;
-            align-items: center; }
-            footer div .primerContenedorFooter article .input-group .input {
-              min-height: 50px;
-              max-width: 150px;
-              padding: 0 1rem;
-              color: #fff;
-              font-size: 15px;
-              border: 1px solid #f5f5dc;
-              border-radius: 1.25rem 0 0 0;
-              background-color: transparent; }
-              footer div .primerContenedorFooter article .input-group .input:focus, footer div .primerContenedorFooter article .input-group .input:focus-visible {
-                border-color: #d19300;
-                outline: none; }
-            footer div .primerContenedorFooter article .input-group .button--submit {
-              min-height: 50px;
-              padding: .5em 1em;
-              border: none;
-              border-radius: 0 0 1.25rem 0;
-              background-color: #f5f5dc;
-              color: #4b0082;
-              font-size: 15px;
-              cursor: pointer;
-              transition: background-color .3s ease-in-out; }
-              footer div .primerContenedorFooter article .input-group .button--submit:hover {
-                background-color: #d19300;
-                color: #f5f5dc; }
-      footer div .segundoContenedorFooter {
-        display: flex;
-        padding: 1.25rem;
-        flex-wrap: wrap;
-        flex-direction: column;
-        gap: .625rem;
-        justify-content: center;
-        align-items: center; }
-        footer div .segundoContenedorFooter div {
-          display: flex;
-          gap: .625rem; }
-          footer div .segundoContenedorFooter div a img:hover {
-            transition: transform 0.3s;
-            transform: scale(1.1); } }
 
 .primeraSectionAprende {
   max-width: 21.25rem;
@@ -1173,26 +1133,33 @@ footer {
 header {
   max-width: 100%;
   padding: .625rem;
-  background-color: #4b0082; }
+  background-color: #4b0082;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px; }
   header nav {
     max-width: 21.25rem;
     padding: .625rem;
     margin: .625rem auto;
     transition: all 0.5s ease-in-out;
-    margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: .625rem; }
     header nav img {
-      width: 3.75rem; }
+      width: 3.75rem;
+      overflow: hidden;
+      box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+      transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275); }
+      header nav img:hover {
+        transform: scale(1.05); }
     header nav ul {
       display: flex;
       justify-content: center;
       align-items: center;
       gap: .625rem;
       color: #f5f5dc; }
+    header nav .botonMenuUnete {
+      display: flex; }
     header nav article {
       display: none; }
 
@@ -1244,6 +1211,8 @@ header {
         align-items: center;
         gap: .625rem;
         color: #f5f5dc; }
+      header nav #botonMenuUnete {
+        display: none; }
       header nav article {
         display: flex;
         justify-content: center;
@@ -1275,18 +1244,6 @@ header {
   .btnBlanco:focus:after, .botonPurpura:focus:after, .btnBlanco:hover:after, .botonPurpura:hover:after {
     width: 90%;
     left: 0%; }
-  .btnBlanco:after, .botonPurpura:after {
-    content: "";
-    pointer-events: none;
-    bottom: -2px;
-    left: 50%;
-    position: absolute;
-    width: 0%;
-    height: 2px;
-    background-color: #f5f5dc;
-    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
-    transition-duration: 2s;
-    transition-property: width, left; }
 
 .botonPurpura {
   background-color: #4b0082;
@@ -2000,3 +1957,36 @@ header {
         border-radius: 0 0 15.625rem 0;
         border: solid 0.0625rem #4b0082;
         border-left: none; } }
+
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+  footer {
+    margin-top: 1.25rem; }
+    footer > :first-child {
+      max-width: 37.5rem;
+      padding: .625rem;
+      margin: 1.25rem auto;
+      transition: all 0.5s ease-in-out;
+      margin-bottom: 0;
+      padding: 1.25rem; } }
+
+@media screen and (min-width: 60rem) {
+  footer {
+    margin-top: 2.5rem; }
+    footer > :first-child {
+      max-width: 71.25rem;
+      padding: .625rem;
+      margin: 2.5rem auto;
+      transition: all 0.5s ease-in-out;
+      padding: 1.875rem;
+      margin-bottom: 0;
+      gap: 2.5rem; }
+      footer > :first-child > :first-child {
+        flex-direction: row; }
+        footer > :first-child > :first-child > :first-child {
+          flex: 1; }
+        footer > :first-child > :first-child > :nth-child(2) {
+          flex: 1; }
+        footer > :first-child > :first-child > :nth-child(3) {
+          flex: 1; }
+        footer > :first-child > :first-child > :last-child {
+          flex: 1; } }

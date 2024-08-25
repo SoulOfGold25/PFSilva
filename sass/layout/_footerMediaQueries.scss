@@ -1,0 +1,49 @@
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+    footer {
+        margin-top: 1.25rem;
+
+        >:first-child {
+            @include boxModelingTablet;
+            margin-bottom: 0;
+            padding: 1.25rem;
+        }
+    }
+}
+
+@media screen and (min-width: 60rem) {
+    footer {
+        margin-top: 2.5rem;
+
+        >:first-child {
+            @include boxModelingDesktop;
+            padding: 1.875rem;
+            margin-bottom: 0;
+            gap: 2.5rem;
+
+            //primer contenedor footer
+            >:first-child {
+                flex-direction: row;
+
+                //Contenedor tienes preguntas
+                >:first-child {
+                    flex: 1;
+                }
+
+                //transpariencia
+                >:nth-child(2) {
+                    flex: 1;
+                }
+
+                //Preguntas
+                >:nth-child(3) {
+                    flex: 1;
+                }
+
+                //newsletter
+                >:last-child {
+                    flex: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,54 +1,72 @@
-header{
+header {
     max-width: 100%;
     padding: .625rem;
     background-color: $colorPrincipal;
-    nav{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    nav {
         @include boxModelingMobile;
-        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         gap: .625rem;
-        img{
+        
+        img {
             width: 3.75rem;
+            overflow: hidden;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 20px 0px;
+            transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            &:hover {
+                transform: scale(1.05);
+            }
         }
-        ul{
+
+        ul {
             display: flex;
             justify-content: center;
             align-items: center;
             gap: .625rem;
             color: $colorSecundario;
         }
-        article{
+
+        .botonMenuUnete {
+            display: flex;
+        }
+
+        article {
             display: none;
         }
     }
 }
 
-@media screen and (min-width: 30rem) and (max-width: 60rem){
-    header{
+@media screen and (min-width: 30rem) and (max-width: 60rem) {
+    header {
         max-width: 100%;
         padding: .625rem;
         background-color: $colorPrincipal;
-        nav{
+
+        nav {
             @include boxModelingTablet;
             margin: 0 auto;
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
             gap: .625rem;
-            img{
+
+            img {
                 width: 5rem;
             }
-            ul{
+
+            ul {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: .625rem;
                 color: $colorSecundario;
             }
-            article{
+
+            article {
                 display: none;
             }
         }
@@ -56,27 +74,35 @@ header{
 }
 
 @media screen and (min-width: 60rem) {
-    header{
+    header {
         max-width: 100%;
         padding: .625rem;
         background-color: $colorPrincipal;
-        nav{
+
+        nav {
             @include boxModelingDesktop;
             margin: 0 auto;
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
-            img{
+
+            img {
                 width: 6.25rem;
             }
-            ul{
+
+            ul {
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 gap: .625rem;
                 color: $colorSecundario;
             }
-            article{
+
+            #botonMenuUnete {
+                display: none;
+            }
+
+            article {
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -85,4 +111,3 @@ header{
         }
     }
 }
-
